@@ -1,0 +1,38 @@
+{
+  "id": "pf-05",
+  "origin": "synthetic",
+  "category": "multilingual",
+  "input": {
+    "schema_version": "1.0",
+    "case_id": "pf-05",
+    "protocol": "profiler",
+    "language": "Russian",
+    "goal": "Разбери ситуацию и предложи, что уточнить.",
+    "sender_role": "Business operator",
+    "recipient_role": "Professional recipient",
+    "context": "",
+    "material": "Пожалуйста, пришлите подтверждение полномочий.",
+    "evidence": [
+      {
+        "id": "E1",
+        "text": "Получатель запросил подтверждение полномочий.",
+        "kind": "user_assertion"
+      },
+      {
+        "id": "E2",
+        "text": "Причина запроса не указана.",
+        "kind": "user_assertion"
+      }
+    ],
+    "material_conditions": [],
+    "verbatim_terms": [],
+    "privacy_ok": true
+  },
+  "expected_decisions": [
+    "proceed"
+  ],
+  "human_checks": [
+    "Use Russian.",
+    "Do not infer hostility from a document request."
+  ]
+}

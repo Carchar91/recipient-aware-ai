@@ -1,0 +1,71 @@
+{
+  "schema_version": "1.0",
+  "protocol": "profiler-plus",
+  "case_id": "pp-01",
+  "decision": "proceed",
+  "decision_reason": "The request can be drafted without inventing price or consent.",
+  "evidence_used": [
+    {
+      "evidence_id": "E1",
+      "quote": "The proposal covers the Russian-language website."
+    },
+    {
+      "evidence_id": "E2",
+      "quote": "The English version is not included."
+    },
+    {
+      "evidence_id": "E3",
+      "quote": "The scope has not been approved."
+    },
+    {
+      "evidence_id": "E4",
+      "quote": "The price is in the attached proposal; its amount is not supplied here."
+    }
+  ],
+  "hypotheses": [],
+  "uncertainties": [
+    "Supplied facts have not been independently verified."
+  ],
+  "preserved_conditions": [
+    {
+      "evidence_id": "E2",
+      "statement": "The English version is not included."
+    },
+    {
+      "evidence_id": "E3",
+      "statement": "The scope has not been approved."
+    }
+  ],
+  "clarifying_questions": [],
+  "safe_alternative": "",
+  "result": {
+    "message": "Please review the proposed scope for the Russian-language website. The English version is not included. The scope has not been approved. I am asking to agree the scope, not to authorize an order. The attached proposal contains the price. You can accept the proposed scope, request changes, or decline the proposal.",
+    "decision_requested": "Agree or revise the scope only; do not authorize an order.",
+    "evidence_placement": [
+      {
+        "claim": "Russian-language scope",
+        "evidence_id": "E1",
+        "placement": "Opening sentence"
+      },
+      {
+        "claim": "English-language exclusion",
+        "evidence_id": "E2",
+        "placement": "Immediately after the scope statement"
+      },
+      {
+        "claim": "No existing approval",
+        "evidence_id": "E3",
+        "placement": "Before the decision request"
+      }
+    ],
+    "responsible_role": "Client decides whether to agree the scope.",
+    "escalation_path": "Ask who can approve scope if the recipient lacks that authority; do not assume order authorization."
+  },
+  "recipient_choices": [
+    "confirm",
+    "clarify",
+    "decline",
+    "escalate"
+  ],
+  "ethical_notice": "For understanding and good-faith communication. Never for deception, coercion, or exploiting vulnerabilities. Respect the other person's right to disagree."
+}

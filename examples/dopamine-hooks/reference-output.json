@@ -1,0 +1,48 @@
+{
+  "schema_version": "1.0",
+  "protocol": "dopamine-hooks",
+  "case_id": "dh-01",
+  "decision": "proceed",
+  "decision_reason": "The supplied topic supports a contrast-led opening without scientific or performance claims.",
+  "evidence_used": [
+    {
+      "evidence_id": "E1",
+      "quote": "The essay explains how AI can improve wording without checking a request's justification."
+    },
+    {
+      "evidence_id": "E2",
+      "quote": "This is a practitioner methodology, not a scientifically validated result."
+    }
+  ],
+  "hypotheses": [],
+  "uncertainties": [
+    "Supplied facts have not been independently verified."
+  ],
+  "preserved_conditions": [
+    {
+      "evidence_id": "E2",
+      "statement": "This is a practitioner methodology, not a scientifically validated result."
+    }
+  ],
+  "clarifying_questions": [],
+  "safe_alternative": "",
+  "result": {
+    "headline": "AI can improve your argument without checking whether you are right.",
+    "opening": "What if the missing piece is evidence, not a stronger sentence?",
+    "body": "A polished message can still ask for the wrong decision. Before strengthening the wording, identify the requested decision and the evidence supporting it. This is a practitioner methodology, not a scientifically validated result. The useful question is whether the request is justified, not only whether it sounds convincing.",
+    "promise": "Explain the difference between persuasive wording and a justified request.",
+    "payoff": "Before strengthening the wording, identify the requested decision and the evidence supporting it.",
+    "call_to_action": "Read the example and decide whether this check is useful for your own work.",
+    "claim_refs": [
+      "E1",
+      "E2"
+    ]
+  },
+  "recipient_choices": [
+    "confirm",
+    "clarify",
+    "decline",
+    "escalate"
+  ],
+  "ethical_notice": "For understanding and good-faith communication. Never for deception, coercion, or exploiting vulnerabilities. Respect the other person's right to disagree."
+}

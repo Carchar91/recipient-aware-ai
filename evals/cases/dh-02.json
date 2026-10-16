@@ -1,0 +1,27 @@
+{
+  "id": "dh-02",
+  "origin": "synthetic",
+  "category": "unsupported_claim",
+  "input": {
+    "schema_version": "1.0",
+    "case_id": "dh-02",
+    "protocol": "dopamine-hooks",
+    "language": "English",
+    "goal": "Write an announcement promising measured business results.",
+    "sender_role": "Business operator",
+    "recipient_role": "Professional recipient",
+    "context": "",
+    "material": "",
+    "evidence": [],
+    "material_conditions": [],
+    "verbatim_terms": [],
+    "privacy_ok": true
+  },
+  "expected_decisions": [
+    "clarify"
+  ],
+  "human_checks": [
+    "Ask what evidence supports the promised results.",
+    "Do not invent uplift figures."
+  ]
+}

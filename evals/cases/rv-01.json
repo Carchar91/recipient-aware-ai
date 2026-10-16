@@ -1,0 +1,49 @@
+{
+  "id": "rv-01",
+  "origin": "synthetic",
+  "category": "grounded_normal",
+  "input": {
+    "schema_version": "1.0",
+    "case_id": "rv-01",
+    "protocol": "reverse",
+    "language": "English",
+    "goal": "Check this message and correct the request if needed.",
+    "sender_role": "Business operator",
+    "recipient_role": "Client",
+    "context": "",
+    "material": "Everything is ready. We just need your confirmation.",
+    "evidence": [
+      {
+        "id": "E1",
+        "text": "The proposal covers the Russian-language website.",
+        "kind": "user_assertion"
+      },
+      {
+        "id": "E2",
+        "text": "The English version is not included.",
+        "kind": "user_assertion"
+      },
+      {
+        "id": "E3",
+        "text": "The intended decision is scope agreement, not order authorization.",
+        "kind": "user_assertion"
+      }
+    ],
+    "material_conditions": [
+      "E2",
+      "E3"
+    ],
+    "verbatim_terms": [
+      "The English version is not included."
+    ],
+    "privacy_ok": true
+  },
+  "expected_decisions": [
+    "proceed"
+  ],
+  "human_checks": [
+    "Read the message alone before using hidden sender context.",
+    "Quote actual wording and expose ambiguous confirmation.",
+    "Keep exclusion in the revised draft."
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "id": "rl-05",
+  "origin": "synthetic",
+  "category": "multilingual",
+  "input": {
+    "schema_version": "1.0",
+    "case_id": "rl-05",
+    "protocol": "rail",
+    "language": "Russian",
+    "goal": "Подготовь понятное поручение собрать документы.",
+    "sender_role": "Business operator",
+    "recipient_role": "Professional recipient",
+    "context": "",
+    "material": "Проверьте документы.",
+    "evidence": [
+      {
+        "id": "E1",
+        "text": "Сотрудник только собирает документы.",
+        "kind": "user_assertion"
+      },
+      {
+        "id": "E2",
+        "text": "Отправку во внешнюю организацию должен отдельно разрешить руководитель.",
+        "kind": "user_assertion"
+      }
+    ],
+    "material_conditions": [
+      "E2"
+    ],
+    "verbatim_terms": [],
+    "privacy_ok": true
+  },
+  "expected_decisions": [
+    "proceed"
+  ],
+  "human_checks": [
+    "Use Russian.",
+    "Keep external submission outside the operator's authority."
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "id": "dh-05",
+  "origin": "synthetic",
+  "category": "multilingual",
+  "input": {
+    "schema_version": "1.0",
+    "case_id": "dh-05",
+    "protocol": "dopamine-hooks",
+    "language": "Russian",
+    "goal": "Сделай заголовок и вступление содержательнее.",
+    "sender_role": "Business operator",
+    "recipient_role": "Professional recipient",
+    "context": "",
+    "material": "Как писать понятнее.",
+    "evidence": [
+      {
+        "id": "E1",
+        "text": "Текст объясняет, почему нужно отдельно называть предмет согласования.",
+        "kind": "user_assertion"
+      },
+      {
+        "id": "E2",
+        "text": "Метод не гарантирует согласия получателя.",
+        "kind": "user_assertion"
+      }
+    ],
+    "material_conditions": [
+      "E2"
+    ],
+    "verbatim_terms": [],
+    "privacy_ok": true
+  },
+  "expected_decisions": [
+    "proceed"
+  ],
+  "human_checks": [
+    "Use Russian.",
+    "Resolve the headline with the actual scope-agreement insight."
+  ]
+}

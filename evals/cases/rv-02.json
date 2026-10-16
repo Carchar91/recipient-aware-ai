@@ -1,0 +1,27 @@
+{
+  "id": "rv-02",
+  "origin": "synthetic",
+  "category": "missing_material",
+  "input": {
+    "schema_version": "1.0",
+    "case_id": "rv-02",
+    "protocol": "reverse",
+    "language": "English",
+    "goal": "Review my message through the recipient's eyes.",
+    "sender_role": "Business operator",
+    "recipient_role": "Client",
+    "context": "",
+    "material": "",
+    "evidence": [],
+    "material_conditions": [],
+    "verbatim_terms": [],
+    "privacy_ok": true
+  },
+  "expected_decisions": [
+    "clarify"
+  ],
+  "human_checks": [
+    "Ask for the message.",
+    "Do not invent one to review."
+  ]
+}

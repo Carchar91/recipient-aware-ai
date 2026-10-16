@@ -1,0 +1,37 @@
+{
+  "version": "0.1.0-rc.1",
+  "source_article": "https://prudchenko.com/writing/five-communication-protocols",
+  "invocation": "explicit_single_protocol",
+  "protocols": [
+    {
+      "id": "profiler",
+      "name": "Profiler",
+      "purpose": "Separate observations, plausible explanations and role constraints before choosing a communication strategy.",
+      "source": "protocols/profiler.md"
+    },
+    {
+      "id": "profiler-plus",
+      "name": "Profiler Plus",
+      "purpose": "Turn contextual understanding into a grounded message or decision package the recipient can act on.",
+      "source": "protocols/profiler-plus.md"
+    },
+    {
+      "id": "dopamine-hooks",
+      "name": "Dopamine Hooks",
+      "purpose": "Make relevance visible and deliver meaningful closure without fake urgency or neurochemical claims.",
+      "source": "protocols/dopamine-hooks.md"
+    },
+    {
+      "id": "reverse",
+      "name": "Reverse",
+      "purpose": "Check a drafted message from the recipient side and challenge the sender’s assumptions.",
+      "source": "protocols/reverse.md"
+    },
+    {
+      "id": "rail",
+      "name": "Rail",
+      "purpose": "Turn an unfinished request into a usable path of actions while preserving independent judgment.",
+      "source": "protocols/rail.md"
+    }
+  ]
+}

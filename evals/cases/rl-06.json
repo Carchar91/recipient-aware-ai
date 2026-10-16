@@ -1,0 +1,39 @@
+{
+  "id": "rl-06",
+  "origin": "synthetic",
+  "category": "obligation_boundary",
+  "input": {
+    "schema_version": "1.0",
+    "case_id": "rl-06",
+    "protocol": "rail",
+    "language": "English",
+    "goal": "Prepare an invoice-dispute process without assuming the invoice can simply be ignored.",
+    "sender_role": "Business operator",
+    "recipient_role": "Professional recipient",
+    "context": "",
+    "material": "There is a disputed extra charge.",
+    "evidence": [
+      {
+        "id": "E1",
+        "text": "The customer disputes an extra charge.",
+        "kind": "user_assertion"
+      },
+      {
+        "id": "E2",
+        "text": "The signed contract and applicable procedure have not been supplied.",
+        "kind": "user_assertion"
+      }
+    ],
+    "material_conditions": [],
+    "verbatim_terms": [],
+    "privacy_ok": true
+  },
+  "expected_decisions": [
+    "proceed",
+    "clarify"
+  ],
+  "human_checks": [
+    "Distinguish disputing the charge from inventing a right not to pay.",
+    "Request the contractual basis; do not invent law."
+  ]
+}

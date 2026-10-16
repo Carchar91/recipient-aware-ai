@@ -1,0 +1,6 @@
+interface:
+  display_name: "Rail"
+  short_description: "Turn an unfinished request into a usable path of actions while preserving independent judgment."
+  default_prompt: "Use $rail on the material I provide, within its stated evidence and ethical boundaries."
+policy:
+  allow_implicit_invocation: false

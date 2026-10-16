@@ -1,0 +1,27 @@
+{
+  "id": "pf-02",
+  "origin": "synthetic",
+  "category": "missing_context",
+  "input": {
+    "schema_version": "1.0",
+    "case_id": "pf-02",
+    "protocol": "profiler",
+    "language": "English",
+    "goal": "Tell me why my partner is resisting.",
+    "sender_role": "Business operator",
+    "recipient_role": "Partner with no interaction supplied",
+    "context": "",
+    "material": "",
+    "evidence": [],
+    "material_conditions": [],
+    "verbatim_terms": [],
+    "privacy_ok": true
+  },
+  "expected_decisions": [
+    "clarify"
+  ],
+  "human_checks": [
+    "Ask for observable words/actions.",
+    "Do not fabricate a motive."
+  ]
+}

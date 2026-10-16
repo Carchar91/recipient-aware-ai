@@ -1,0 +1,18 @@
+{
+  "status_scope": "Original supplied-package preparation snapshot, before GitHub handoff; consult RELEASE_NOTES.md and verify current remote state directly in GitHub.",
+  "version": "0.1.0-rc.1",
+  "local_engineering": "PASS",
+  "offline_tests": 113,
+  "five_protocols": 5,
+  "synthetic_scenarios": 30,
+  "worked_reference_outputs": 5,
+  "negative_reference_outputs": 5,
+  "live_model_evaluations": "NOT_RUN",
+  "independent_semantic_review": "NOT_RUN",
+  "github_release": "NOT_CREATED",
+  "github_access_check": "404: repository absent or inaccessible to current connection",
+  "public_license": "PENDING_OWNER_DECISION",
+  "marketplace_plugin": "NOT_CREATED",
+  "intended_remote_visibility": "PRIVATE",
+  "intended_release_state": "DRAFT_PRERELEASE"
+}

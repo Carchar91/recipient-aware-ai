@@ -1,0 +1,40 @@
+{
+  "id": "pp-05",
+  "origin": "synthetic",
+  "category": "multilingual",
+  "input": {
+    "schema_version": "1.0",
+    "case_id": "pp-05",
+    "protocol": "profiler-plus",
+    "language": "Thai",
+    "goal": "Draft a brief Thai question for the accountant asking what evidence is needed.",
+    "sender_role": "Business operator",
+    "recipient_role": "Accountant",
+    "context": "",
+    "material": "Need to confirm supporting documents.",
+    "evidence": [
+      {
+        "id": "E1",
+        "text": "The accountant is asked to identify required documents, not authorize a transaction.",
+        "kind": "user_assertion"
+      },
+      {
+        "id": "E2",
+        "text": "No transaction approval has been granted.",
+        "kind": "user_assertion"
+      }
+    ],
+    "material_conditions": [
+      "E2"
+    ],
+    "verbatim_terms": [],
+    "privacy_ok": true
+  },
+  "expected_decisions": [
+    "proceed"
+  ],
+  "human_checks": [
+    "Use natural Thai.",
+    "Do not turn a document query into an authorization."
+  ]
+}

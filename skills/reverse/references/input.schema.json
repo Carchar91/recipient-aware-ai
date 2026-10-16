@@ -1,0 +1,114 @@
+{
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "enum": [
+        "1.0"
+      ]
+    },
+    "case_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9_-]{0,79}$"
+    },
+    "protocol": {
+      "type": "string",
+      "enum": [
+        "profiler",
+        "profiler-plus",
+        "dopamine-hooks",
+        "reverse",
+        "rail"
+      ]
+    },
+    "language": {
+      "type": "string",
+      "minLength": 1
+    },
+    "goal": {
+      "type": "string",
+      "minLength": 1
+    },
+    "sender_role": {
+      "type": "string",
+      "minLength": 1
+    },
+    "recipient_role": {
+      "type": "string",
+      "minLength": 1
+    },
+    "context": {
+      "type": "string"
+    },
+    "material": {
+      "type": "string"
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^E[1-9][0-9]*$"
+          },
+          "text": {
+            "type": "string",
+            "minLength": 1
+          },
+          "kind": {
+            "type": "string",
+            "enum": [
+              "user_assertion",
+              "provided_document",
+              "direct_quote"
+            ]
+          }
+        },
+        "required": [
+          "id",
+          "text",
+          "kind"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "material_conditions": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    },
+    "verbatim_terms": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    },
+    "privacy_ok": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "schema_version",
+    "case_id",
+    "protocol",
+    "language",
+    "goal",
+    "sender_role",
+    "recipient_role",
+    "context",
+    "material",
+    "evidence",
+    "material_conditions",
+    "verbatim_terms",
+    "privacy_ok"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Recipient-Aware AI input 1.0"
+}

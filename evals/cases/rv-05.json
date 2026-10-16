@@ -1,0 +1,41 @@
+{
+  "id": "rv-05",
+  "origin": "synthetic",
+  "category": "multilingual",
+  "input": {
+    "schema_version": "1.0",
+    "case_id": "rv-05",
+    "protocol": "reverse",
+    "language": "Russian",
+    "goal": "Проверь письмо и предложи одну правку.",
+    "sender_role": "Business operator",
+    "recipient_role": "Professional recipient",
+    "context": "",
+    "material": "Всё согласовано, осталось ваше подтверждение.",
+    "evidence": [
+      {
+        "id": "E1",
+        "text": "Согласование ещё не получено.",
+        "kind": "user_assertion"
+      },
+      {
+        "id": "E2",
+        "text": "Нужно согласовать состав работ, а не оформить заказ.",
+        "kind": "user_assertion"
+      }
+    ],
+    "material_conditions": [
+      "E1",
+      "E2"
+    ],
+    "verbatim_terms": [],
+    "privacy_ok": true
+  },
+  "expected_decisions": [
+    "proceed"
+  ],
+  "human_checks": [
+    "Use Russian.",
+    "Do not describe approval as already received."
+  ]
+}

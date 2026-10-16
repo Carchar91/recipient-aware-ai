@@ -1,0 +1,38 @@
+{
+  "id": "rv-06",
+  "origin": "synthetic",
+  "category": "already_clear",
+  "input": {
+    "schema_version": "1.0",
+    "case_id": "rv-06",
+    "protocol": "reverse",
+    "language": "English",
+    "goal": "Review whether this correction letter is fair and clear.",
+    "sender_role": "Business operator",
+    "recipient_role": "Professional recipient",
+    "context": "",
+    "material": "I cannot approve the scope because the English version is excluded. Please quote it separately.",
+    "evidence": [
+      {
+        "id": "E1",
+        "text": "The English version is not included.",
+        "kind": "user_assertion"
+      },
+      {
+        "id": "E2",
+        "text": "The client wants a separate English-version quote.",
+        "kind": "user_assertion"
+      }
+    ],
+    "material_conditions": [],
+    "verbatim_terms": [],
+    "privacy_ok": true
+  },
+  "expected_decisions": [
+    "proceed"
+  ],
+  "human_checks": [
+    "Do not manufacture flaws to justify the review.",
+    "Do not turn the client's refusal into agreement."
+  ]
+}

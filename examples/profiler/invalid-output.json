@@ -1,0 +1,60 @@
+{
+  "schema_version": "1.0",
+  "protocol": "profiler",
+  "case_id": "pf-01",
+  "decision": "proceed",
+  "decision_reason": "There is enough observable context for bounded analysis, but not for a conclusion about motive or bank policy.",
+  "evidence_used": [
+    {
+      "evidence_id": "E1",
+      "quote": "The bank rule is independently verified."
+    },
+    {
+      "evidence_id": "E2",
+      "quote": "No written bank rule has been supplied."
+    },
+    {
+      "evidence_id": "E3",
+      "quote": "The clerk's approval authority is unknown."
+    }
+  ],
+  "hypotheses": [
+    {
+      "statement": "The clerk may be applying an ordinary document requirement.",
+      "supporting_evidence": [
+        "E1"
+      ],
+      "alternative": "The clerk may be uncertain about their authority and using a general statement instead of referring the question.",
+      "verification_question": "Which written requirement applies, and who has authority to decide this case?"
+    }
+  ],
+  "uncertainties": [
+    "Supplied facts have not been independently verified."
+  ],
+  "preserved_conditions": [],
+  "clarifying_questions": [],
+  "safe_alternative": "",
+  "result": {
+    "observations": [
+      {
+        "evidence_id": "E1",
+        "observation": "The clerk stated that a contract is required."
+      }
+    ],
+    "role_constraints": [
+      "The clerk's approval authority is unknown.",
+      "No official rule is supplied; a procedural requirement is only a possible explanation."
+    ],
+    "likely_objections": [
+      "The clerk may need documentary support before referring the request."
+    ],
+    "recommended_action": "Ask for the applicable written requirement and whether this clerk can decide or should refer the request to the authorized team."
+  },
+  "recipient_choices": [
+    "confirm",
+    "clarify",
+    "decline",
+    "escalate"
+  ],
+  "ethical_notice": "For understanding and good-faith communication. Never for deception, coercion, or exploiting vulnerabilities. Respect the other person's right to disagree."
+}

@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "test_layer": "offline_engineering_only",
+  "tests_run": 113,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "python": "3.13.5",
+  "dependencies": {
+    "jsonschema": "4.26.0",
+    "attrs": "26.1.0",
+    "jsonschema-specifications": "2025.9.1",
+    "referencing": "0.37.0",
+    "rpds-py": "2026.5.1",
+    "typing_extensions": "4.16.0"
+  },
+  "scenario_count": 30,
+  "protocol_count": 5,
+  "reference_outputs": 5,
+  "reference_output_origin": "assistant_authored_synthetic_fixtures",
+  "live_model_calls": 0,
+  "live_evaluation_status": "NOT_RUN",
+  "independent_semantic_review": "NOT_RUN",
+  "github_publication": "NOT_PERFORMED",
+  "license": "PENDING_OWNER_DECISION",
+  "limits": "Passing schema, provenance-reference and mock-transport tests does not establish model behavior, semantic truth, safety or efficacy."
+}

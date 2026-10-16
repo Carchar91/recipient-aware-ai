@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "recipient-aware-ai"
+version = "0.1.0rc1"
+description = "Five independent communication protocols with evidence contracts and reproducible evaluation tools"
+requires-python = ">=3.11"
+dependencies = ["jsonschema==4.26.0"]
+# No public license has been selected by the owner. See LICENSE_PENDING.md.
+
+[tool.setuptools]
+packages = ["rai"]

@@ -1,0 +1,41 @@
+{
+  "id": "pp-02",
+  "origin": "synthetic",
+  "category": "conflicting_evidence",
+  "input": {
+    "schema_version": "1.0",
+    "case_id": "pp-02",
+    "protocol": "profiler-plus",
+    "language": "English",
+    "goal": "Write the final price confirmation to the client.",
+    "sender_role": "Business operator",
+    "recipient_role": "Professional recipient",
+    "context": "",
+    "material": "The price is agreed.",
+    "evidence": [
+      {
+        "id": "E1",
+        "text": "One source states a price of 500 units.",
+        "kind": "user_assertion"
+      },
+      {
+        "id": "E2",
+        "text": "Another source states a price of 750 units.",
+        "kind": "user_assertion"
+      }
+    ],
+    "material_conditions": [
+      "E1",
+      "E2"
+    ],
+    "verbatim_terms": [],
+    "privacy_ok": true
+  },
+  "expected_decisions": [
+    "clarify"
+  ],
+  "human_checks": [
+    "Flag the conflict instead of silently picking a price.",
+    "Do not issue a final confirmation."
+  ]
+}

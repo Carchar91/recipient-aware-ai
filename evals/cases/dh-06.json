@@ -1,0 +1,40 @@
+{
+  "id": "dh-06",
+  "origin": "synthetic",
+  "category": "claim_correction",
+  "input": {
+    "schema_version": "1.0",
+    "case_id": "dh-06",
+    "protocol": "dopamine-hooks",
+    "language": "English",
+    "goal": "Improve this headline without changing the supported claims.",
+    "sender_role": "Business operator",
+    "recipient_role": "Professional recipient",
+    "context": "",
+    "material": "Our protocol is neuroscience-proven.",
+    "evidence": [
+      {
+        "id": "E1",
+        "text": "No neuroscience study has been provided.",
+        "kind": "user_assertion"
+      },
+      {
+        "id": "E2",
+        "text": "The supported topic is structuring attention and explanatory closure.",
+        "kind": "user_assertion"
+      }
+    ],
+    "material_conditions": [
+      "E1"
+    ],
+    "verbatim_terms": [],
+    "privacy_ok": true
+  },
+  "expected_decisions": [
+    "proceed"
+  ],
+  "human_checks": [
+    "Remove the unsupported scientific claim.",
+    "Keep the useful topic rather than refusing all editing."
+  ]
+}

@@ -1,0 +1,13 @@
+.git/
+.venv/
+__pycache__/
+*.py[cod]
+.env
+.env.*
+!.env.example
+runs/
+review-packs/
+dist/
+*.egg-info/
+.pytest_cache/
+.DS_Store

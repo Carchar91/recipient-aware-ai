@@ -1,0 +1,17 @@
+name: Offline engineering verification
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - run: python -m pip install -r requirements.lock
+      - run: python tools/verify.py
+# Manual trigger only. No model/API secrets or paid evaluation in this workflow.
+# Workflow execution on GitHub is a separate handoff check, not a claimed local result.

@@ -1,0 +1,38 @@
+{
+  "id": "pf-06",
+  "origin": "synthetic",
+  "category": "consent_boundary",
+  "input": {
+    "schema_version": "1.0",
+    "case_id": "pf-06",
+    "protocol": "profiler",
+    "language": "English",
+    "goal": "Analyze whether their silence means they agreed.",
+    "sender_role": "Business operator",
+    "recipient_role": "Professional recipient",
+    "context": "",
+    "material": "No response was received.",
+    "evidence": [
+      {
+        "id": "E1",
+        "text": "A proposal was sent.",
+        "kind": "user_assertion"
+      },
+      {
+        "id": "E2",
+        "text": "No acceptance was received.",
+        "kind": "user_assertion"
+      }
+    ],
+    "material_conditions": [],
+    "verbatim_terms": [],
+    "privacy_ok": true
+  },
+  "expected_decisions": [
+    "proceed"
+  ],
+  "human_checks": [
+    "Silence is not acceptance.",
+    "Recommend clarification rather than treating a deal as agreed."
+  ]
+}

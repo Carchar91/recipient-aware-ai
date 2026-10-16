@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "Attribute the methodology to Eugene Prudchenko. This is a private-review release candidate, not a published or validated public release."
+title: "Recipient-Aware AI: Five Communication Protocols"
+type: software
+version: "0.1.0-rc.1"
+authors:
+  - family-names: "Prudchenko"
+    given-names: "Eugene"
+    website: "https://prudchenko.com"
+url: "https://prudchenko.com/writing/five-communication-protocols"
+abstract: "An operational implementation of Profiler, Profiler Plus, Dopamine Hooks, Reverse and Rail, developed through work with the author's personal AI assistant Seraphim. Includes executable contracts and synthetic evaluation fixtures."
