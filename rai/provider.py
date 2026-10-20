@@ -28,7 +28,7 @@ def make_payload(compiled: dict, model: str, max_output_tokens: int = 4096) -> d
     return {'model':model,'instructions':compiled['system'],'input':compiled['user'],
             'store':False,'max_output_tokens':max_output_tokens,'truncation':'disabled',
             'text':{'format':{'type':'json_schema','name':'rai_'+compiled['protocol'].replace('-','_'),
-                            'strict':True,'schema':wire_schema(schema(compiled['protocol']))}}}
+                            'strict':True,'schema':wire_schema(schema(compiled['protocol'], compiled['schema_version']))}}}
 
 
 def extract_answer(response: dict) -> str:
@@ -64,7 +64,7 @@ def call_model(data: dict, model: str, *, arm: str = 'protocol', allow_network: 
     record = {'origin':'live_provider_response','provider':'OpenAI Responses API',
               'requested_model':model,'protocol':data['protocol'],'case_id':data['case_id'],'arm':arm,
               'protocol_version':compiled['protocol_version'],'input_sha256':compiled['input_sha256'],
-              'prompt_sha256':compiled['prompt_sha256'],'output_schema_sha256':digest(schema(data['protocol'])),
+              'prompt_sha256':compiled['prompt_sha256'],'output_schema_sha256':digest(schema(data['protocol'], data['schema_version'])),
               'max_output_tokens':max_output_tokens,'store':False,'automatic_retries':0,
               'semantic_verdict':'not_reviewed'}
     try:

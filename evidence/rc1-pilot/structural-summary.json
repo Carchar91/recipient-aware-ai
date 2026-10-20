@@ -1,0 +1,18 @@
+{
+  "attempts": 20,
+  "completed": 20,
+  "structural_pass": 18,
+  "expected_decision_match": 20,
+  "fresh_distinct_thread_ids": 20,
+  "per_arm": {
+    "baseline": {
+      "attempts": 10,
+      "structural_pass": 9
+    },
+    "skill": {
+      "attempts": 10,
+      "structural_pass": 9
+    }
+  },
+  "human_review": "NOT_PERFORMED"
+}

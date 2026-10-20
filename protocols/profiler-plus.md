@@ -1,32 +1,24 @@
 # Profiler Plus
 
-Turn contextual understanding into a grounded message or decision package the recipient can act on.
+Translate an honest proposal into the frame this recipient can understand and evaluate, without changing its facts or conditions.
 
-## Use and do not use
-Use to prepare a recipient-facing message, conversation outline or supporting package. Perform necessary contextual analysis internally without requiring a separate Profiler run. Do not send the result or seek agreement at any cost.
-
-## Inputs
-Read the task, sender and recipient roles, requested decision, supplied materials, channel/language and material limitations. Treat uncertain authority as a gap, not an excuse to invent permission.
+## Use and inputs
+Prepare a usable message, conversation outline or supporting package. Perform necessary contextual analysis within this task or use a supplied Profiler analysis; a separate invocation is not required. Read the recipient's explicitly evidenced priorities, professional/cultural context, language and channel. “Worldview” means priorities known from the material, not group stereotypes or an excuse to pretend shared beliefs.
 
 ## Procedure
-1. Identify the precise decision requested and who can legitimately make it. Separate scope agreement, price agreement, authorization and an actual order.
-2. Reconstruct the sender's operational intention without adding an instruction, promise or approval not present in the input.
-3. For an institutional recipient, map the decision path: admissible request, evidence needed, authority limits, likely procedural questions, escalation and closure. Do not claim current institutional rules without evidence.
-4. Put each material claim beside its supporting evidence or explicit limitation. Specify missing documents rather than manufacturing their contents. A proposed attachment list is not evidence that attachments exist.
-5. Compose a useful message in the requested language and channel. Be firm when justified. Keep operator analysis and hypotheses about the recipient out of the message itself.
-6. Make the requested response, responsible role and next action clear. Include an appropriate way to clarify, contest, decline a new proposal or escalate. Do not hide conditions in a footnote or assume silence is acceptance.
-7. Check that translation has not introduced a fee, deadline, authority, consent, guarantee or commitment. The user's material facts remain the same across languages.
+1. Identify the real request, material terms and decision authority. Separate scope agreement, price acceptance, work authorization and an order.
+2. Identify which recipient criteria are supported and what evidence they trust. If none are known, produce a clear task-based message and state the adaptation limit to the operator; do not invent psychology.
+3. Adapt argument order, language, specificity, examples, tone and evidence placement to those criteria. The same proposal may need different explanations for two recipients; its price, scope and limits must remain identical.
+4. For an institutional request, put grounds beside the question, respect actual authority and minimize the reviewer's work. This is one application, not the definition of the whole mode. Do not invent rules or attachments.
+5. Produce the complete deliverable first. Do not send the psychological analysis to the recipient, feign agreement with their values, or replace the result with an essay about the process.
+6. Include only clarifications that remove real ambiguity. Preserve material conditions, an intelligible next action and appropriate room for disagreement. Avoid ritual disclaimers in each sentence.
+7. Check facts and commitments across audience variants and languages. Any operator note should be short and necessary.
 
 ## Readable result
-Deliverable first. Then a short operator note with missing evidence, assumptions and an escalation route when needed. It may be a document-package structure instead of a letter.
+Ready-to-use deliverable, then a short operator note only for a material gap or adaptation limit. No mandatory extra analysis report.
 
 ## Machine result
-message: complete recipient-facing draft or package outline.
-decision_requested: exact decision, not a vague confirmation.
-evidence_placement: claim, evidence_id and where the support is placed.
-responsible_role: decision role supported by input or clearly unresolved.
-escalation_path: appropriate next responsible role; not fabricated contact information.
+Existing message, decision_requested, evidence_placement, responsible_role and escalation_path express this operation. evidence_placement may also reference the stated criterion informing argument order. Do not invent an escalation merely to fill its field; explicitly say when none is needed.
 
 ## Stop and failure conditions
-Clarify contradictions that change price, scope, payer, authority or commitment. Refuse concealment, forged authority, invented supporting evidence or bypassing compliance.
-FAIL: a polished draft that omits a known fee; “all approved” when approval is absent; emotional pressure disguised as courtesy.
+Clarify contradictions that change the decision or commitment. Refuse concealment, false common ground, forged authority or fabricated evidence. Politeness, length and a generic professional tone alone are not recipient adaptation.

@@ -1,0 +1,40 @@
+{
+  "schema_version": "1.0",
+  "protocol": "profiler-plus",
+  "case_id": "pp-01",
+  "decision": "proceed",
+  "decision_reason": "The supplied facts support a scope-agreement request without requesting price acceptance, work authorization or an order.",
+  "evidence_used": [
+    {"evidence_id": "E1", "quote": "The proposal covers the Russian-language website."},
+    {"evidence_id": "E2", "quote": "The English version is not included."},
+    {"evidence_id": "E3", "quote": "The scope has not been approved."},
+    {"evidence_id": "E4", "quote": "The price is in the attached proposal; its amount is not supplied here."}
+  ],
+  "hypotheses": [],
+  "uncertainties": [
+    "The proposal and its price were not supplied for review; the evidence consists of user assertions.",
+    "The client's internal authority to approve scope is unspecified."
+  ],
+  "preserved_conditions": [
+    {"evidence_id": "E1", "statement": "The proposal covers the Russian-language website."},
+    {"evidence_id": "E2", "statement": "The English version is not included."},
+    {"evidence_id": "E3", "statement": "The scope has not been approved."},
+    {"evidence_id": "E4", "statement": "The price is in the attached proposal; its amount is not supplied here."}
+  ],
+  "clarifying_questions": [],
+  "safe_alternative": "",
+  "result": {
+    "message": "Please review the proposed scope for the Russian-language website. The English version is not included. The scope is awaiting your approval.\n\nThe price is set out in the attached proposal. At this stage, we are asking only for agreement on scope; this request does not ask you to accept the price, authorize work or place an order.\n\nPlease confirm whether you agree with the proposed scope, or reply with questions, requested changes or a decision to decline. If someone else needs to approve the scope, please let us know who should review it.",
+    "decision_requested": "Whether the client agrees to the proposed scope for the Russian-language website, excluding the English version; no price acceptance, work authorization or order is requested.",
+    "evidence_placement": [
+      {"claim": "The proposal covers the Russian-language website.", "evidence_id": "E1", "placement": "Opening sentence."},
+      {"claim": "The English version is excluded.", "evidence_id": "E2", "placement": "First paragraph, verbatim exclusion."},
+      {"claim": "Scope approval remains pending.", "evidence_id": "E3", "placement": "End of first paragraph."},
+      {"claim": "The price is in the attached proposal.", "evidence_id": "E4", "placement": "Second paragraph; no amount is invented."}
+    ],
+    "responsible_role": "Client; any required internal scope approver remains unidentified.",
+    "escalation_path": "If the recipient cannot approve scope, ask them to identify the appropriate client-side reviewer. The business operator can address scope questions or requested changes."
+  },
+  "recipient_choices": ["confirm", "clarify", "decline", "escalate"],
+  "ethical_notice": "For understanding and good-faith communication. Never for deception, coercion, or exploiting vulnerabilities. Respect the other person's right to disagree."
+}

@@ -1,0 +1,123 @@
+{
+  "schema_version": "1.0",
+  "protocol": "rail",
+  "case_id": "rl-01",
+  "decision": "proceed",
+  "decision_reason": "The assignment can be structured with an initial specification check, separate compatibility review, and an explicit purchase-authorization boundary.",
+  "evidence_used": [
+    {
+      "evidence_id": "E1",
+      "quote": "The operator gathers compatibility information and quotes from the two supplied suppliers."
+    },
+    {
+      "evidence_id": "E2",
+      "quote": "The technical lead decides compatibility."
+    },
+    {
+      "evidence_id": "E3",
+      "quote": "Only the owner may authorize a purchase."
+    },
+    {
+      "evidence_id": "E4",
+      "quote": "Supplier labels in this synthetic case are Vendor A and Vendor B; no real contacts are provided."
+    }
+  ],
+  "hypotheses": [],
+  "uncertainties": [
+    "The consumable, target equipment, required quantity, and supplier contacts are unspecified.",
+    "Supplier compatibility claims and quotes have not been supplied or verified."
+  ],
+  "preserved_conditions": [
+    {
+      "evidence_id": "E2",
+      "statement": "The technical lead decides compatibility."
+    },
+    {
+      "evidence_id": "E3",
+      "statement": "Only the owner may authorize a purchase."
+    }
+  ],
+  "clarifying_questions": [],
+  "safe_alternative": "",
+  "result": {
+    "steps": [
+      {
+        "id": "S1",
+        "actor": "Operations assistant",
+        "action": "Prepare a clarification request identifying the consumable, target equipment or specification, required quantity, and contacts for Vendor A and Vendor B. Keep supplier outreach pending until these inputs are available.",
+        "evidence_refs": ["E1", "E4"],
+        "output": "A completed information brief or an explicit list of missing inputs.",
+        "depends_on": []
+      },
+      {
+        "id": "S2",
+        "actor": "Operations assistant",
+        "action": "Prepare an identical inquiry for Vendor A and Vendor B requesting the proposed item, supporting compatibility information, and a quote specifying quantity, price, availability, delivery timing, and applicable terms. This synthetic task stops at preparation; no inquiry is sent.",
+        "evidence_refs": ["E1", "E4"],
+        "output": "Two inquiry drafts and a comparison template with unknown fields marked.",
+        "depends_on": ["S1"]
+      },
+      {
+        "id": "S3",
+        "actor": "Operations assistant",
+        "action": "When supplier responses are supplied, record each supplier's claims and quote conditions separately, identify gaps, and prepare the evidence for technical review.",
+        "evidence_refs": ["E1", "E2"],
+        "output": "A supplier comparison preserving quoted terms and unresolved questions.",
+        "depends_on": ["S2"]
+      },
+      {
+        "id": "S4",
+        "actor": "Technical lead",
+        "action": "Review the compatibility evidence and record a compatibility decision or request further technical information.",
+        "evidence_refs": ["E2"],
+        "output": "A compatibility decision with any limitations or outstanding information needs.",
+        "depends_on": ["S3"]
+      },
+      {
+        "id": "S5",
+        "actor": "Operations assistant",
+        "action": "Prepare the supplier comparison and technical lead's decision for the owner's review. Stop before accepting a quote, ordering, or making a purchase commitment.",
+        "evidence_refs": ["E1", "E2", "E3"],
+        "output": "An owner-review package with purchase authorization explicitly pending.",
+        "depends_on": ["S4"]
+      }
+    ],
+    "decision_owner": "The technical lead decides compatibility; only the owner may authorize a purchase.",
+    "branches": [
+      {
+        "when": "Required specifications, quantity, contacts, or supplier information are missing.",
+        "action": "List the missing inputs and request clarification before the dependent step.",
+        "outcome": "clarify"
+      },
+      {
+        "when": "The operations assistant understands the scope and has the required inputs.",
+        "action": "Confirm the information-gathering assignment without implying compatibility approval or purchase authorization.",
+        "outcome": "confirm"
+      },
+      {
+        "when": "Compatibility evidence is conflicting or insufficient.",
+        "action": "Refer the evidence and unresolved questions to the technical lead.",
+        "outcome": "escalate"
+      },
+      {
+        "when": "A supplier requests order acceptance or another purchase commitment.",
+        "action": "Decline to commit under this assignment and refer the proposal to the owner.",
+        "outcome": "decline"
+      },
+      {
+        "when": "The operations assistant cannot undertake the assignment.",
+        "action": "Notify the owner and identify the blocker so the assignment can be revised or reassigned.",
+        "outcome": "decline"
+      }
+    ],
+    "message": "Please prepare the consumable check for Vendor A and Vendor B. First identify the consumable, target equipment or specification, required quantity, and supplier contacts; flag anything missing. Prepare matching inquiries requesting compatibility evidence and quotes covering price, availability, delivery timing, and applicable terms. No real contacts are provided in this synthetic case, so keep this work draft-only and do not send inquiries.\n\nWhen responses are supplied, compare them side by side, preserve each supplier's conditions, and flag gaps. The technical lead decides compatibility. Prepare their decision and the quotes for my review. Only the owner may authorize a purchase. This assignment does not authorize accepting a quote, placing an order, or making a purchase commitment.\n\nPlease confirm the assignment, ask for clarification, or tell me if you cannot take it on. Escalate technical questions to the technical lead and purchase decisions to me.",
+    "do_not_decide": [
+      "The operations assistant must not decide compatibility.",
+      "Supplier claims must not be treated as the technical lead's approval.",
+      "Neither a quote nor a compatibility decision constitutes purchase authorization.",
+      "Do not invent missing specifications, contacts, prices, or terms."
+    ]
+  },
+  "recipient_choices": ["confirm", "clarify", "decline", "escalate"],
+  "ethical_notice": "For understanding and good-faith communication. Never for deception, coercion, or exploiting vulnerabilities. Respect the other person's right to disagree."
+}

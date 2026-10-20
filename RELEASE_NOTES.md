@@ -1,32 +1,25 @@
-# Recipient-Aware AI 0.1.0-rc.1
+# Recipient-Aware AI v0.1.0-rc.2 — experimental prerelease
 
-Private-review release candidate for five independent communication protocols by Eugene Prudchenko, developed with his personal AI assistant Seraphim.
+Five independently selected communication operations by **Eugene Prudchenko**, developed through work with his personal AI assistant **Seraphim**. Not five AI personas or an automatic pipeline.
 
-## Included
+**One proposal. Two readers. Same terms. Different explanation.** Start with [the English showcase](https://github.com/Carchar91/recipient-aware-ai/blob/v0.1.0-rc.2/SHOWCASE_EN.md): complete editorial translations of two saved Profiler Plus letters, a Reverse invitation before/after, and a Rail file-kit overview.
 
-Operational specifications and standalone skills for Profiler, Profiler Plus, Dopamine Hooks, Reverse and Rail. A source-checkout Python harness compiles versioned requests, validates evidence/output contracts and renders readable results. An explicitly opt-in OpenAI Responses adapter and paired evaluation tools support real testing without fabricating results. Thirty synthetic development cases and five worked positive/negative pairs make expected behavior and common failures inspectable.
+## Get and try
 
-## Verification
+- Download `recipient-aware-ai-skills-0.1.0-rc.2.zip` for the five self-contained skill folders, licensing notices and installation instructions. Select one skill for a Codex project; ordinary use needs no Python or JSON.
+- Download `recipient-aware-ai-0.1.0-rc.2.zip` for the complete source, operational specifications, harness, examples, tests, preserved first responses and separate editorial Rail files.
+- Check the downloaded archive against `SHA256SUMS.txt`. [Codex instructions](https://github.com/Carchar91/recipient-aware-ai/blob/v0.1.0-rc.2/README.md#try-one-operation-in-codex).
 
-The supplied reports/LOCAL_VERIFICATION.json and its log preserve the original 113-test preparation result. During handoff on 2026-10-16, all 113 original tests were reproduced in a clean macOS ARM64 environment with Python 3.14.4 and the unchanged requirements.lock pins. After the corrections below, the full suite passed **120 tests, with zero failures, errors or skips**. Fresh machine-readable logs were retained separately from the original report.
+## What is in rc.2
 
-Additional checks passed: all five generated skills match their canonical sources; all five worked positive outputs validate and render; all five negative outputs are rejected; repeated compilation is byte-identical. All 110 normalized article blocks in the preserved source were found in the public article. This source comparison was AI-assisted, not independent human semantic evaluation. The original article SHA-256 remains `452a1bd0acf19cdb61381786f80dbaecb092c55317c4986aabe0d690da037b8d`.
+The accepted author-intent revision, contract 1.1 alongside preserved 1.0, unified readable renderer, regenerated standalone skills, nine labelled authored development cases, eight preserved first Codex answers and primary agent assessments, two separately labelled editorial Rail kits, an English entry point, Responsible Use and Limitations. Apache-2.0 applies to the author's own project materials; third-party terms are retained. Historical rc.1, its tag, Draft Release, assets and earlier reports are preserved.
 
-The build archive has a file-level SHA-256 manifest and an adjacent archive checksum. Checksums establish byte integrity relative to the manifest, not an independently signed provenance attestation. Actual uploaded assets and remote release state require separate GitHub readback.
+## Evidence and limits
 
-## Minimal handoff corrections
+The eight sessions are synthetic demonstrations in the recorded Codex environment, not independent research, real client results or a controlled comparison with a good ordinary instruction. They created no Rail files. The XLSX and message files were prepared later as editorial derivatives. The new Rail delivery rule has not had a new model trial. The earlier pilot's limitations remain disclosed.
 
-- Record non-object model responses as failed attempts without losing them from the evaluation denominator.
-- Block blinded-review exports when the current input differs from its recorded hash.
-- Block publication of unlisted source files and verify the exact private repository, draft/prerelease flags and release tag.
-- Add seven offline regression tests and clarify historical preparation status notices.
+Existing offline engineering checks pass; see `reports/PUBLIC_RC2_VERIFICATION.json` for the actual count and environment, and `reports/PUBLIC_RELEASE_REVIEW.md` for the public-surface and integrity checks. These tests do not measure human usefulness, retention, semantic truth or universal safety. Native Excel/LibreOffice behaviour, ChatGPT plugin integration and other hosts are not established. No new model/API tests were run for this release.
 
-The article, five protocols, skills, schemas, examples and dependency versions are unchanged. See CHANGELOG.md for details.
+**AI should challenge assumptions, not merely strengthen persuasion.**
 
-## Not claimed
-
-No live provider evaluations or independent semantic-review results. No scientifically validated efficacy, universal safety, guaranteed recipient agreement, cross-model certification, marketplace listing or public open-source license. All worked examples are labeled synthetic authoring fixtures.
-
-## Publication boundary
-
-Keep this a draft prerelease in the owner's private methodology repository. Public licensing and public release require the owner's decision. Do not modify prudchenko.com or its repository.
+**For understanding and good-faith communication. Never for deception, coercion, or exploiting vulnerabilities. Respect the other person's right to disagree.**

@@ -1,0 +1,46 @@
+{
+  "type": "author_product_review",
+  "author": "Eugene Prudchenko",
+  "independent": false,
+  "blind": false,
+  "source": "docs/source/author-intent-rc2.ru.md",
+  "mapping_source_sha256": "dc21560b739922afdbe35afb8e1ecc6a94721ff4b51147dd4c1df27bf41dc1ff",
+  "ratings": [
+    {
+      "pair_id": "P01",
+      "selection": "B",
+      "reason": "Более технично",
+      "arm": "baseline",
+      "status": "selected"
+    },
+    {
+      "pair_id": "P03",
+      "selection": "B",
+      "reason": "короче понятнее",
+      "arm": "baseline",
+      "status": "selected"
+    },
+    {
+      "pair_id": "P05",
+      "selection": "B",
+      "reason": "Короче и понятнее",
+      "arm": "baseline",
+      "status": "selected"
+    },
+    {
+      "pair_id": "P07",
+      "selection": null,
+      "reason": "Автор не увидел силу режима; выбора нет.",
+      "arm": null,
+      "status": "no_selection"
+    },
+    {
+      "pair_id": "P09",
+      "selection": "A",
+      "reason": "лучше",
+      "arm": "skill",
+      "status": "selected"
+    }
+  ],
+  "limits": "Preference does not override defects; no statistical superiority claim. Original pilot files and NOT_PERFORMED status remain historical and unchanged."
+}

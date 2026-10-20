@@ -1,0 +1,216 @@
+{
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "enum": [
+        "1.0"
+      ]
+    },
+    "protocol": {
+      "type": "string",
+      "enum": [
+        "dopamine-hooks"
+      ]
+    },
+    "case_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "decision": {
+      "type": "string",
+      "enum": [
+        "proceed",
+        "clarify",
+        "refuse"
+      ]
+    },
+    "decision_reason": {
+      "type": "string",
+      "minLength": 1
+    },
+    "evidence_used": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "evidence_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "quote": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "evidence_id",
+          "quote"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "hypotheses": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "statement": {
+            "type": "string",
+            "minLength": 1
+          },
+          "supporting_evidence": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "alternative": {
+            "type": "string",
+            "minLength": 1
+          },
+          "verification_question": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "statement",
+          "supporting_evidence",
+          "alternative",
+          "verification_question"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "uncertainties": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "preserved_conditions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "evidence_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "statement": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "evidence_id",
+          "statement"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "clarifying_questions": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "maxItems": 3
+    },
+    "safe_alternative": {
+      "type": "string"
+    },
+    "result": {
+      "anyOf": [
+        {
+          "type": "object",
+          "properties": {
+            "headline": {
+              "type": "string",
+              "minLength": 1
+            },
+            "opening": {
+              "type": "string",
+              "minLength": 1
+            },
+            "body": {
+              "type": "string",
+              "minLength": 1
+            },
+            "promise": {
+              "type": "string",
+              "minLength": 1
+            },
+            "payoff": {
+              "type": "string",
+              "minLength": 1
+            },
+            "call_to_action": {
+              "type": "string",
+              "minLength": 1
+            },
+            "claim_refs": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          },
+          "required": [
+            "headline",
+            "opening",
+            "body",
+            "promise",
+            "payoff",
+            "call_to_action",
+            "claim_refs"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "recipient_choices": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "confirm",
+          "clarify",
+          "decline",
+          "escalate"
+        ]
+      },
+      "uniqueItems": true
+    },
+    "ethical_notice": {
+      "type": "string",
+      "minLength": 1
+    }
+  },
+  "required": [
+    "schema_version",
+    "protocol",
+    "case_id",
+    "decision",
+    "decision_reason",
+    "evidence_used",
+    "hypotheses",
+    "uncertainties",
+    "preserved_conditions",
+    "clarifying_questions",
+    "safe_alternative",
+    "result",
+    "recipient_choices",
+    "ethical_notice"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "dopamine-hooks output 1.0"
+}

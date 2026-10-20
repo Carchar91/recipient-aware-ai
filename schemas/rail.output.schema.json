@@ -4,7 +4,7 @@
     "schema_version": {
       "type": "string",
       "enum": [
-        "1.0"
+        "1.1"
       ]
     },
     "protocol": {
@@ -223,6 +223,62 @@
                 "type": "string",
                 "minLength": 1
               }
+            },
+            "artifacts": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "content": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "evidence_refs": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "uniqueItems": true
+                  }
+                },
+                "required": [
+                  "name",
+                  "content",
+                  "evidence_refs"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "blockers": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "missing": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "source": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "blocked_step": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": [
+                  "missing",
+                  "source",
+                  "blocked_step"
+                ],
+                "additionalProperties": false
+              }
             }
           },
           "required": [
@@ -230,7 +286,9 @@
             "decision_owner",
             "branches",
             "message",
-            "do_not_decide"
+            "do_not_decide",
+            "artifacts",
+            "blockers"
           ],
           "additionalProperties": false
         },
@@ -275,5 +333,5 @@
   ],
   "additionalProperties": false,
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "rail output 1.0"
+  "title": "rail output 1.1"
 }

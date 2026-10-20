@@ -1,132 +1,120 @@
 # Recipient-Aware AI
 
-## AI can make you more persuasive. Even when you are wrong.
+Five independent operations for using AI to understand a person's decision criteria, write a grounded message, develop a complete text, read it from the recipient's side, or prepare the work someone needs to execute.
 
-Five independent communication protocols by **Eugene Prudchenko**, developed through practical work with his AI assistant **Seraphim**.
+Use them when the bottleneck is an unclear decision, a message that assumes too much, or a handoff that leaves someone else to finish the preparation. Choose one operation for the task. These are not five AI personas or a mandatory pipeline.
 
-The point is not to obtain agreement at any cost. It is to check assumptions, prepare grounded communication, make its relevance visible, review what the recipient can actually understand, and remove unnecessary work without removing choice.
+**AI should challenge assumptions, not merely strengthen persuasion.**
 
-**For understanding and good-faith communication. Never for deception, coercion, or exploiting vulnerabilities. Respect the other person's right to disagree.**
+Try a standalone skill in **Codex**, the environment used for the saved eight-run check: [quick start below](#try-one-operation-in-codex). You get a decision map, a usable text, or a prepared execution kit, depending on the operation. Results still need human review.
 
-### Release status
+**[Get v0.1.0-rc.2 — experimental prerelease](https://github.com/Carchar91/recipient-aware-ai/releases/tag/v0.1.0-rc.2)** · [Apache-2.0](LICENSE) for author-owned materials; [third-party terms retained](THIRD_PARTY_NOTICES.md).
 
-`0.1.0-rc.1` is a **private-review release candidate**. It is not a public GitHub release, a scientifically validated method, or a marketplace plugin.
-The original preparation report is [reports/LOCAL_VERIFICATION.json](reports/LOCAL_VERIFICATION.json); it is preserved as a historical snapshot. Current handoff checks and corrections are recorded in [RELEASE_NOTES.md](RELEASE_NOTES.md) and [CHANGELOG.md](CHANGELOG.md). Engineering verification is separate from live model evaluation.
-**Live model evaluation and independent semantic review have not been performed. Public licensing has not been selected.** See [LICENSE_PENDING.md](LICENSE_PENDING.md).
+## One proposal. Two readers. Same terms. Different explanation.
 
-### What is actually in the package?
+Two saved **Profiler Plus** runs used the same synthetic museum-training offer. Olga, the finance recipient, asked for the full cost and equipment requirements first. Sofya, the programme recipient, prioritised accuracy and the author's voice.
 
-| Protocol | Operation | Concrete result |
+**Olga — editorial English translation excerpt:**
+
+> Please approve an order for three in-person sessions on editing exhibition labels. The total fixed price is 54,000 roubles: preparation, all three sessions and a PDF of exercises are included, with no additional materials charges. The museum provides the room and screen.
+
+[Full unchanged Russian first response](evidence/rc2-eight-runs/first-responses/03-plus-budget.md) · [task and original assessment](evidence/rc2-eight-runs/readable-results/03-plus-budget.md)
+
+**Sofya — editorial English translation excerpt:**
+
+> I propose approving an order for three in-person sessions on editing exhibition labels. The work centres on accuracy and preserving the author's voice while making the text clearer.
+
+[Full unchanged Russian first response](evidence/rc2-eight-runs/first-responses/04-plus-curation.md) · [task and original assessment](evidence/rc2-eight-runs/readable-results/04-plus-curation.md)
+
+The terms stay the same: three sessions on 5, 12 and 19 November 2026, 14:00–15:30; one group of up to 24 employees; 54,000 roubles including preparation, delivery and exercise PDFs; no materials surcharge; museum-provided room, screen and six anonymised labels; no recording; six months of internal materials use without public redistribution. Neither letter promises increased attendance or a measured training effect. The openings change to address evidenced priorities; the proposal and the recipient's right to decline remain intact. The excerpts are translations for this README, not new model results.
+
+**[Read both complete letters in English, then see Reverse before/after and a Rail kit](SHOWCASE_EN.md).** These are explicitly labelled editorial translations linked to the unchanged Russian originals.
+
+## See the next two kinds of result
+
+- **Reverse:** [a complete revised invitation and compact question/answer map](evidence/rc2-eight-runs/first-responses/06-reverse-invitation.md), with [its task and assessment](evidence/rc2-eight-runs/readable-results/06-reverse-invitation.md). Supported answers are placed where the reader needs them. Unknown TIFF compatibility stays unknown.
+- **Rail:** [branch-supplies kit](editorial/rail-kits/07-kits/START_HERE_RU.md) and [poster-delivery kit](editorial/rail-kits/08-delivery/START_HERE_RU.md), each with editable formula-based XLSX and separate ready-to-use messages. The delivery kit keeps the missing receiving window visible while preparing the work that can proceed.
+
+**Evidence boundary:** the Rail files are labelled **editorial derivatives of saved answers**. The original two model sessions produced text and created **zero files**. This review creates the files and strengthens Rail's file-delivery rule. It does not demonstrate that a future model session will follow that rule. [Provenance](evidence/rc2-eight-runs/SOURCE.md) · [this review and actual checks](review/DELIVERY_REVIEW_RU.md)
+
+## Choose the operation
+
+| Operation | Use it to | Expected result |
 | --- | --- | --- |
-| **Profiler** | Separate an observation from possible explanations and role constraints. | Evidence-linked observations, alternative hypotheses, unknowns and a verification move. |
-| **Profiler Plus** | Turn understanding into a justified communication or institutional decision package. | Recipient-facing draft, requested decision, evidence placement and authority/escalation notes. |
-| **Dopamine Hooks** | Make relevance visible and deliver the explanation promised by the opening. | Headline, opening, body and an explicit promise-to-payoff link. No neurochemical claims. |
-| **Reverse** | Compare message-only understanding with the sender's actual objective and facts. | Exact-quote findings, possible readings, task correction and one revised message. |
-| **Rail** | Make an unfinished assignment executable without transferring unauthorized decisions. | Actors, evidence, steps, dependencies and confirmation/clarification/refusal/escalation branches. |
+| **Profiler** | Understand evidenced reasoning, criteria, trusted grounds and possible barriers. | A substantive opening conclusion, decision map, alternatives and a useful next move. Not a personality diagnosis or mind reading. |
+| **Profiler Plus** | Explain an unchanged proposal through the recipient's known priorities. | The ready message first; adaptation notes separately; material terms preserved. |
+| **Dopamine Hooks** | Develop interest and understanding from paragraph to paragraph. | A complete connected text that answers the questions it raises. No claim about brain chemistry or observed retention. |
+| **Reverse** | Read a draft using only what the recipient can know. | Revised text with supported answers at their point of need, then a compact map of consequential questions. |
+| **Rail** | Remove avoidable preparation from a handoff. | Necessary working files when tools and permission allow; short instructions, explicit unknowns and human decision limits. |
 
-Each protocol has an operational specification, a standalone `SKILL.md`, an input/output contract, an example and synthetic evaluation cases. No mode starts the other four automatically.
+Each has a [canonical specification](protocols/), a self-contained [skill folder](skills/), examples and engineering checks. Invoking one does not activate the others.
 
-### Not just five descriptions
+## Try one operation in Codex
 
-The reference implementation can:
+Download the [skills-only release asset](https://github.com/Carchar91/recipient-aware-ai/releases/download/v0.1.0-rc.2/recipient-aware-ai-skills-0.1.0-rc.2.zip) and [SHA256SUMS.txt](https://github.com/Carchar91/recipient-aware-ai/releases/download/v0.1.0-rc.2/SHA256SUMS.txt). Verify its checksum, then extract into a **new, empty folder**. You get five independent skill folders plus licence and installation notices. For macOS/Linux, from the download directory:
 
-* Compile the same versioned protocol and input into the same system/user prompt pair, with SHA-256 provenance.
-* Validate structured results against a closed JSON Schema plus cross-field checks: real evidence IDs, exact quotations, preserved conditions, explicit choices and acyclic workflow dependencies.
-* Render a validated output into a readable draft and separate operator notes.
-* Prepare or run paired baseline/protocol evaluations with an explicit call cap, no tools, no automatic retries and opt-in model access.
-* Export shuffled review samples without arm labels, while retaining a separate answer key.
-* Build self-contained skills from one canonical source and fail if generated copies drift.
+```bash
+grep -F '  recipient-aware-ai-skills-0.1.0-rc.2.zip' SHA256SUMS.txt | shasum -a 256 -c
+mkdir recipient-aware-ai-skills-0.1.0-rc.2 && \
+  unzip recipient-aware-ai-skills-0.1.0-rc.2.zip -d recipient-aware-ai-skills-0.1.0-rc.2
+```
 
-These checks make errors observable. They do **not** prove that a model's interpretation is true, non-manipulative or useful. One test deliberately shows that semantically bad prose can satisfy a structural contract. That boundary is part of the design, not a footnote.
+After successful verification and extraction, copy the **selected** folder into a project you control:
 
-## Start from a source checkout
+```bash
+mkdir -p /path/to/your-project/.agents/skills
+test ! -e /path/to/your-project/.agents/skills/profiler-plus && \
+  cp -R recipient-aware-ai-skills-0.1.0-rc.2/profiler-plus /path/to/your-project/.agents/skills/
+```
 
-Requires Python 3.11 or newer; the exact local test interpreter and dependency versions are recorded in the report. The test suite was executed in the supplied environment, not every supported Python version. Install the pinned dependencies in an isolated environment:
+If that skill folder already exists, review it rather than overwriting it. Open that project in Codex and explicitly select `$profiler-plus`. Supply the proposal, all material terms, the recipient's directly known priorities, and what you are authorised to request. For example:
+
+> Use $profiler-plus. Draft the message first. Here are the fixed offer terms, the recipient's stated priorities and the requested decision: [provide your facts]. Keep unsupported assumptions visible; put operator notes outside the recipient's message.
+
+For another operation, copy and explicitly select that skill instead. From the full source package, the same folders live under `skills/`. **Ordinary skill use does not require Python, schemas or JSON.** This README does not install anything. Use synthetic or appropriately authorised material; do not paste confidential correspondence without permission. [Installation details](docs/INSTALLATION.md)
+
+The saved check used Codex CLI **0.163.0-alpha.10.2**, existing ChatGPT sign-in, requested model alias **gpt-6-astra**, reasoning **medium**, and eight fresh task contexts. No separate API billing was used. The backend snapshot was not exposed; global Seraphim instructions remained present, and memory/history were disabled. Each trace showed the selected full skill was read. [Original environment and limitations report](evidence/rc2-eight-runs/REPORT_RU.md)
+
+This is the tested route described here. ChatGPT plugin installation or compatibility was **not tested**. The new file-delivery rule has not had a new model trial.
+
+## Developer path
+
+Use a Python 3.11+ source checkout with pinned dependencies. After dependency installation, the verification tools run offline and make no model calls:
 
 ```bash
 python -m venv .venv
-# macOS / Linux
 source .venv/bin/activate
-# Windows PowerShell: .venv\Scripts\Activate.ps1
 python -m pip install -r requirements.lock
-python tools/verify.py
+python tools/verify_manifest.py
+python tools/build_skills.py --check
+python tools/verify.py --report reports/YOUR_LOCAL_VERIFICATION.json
 ```
 
-This candidate is a source-checkout package, not a published PyPI package. Run the following from the repository root.
+Dependency installation needs package access. The reported checks cover the recorded local interpreter, not every supported Python version. [Current engineering report](reports/PUBLIC_RC2_VERIFICATION.json) · [public release checks and rights scope](reports/PUBLIC_RELEASE_REVIEW.md) · [preserved delivery checks](review/FILE_CHECKS.json) · [earlier minimal delivery patch](review/CHANGES.md)
 
-### Compile a reproducible request without calling any model
-
-```bash
-python -m rai compile --input examples/reverse/input.json
-```
-
-The result contains the selected instructions and task data as separate fields. This is a prompt pair, **not a generated answer**. It can be used with a model environment that the operator is authorized to use. Only the explicit OpenAI adapter described below is implemented here; compatibility with other model APIs has not been tested.
-
-### Inspect a worked example
+The reference harness compiles prompts and validates/renders structured results. It is a developer tool; ordinary skill use does not require a JSON response. To inspect an **authored development fixture**, without calling a model:
 
 ```bash
-python -m rai validate-output \
-  --input examples/reverse/input.json \
-  --output examples/reverse/reference-output.json
-
+python -m rai compile --input development/rc2/dev-rv-sequence/input.json
 python -m rai render \
-  --input examples/reverse/input.json \
-  --output examples/reverse/reference-output.json
+  --input development/rc2/dev-rv-sequence/input.json \
+  --output development/rc2/dev-rv-sequence/authored-output.json
 ```
 
-The reference output is clearly labeled as an **assistant-authored synthetic fixture**, not a measured model run. [Read the walkthrough](examples/reverse/walkthrough.md).
+Canonical rules live in `protocols/`; rebuild generated skills with `python tools/build_skills.py`. The API adapter and comparison tooling are separate, explicitly opt-in operations described in [evaluation documentation](EVALUATION.md). No API calls are needed to review this package.
 
-The matching `invalid-output.json` deliberately contains a false quotation. Passing it to `validate-output` must return a nonzero exit code. Other modes have their own failure examples.
+## What this evidence establishes
 
-### Live execution is explicit, optional and potentially paid
+All eight situations are synthetic. The full first answers and primary agent assessments are preserved unchanged. They illustrate distinct operations; they are not client implementations, independent studies or controlled evidence of superiority. The [earlier pilot and its unchanged answers](evidence/rc1-pilot/SOURCE.md) retain their failures and partially contaminated control; they established no comparative advantage. [Give practical feedback](https://github.com/Carchar91/recipient-aware-ai/issues/new?template=feedback.yml): the task, selected operation and environment, what helped, and what you had to correct. Do not publish private documents or correspondence.
 
-The adapter uses the OpenAI Responses API. Select a model available to your account that supports Structured Outputs. No default model is chosen and no benchmark result is prefilled.
+Engineering checks test software behaviour, provenance handling, generated-source consistency and file integrity. They do **not** measure usefulness to people, semantic truth or general safety. This review ran no new models. Repeated model sessions for this revised delivery rule, real reader reactions, controlled comparisons and safety across scenarios remain untested. The XLSX checks distinguish library recalculation and reopening from untested native Excel/LibreOffice behaviour.
 
-```bash
-# Set OPENAI_API_KEY securely in your environment. Never commit it.
-python -m rai run \
-  --input examples/reverse/input.json \
-  --model YOUR_SUPPORTED_MODEL_ID \
-  --allow-network --acknowledge-cost
-```
+## Author, source and boundaries
 
-`privacy_ok` must also be true in the input. This flag records operator permission; it does not independently verify consent or confidentiality. The adapter uses `store=false`, does not supply tools, does not follow links in material, and does not log credentials. Provider data-handling policies still apply; this is not a promise of zero retention.
+**Eugene Prudchenko** is the author. **Seraphim** is his personal AI assistant, not a separate foundation model. [The author's original article](https://prudchenko.com/writing/five-communication-protocols) provides the historical account; [the approved snapshot](docs/source/article.approved.en.md) and [source map](SOURCE_MAP.md) distinguish that account from this package's engineering implementation. [Citation](CITATION.cff)
 
-Without both opt-in flags or without a key, the runner refuses before sending a request. Incomplete replies, provider refusals outside the schema, HTTP errors and contract failures are recorded, not silently rewritten into passes.
+**For understanding and good-faith communication. Never for deception, coercion, or exploiting vulnerabilities. Respect the other person's right to disagree.**
 
-### Run a real comparison, not a prewritten success story
+[Methodology](METHODOLOGY.md) · [Responsible use](RESPONSIBLE_USE.md) · [Limitations](LIMITATIONS.md) · [Licence](LICENSE) · [Licensing decision record](LICENSE_PENDING.md)
 
-```bash
-# Plan only. No network calls.
-python tools/live_eval.py --model YOUR_SUPPORTED_MODEL_ID --case rv-01
-
-# Executes two requests: common-safety baseline and detailed Reverse.
-python tools/live_eval.py --model YOUR_SUPPORTED_MODEL_ID --case rv-01 \
-  --execute --allow-network --acknowledge-cost --max-calls 2
-```
-
-Both arms receive identical input facts, the same output schema and common safety constraints. Only the detailed mode procedure differs. Model, prompt hashes, input hashes, returned model, usage and validation results are recorded. A repeated prompt is reproducible; stochastic model output is not guaranteed byte-identical.
-
-The 30 included cases are transparent development fixtures, **not held-out evidence of generalization**. Human review is a separate operation. See [EVALUATION.md](EVALUATION.md) before interpreting any score.
-
-## Use the independent skills
-
-`skills/` contains five generated, self-contained skill folders. Each has the approved ethical notice and its own schema references. `agents/openai.yaml` sets `allow_implicit_invocation: false` for hosts that support that setting.
-
-Follow [docs/INSTALLATION.md](docs/INSTALLATION.md). Installing or selecting a skill is not the same as proving it behaves correctly. Other hosts may ignore invocation metadata. The deterministic CLI also requires one explicit protocol ID.
-
-## Read the methodology and its limits
-
-[Methodology](METHODOLOGY.md) · [Source map](SOURCE_MAP.md) · [Responsible use](RESPONSIBLE_USE.md) · [Known limits](LIMITATIONS.md) · [Evaluation design](EVALUATION.md) · [Author's original article](https://prudchenko.com/writing/five-communication-protocols)
-
-The approved article is preserved in `docs/source/article.approved.en.md`. The schemas, cases, validation rules and code are a new operationalization prepared for this candidate, not a claim to have recovered every historical prompt. The author's personal observations remain observations, not experiments.
-
-The package contains no client correspondence, account details, real bank documents, user analytics, auto-send capability or credentials.
-
-## Author and application
-
-The methodology is attributed to Eugene Prudchenko. Seraphim is his personal AI assistant, not a proprietary foundation model. See [CITATION.cff](CITATION.cff) for candidate attribution. No repository URL or published-release date is asserted before actual publication.
-
-For adaptation to a team's legitimate workflows, use the [author's contact page](https://prudchenko.com/contact). Send a general description, not confidential case files.
-
-**Strong communication helps someone make a decision. It should never take that decision away from them.**
+The ethical principles describe intended use and the behaviour of the official skills; they do not add restrictions to Apache-2.0 or guarantee control of third-party copies.

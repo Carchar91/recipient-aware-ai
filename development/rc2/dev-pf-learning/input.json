@@ -1,0 +1,47 @@
+{
+  "schema_version": "1.1",
+  "case_id": "dev-pf-learning",
+  "protocol": "profiler",
+  "language": "Russian",
+  "goal": "Понять способ принятия решения адресатом и выбрать рамку честного предложения пилота.",
+  "sender_role": "Руководитель синтетической команды",
+  "recipient_role": "Указанный в кейсе сотрудник",
+  "context": "Все люди, высказывания, организации, цены и события в этом development case вымышлены. Это материал для разработки, не held-out проверка.",
+  "material": "Предлагаем проверить инструмент отчётности; согласия адресата ещё нет.",
+  "evidence": [
+    {
+      "id": "E1",
+      "text": "Адресат: «Сначала покажите, какую гипотезу проверим за неделю».",
+      "kind": "provided_document"
+    },
+    {
+      "id": "E2",
+      "text": "На предыдущем обсуждении адресат выбрал ограниченный обратимый пилот вместо полной перестройки процесса.",
+      "kind": "provided_document"
+    },
+    {
+      "id": "E3",
+      "text": "Адресат: «Если идея не сработает, хочу остановиться без обязательства продолжать».",
+      "kind": "provided_document"
+    },
+    {
+      "id": "E4",
+      "text": "Адресат: «Мне достаточно одного проверяемого примера сейчас; полный отчёт нужен, только если решим масштабировать».",
+      "kind": "provided_document"
+    }
+  ],
+  "material_conditions": [],
+  "verbatim_terms": [],
+  "privacy_ok": true,
+  "perspective": {
+    "recipient_known_evidence": [],
+    "sender_private_evidence": [],
+    "recipient_criteria": [
+      "E1",
+      "E3",
+      "E4"
+    ],
+    "human_authority": [],
+    "agent_authority": "draft_only"
+  }
+}

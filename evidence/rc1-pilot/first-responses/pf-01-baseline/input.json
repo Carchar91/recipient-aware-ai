@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0",
+  "case_id": "pf-01",
+  "protocol": "profiler",
+  "language": "English",
+  "goal": "Understand why the clerk requested a contract and choose a verification step.",
+  "sender_role": "Business operator",
+  "recipient_role": "Bank clerk",
+  "context": "",
+  "material": "The bank does not allow this without the contract.",
+  "evidence": [
+    {
+      "id": "E1",
+      "text": "The clerk said: The bank does not allow this without the contract.",
+      "kind": "user_assertion"
+    },
+    {
+      "id": "E2",
+      "text": "No written bank rule has been supplied.",
+      "kind": "user_assertion"
+    },
+    {
+      "id": "E3",
+      "text": "The clerk's approval authority is unknown.",
+      "kind": "user_assertion"
+    }
+  ],
+  "material_conditions": [],
+  "verbatim_terms": [],
+  "privacy_ok": true
+}

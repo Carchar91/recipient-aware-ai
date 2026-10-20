@@ -4,11 +4,16 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "recipient-aware-ai"
-version = "0.1.0rc1"
+version = "0.1.0rc2"
 description = "Five independent communication protocols with evidence contracts and reproducible evaluation tools"
 requires-python = ">=3.11"
 dependencies = ["jsonschema==4.26.0"]
-# No public license has been selected by the owner. See LICENSE_PENDING.md.
+license = {file = "LICENSE"}
+authors = [{name = "Eugene Prudchenko"}]
+
+[project.urls]
+Repository = "https://github.com/Carchar91/recipient-aware-ai"
+Source = "https://prudchenko.com/writing/five-communication-protocols"
 
 [tool.setuptools]
 packages = ["rai"]

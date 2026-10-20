@@ -1,0 +1,47 @@
+{
+  "schema_version": "1.0",
+  "protocol": "dopamine-hooks",
+  "case_id": "dh-01",
+  "decision": "proceed",
+  "decision_reason": "The supplied evidence supports an engaging opening about the gap between improved wording and a justified request.",
+  "evidence_used": [
+    {
+      "evidence_id": "E1",
+      "quote": "The essay explains how AI can improve wording without checking a request's justification."
+    },
+    {
+      "evidence_id": "E2",
+      "quote": "This is a practitioner methodology, not a scientifically validated result."
+    }
+  ],
+  "hypotheses": [],
+  "uncertainties": [
+    "The five tools and the full article were not supplied; their specific functions cannot be described."
+  ],
+  "preserved_conditions": [
+    {
+      "evidence_id": "E2",
+      "statement": "This is a practitioner methodology, not a scientifically validated result."
+    }
+  ],
+  "clarifying_questions": [],
+  "safe_alternative": "",
+  "result": {
+    "headline": "Five Tools for Working with AI: Beyond Better Wording",
+    "opening": "A request can sound better without becoming better justified. AI can improve the wording while leaving the reason for the request unexamined.",
+    "body": "That gap is the starting point for this essay: improving how a request is expressed does not establish whether it is justified. This is a practitioner methodology, not a scientifically validated result.",
+    "promise": "The focus is a practical distinction: the quality of the wording and the justification for the request are separate questions.",
+    "payoff": "A polished request still needs scrutiny of what it asks and why.",
+    "call_to_action": "Consider your next AI-assisted request: has its wording improved, and have you checked its justification? Use that distinction if it helps, ask for clarification, or challenge it.",
+    "claim_refs": [
+      "E1",
+      "E2"
+    ]
+  },
+  "recipient_choices": [
+    "confirm",
+    "clarify",
+    "decline"
+  ],
+  "ethical_notice": "For understanding and good-faith communication. Never for deception, coercion, or exploiting vulnerabilities. Respect the other person's right to disagree."
+}

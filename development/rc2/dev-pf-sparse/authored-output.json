@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.1",
+  "protocol": "profiler",
+  "case_id": "dev-pf-sparse",
+  "decision": "proceed",
+  "decision_reason": "Достаточно данных для указанного ограниченного результата; это подготовка, а не внешнее действие.",
+  "evidence_used": [
+    {
+      "evidence_id": "E1",
+      "quote": "Сотрудник сказал: «Без договора не проведём»."
+    }
+  ],
+  "hypotheses": [],
+  "uncertainties": [
+    "По одной процедурной реплике нельзя установить характер, страхи или способ принятия решений."
+  ],
+  "preserved_conditions": [],
+  "clarifying_questions": [],
+  "safe_alternative": "",
+  "result": {
+    "observations": [
+      {
+        "evidence_id": "E1",
+        "observation": "Есть сообщение сотрудника о необходимости договора, а не подтверждённый текст правила."
+      }
+    ],
+    "role_constraints": [
+      "Полномочия и применимое правило неизвестны."
+    ],
+    "likely_objections": [],
+    "recommended_action": "Уточнить, какой договор нужен, что он подтверждает и кто может объяснить основание требования.",
+    "decision_map": [],
+    "main_barrier": "Неясно основание требования и предмет договора.",
+    "communication_frame": "Запрос основания и применимости; материала для карты интересов или мотивов недостаточно."
+  },
+  "recipient_choices": [
+    "clarify",
+    "decline"
+  ],
+  "ethical_notice": "For understanding and good-faith communication. Never for deception, coercion, or exploiting vulnerabilities. Respect the other person's right to disagree."
+}

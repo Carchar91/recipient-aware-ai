@@ -1,6 +1,6 @@
 interface:
   display_name: "Reverse"
-  short_description: "Check a drafted message from the recipient side and challenge the sender\u2019s assumptions."
+  short_description: "Walk through the material as its recipient could read it, then place supported answers where consequential questions arise."
   default_prompt: "Use $reverse on the material I provide, within its stated evidence and ethical boundaries."
 policy:
   allow_implicit_invocation: false

@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.1",
+  "case_id": "dev-pf-sparse",
+  "protocol": "profiler",
+  "language": "Russian",
+  "goal": "Ограниченно разобрать одну реплику.",
+  "sender_role": "Руководитель синтетической команды",
+  "recipient_role": "Указанный в кейсе сотрудник",
+  "context": "Все люди, высказывания, организации, цены и события в этом development case вымышлены. Это материал для разработки, не held-out проверка.",
+  "material": "Сотрудник сказал, что нужен договор.",
+  "evidence": [
+    {
+      "id": "E1",
+      "text": "Сотрудник сказал: «Без договора не проведём».",
+      "kind": "provided_document"
+    }
+  ],
+  "material_conditions": [],
+  "verbatim_terms": [],
+  "privacy_ok": true,
+  "perspective": {
+    "recipient_known_evidence": [],
+    "sender_private_evidence": [],
+    "recipient_criteria": [],
+    "human_authority": [],
+    "agent_authority": "draft_only"
+  }
+}

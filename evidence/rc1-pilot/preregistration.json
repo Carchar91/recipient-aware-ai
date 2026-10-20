@@ -1,0 +1,297 @@
+{
+  "registered_at_utc": "2026-10-16T15:01:25.719520+00:00",
+  "candidate_commit": "97e0381294ef25f0bea4898e0493fb508e994362",
+  "candidate_version": "v0.1.0-rc.1",
+  "model": "gpt-6-astra",
+  "reasoning_effort": "medium",
+  "host": "codex-cli 0.146.1",
+  "authentication": "Existing ChatGPT account; no separate API key or API billing. Usage is not asserted to be free.",
+  "selection_rule": "User protocol order; minimum grounded_normal ID each; odd protocol positions minimum abusive-case ID, even positions minimum prompt_injection ID. Selection fixed before any model responses.",
+  "cases": [
+    {
+      "id": "pf-01",
+      "protocol": "profiler",
+      "category": "grounded_normal",
+      "input_sha256": "f3934281ac1bb7234d95e0e5b6441d5f4122f06dd66e6e0252e1598a455112ee",
+      "case_file_sha256": "dda7ba5f309f84a8f1e4790fc0388af5e47ab2de1c060a4d8d57b296236a4d71"
+    },
+    {
+      "id": "pf-03",
+      "protocol": "profiler",
+      "category": "prohibited_inference",
+      "input_sha256": "68cef7e90a0ee9640109e87d42bb06a8f9f6a7313f1661b342bb42b4057e53db",
+      "case_file_sha256": "b87ff4bcf87e58837d1a63899e0f166b64afaab9b2d41c0c3ac18849c5c80240"
+    },
+    {
+      "id": "pp-01",
+      "protocol": "profiler-plus",
+      "category": "grounded_normal",
+      "input_sha256": "f9b08453eebebd6a8691e9cd5abdd8babc691c030577c09cac6ab3642d2d0c00",
+      "case_file_sha256": "ec4190b4c8f1601670ae486f749e2051ccddac553b46f3849c3729366c5d9905"
+    },
+    {
+      "id": "pp-04",
+      "protocol": "profiler-plus",
+      "category": "prompt_injection",
+      "input_sha256": "3446553ffc09c7e9cca2372977c2c633b6bebcb198348699fa8f07a685e01f95",
+      "case_file_sha256": "fd119af97bc8bd565c235d0b176bd8ba8fb70653a0ae2f035d625c8fca3c157b"
+    },
+    {
+      "id": "dh-01",
+      "protocol": "dopamine-hooks",
+      "category": "grounded_normal",
+      "input_sha256": "b780c6f8f3e5a9a1d3c2157f9df02317f4d2c1bc471e781d8cbff4217e62f586",
+      "case_file_sha256": "760cef256819f25d9e161584a51ae8e9190c3b92b2ab12c9da7f0c829f29510e"
+    },
+    {
+      "id": "dh-03",
+      "protocol": "dopamine-hooks",
+      "category": "manufactured_pressure",
+      "input_sha256": "a3dfed556a67d30f90055f009d298235ef0f627f96cb2d4a7a7cfe70f45019ea",
+      "case_file_sha256": "b4675b6b2f0905c24f6d6b008390e8ece35e8bdb55cada175138b3d1d1d531ca"
+    },
+    {
+      "id": "rv-01",
+      "protocol": "reverse",
+      "category": "grounded_normal",
+      "input_sha256": "7aae0604bcfaeb31f95883aa9aab33ac6ed11956718de444c053d0434f04640b",
+      "case_file_sha256": "5be3b965aa1a220551b7e9ae679b08e24a143406746042f97bb94a6a8a023e7c"
+    },
+    {
+      "id": "rv-04",
+      "protocol": "reverse",
+      "category": "prompt_injection",
+      "input_sha256": "7759b63a90654ed5e0640861202bed883a27634d66a460bb9c7a3d04a6517125",
+      "case_file_sha256": "6f84bcc118605f6c33656ad1e0756fb2752d5a6b5b25b53dfad15fc729a37b31"
+    },
+    {
+      "id": "rl-01",
+      "protocol": "rail",
+      "category": "grounded_normal",
+      "input_sha256": "110c7d6dd91a7ce9048b912fb945a9000e1053dfd3831a6b2385347953b15ab7",
+      "case_file_sha256": "49c95325c6754a12cc2b9c2186fb5c437153675c0af200ad37351eaf96965932"
+    },
+    {
+      "id": "rl-03",
+      "protocol": "rail",
+      "category": "forced_funnel",
+      "input_sha256": "1ed4dfd2ed380dc15c24bc6887dacd418b7cfe96145e55f3f29c94f75b4f59f8",
+      "case_file_sha256": "64723655092ca7df8f75c3bfd49b70441f30e9a6f26c4d54e53aebc03b9af86f"
+    }
+  ],
+  "execution_order_seed": 20261016,
+  "runs": [
+    {
+      "run_id": "dh-03-baseline",
+      "case_id": "dh-03",
+      "arm": "baseline",
+      "workspace": "/Users/carchar/Documents/GEO/recipient-aware-ai-codex-pilot-2026-10-16/workspaces/dh-03-baseline",
+      "prompt_sha256": "2ccba0fee0816bcb6db676564c18dcdbf177eafee5373176799972cbe3cf31c2",
+      "developer_sha256": "6a198b04b81020c626f59877b3b76f92e318ebfe262b94a4519acf8de2419837",
+      "wire_schema_sha256": "94c036de759217adb9a0aa574ee1f8277aab96f66cdf40e56cf65dba7fac9a79",
+      "input_sha256": "a3dfed556a67d30f90055f009d298235ef0f627f96cb2d4a7a7cfe70f45019ea"
+    },
+    {
+      "run_id": "pp-01-skill",
+      "case_id": "pp-01",
+      "arm": "skill",
+      "workspace": "/Users/carchar/Documents/GEO/recipient-aware-ai-codex-pilot-2026-10-16/workspaces/pp-01-skill",
+      "prompt_sha256": "8b53db55b1f44c43eab95214d7350c4e9d98ec04a5f7b76704f649a091c08ca2",
+      "developer_sha256": "b36aa277daf6cf31fef3dc190f34aa97506fa2b18fd637398c20b23b217171c5",
+      "wire_schema_sha256": "13341c9b9ff6a46dbedf7e522b665b02d682176aa8d25d209866c01c18b312ce",
+      "input_sha256": "f9b08453eebebd6a8691e9cd5abdd8babc691c030577c09cac6ab3642d2d0c00"
+    },
+    {
+      "run_id": "rl-03-baseline",
+      "case_id": "rl-03",
+      "arm": "baseline",
+      "workspace": "/Users/carchar/Documents/GEO/recipient-aware-ai-codex-pilot-2026-10-16/workspaces/rl-03-baseline",
+      "prompt_sha256": "4a3095392ad07f949e0356c2918e86fa9f351751ce593312733c98c9793d5e9e",
+      "developer_sha256": "104078606c8848b427ad9bc4da36ac9f8e67381c31326c7beb6e18f76d0a2e7e",
+      "wire_schema_sha256": "cc1c5ffcea8eae7a6b1d179d32303df74b58393fcd3303abed39e43b711639d9",
+      "input_sha256": "1ed4dfd2ed380dc15c24bc6887dacd418b7cfe96145e55f3f29c94f75b4f59f8"
+    },
+    {
+      "run_id": "rv-04-baseline",
+      "case_id": "rv-04",
+      "arm": "baseline",
+      "workspace": "/Users/carchar/Documents/GEO/recipient-aware-ai-codex-pilot-2026-10-16/workspaces/rv-04-baseline",
+      "prompt_sha256": "040c4674ed0384a4c3d12373995f3dea616b1a8b713d7ebbbf5924c7a515d5eb",
+      "developer_sha256": "8067e2621b276a06f29917fec2c38907b9bfd9620c4c0e645bc9c26a9c2088e1",
+      "wire_schema_sha256": "6c6f1883fde5d4297e5e31fbd8ead3b3f066b9cb084ed9d3a03d127a6de9013c",
+      "input_sha256": "7759b63a90654ed5e0640861202bed883a27634d66a460bb9c7a3d04a6517125"
+    },
+    {
+      "run_id": "pp-04-baseline",
+      "case_id": "pp-04",
+      "arm": "baseline",
+      "workspace": "/Users/carchar/Documents/GEO/recipient-aware-ai-codex-pilot-2026-10-16/workspaces/pp-04-baseline",
+      "prompt_sha256": "b820981ef676268a49ae650abb26000c55d4a9b9e809a85d5d7af7fd0ae038ff",
+      "developer_sha256": "b36aa277daf6cf31fef3dc190f34aa97506fa2b18fd637398c20b23b217171c5",
+      "wire_schema_sha256": "13341c9b9ff6a46dbedf7e522b665b02d682176aa8d25d209866c01c18b312ce",
+      "input_sha256": "3446553ffc09c7e9cca2372977c2c633b6bebcb198348699fa8f07a685e01f95"
+    },
+    {
+      "run_id": "rv-01-baseline",
+      "case_id": "rv-01",
+      "arm": "baseline",
+      "workspace": "/Users/carchar/Documents/GEO/recipient-aware-ai-codex-pilot-2026-10-16/workspaces/rv-01-baseline",
+      "prompt_sha256": "6058986fe11d9c7f2302485c2b27adf1812e2cfa96bf3347f7ea607aad66096d",
+      "developer_sha256": "8067e2621b276a06f29917fec2c38907b9bfd9620c4c0e645bc9c26a9c2088e1",
+      "wire_schema_sha256": "6c6f1883fde5d4297e5e31fbd8ead3b3f066b9cb084ed9d3a03d127a6de9013c",
+      "input_sha256": "7aae0604bcfaeb31f95883aa9aab33ac6ed11956718de444c053d0434f04640b"
+    },
+    {
+      "run_id": "pf-01-baseline",
+      "case_id": "pf-01",
+      "arm": "baseline",
+      "workspace": "/Users/carchar/Documents/GEO/recipient-aware-ai-codex-pilot-2026-10-16/workspaces/pf-01-baseline",
+      "prompt_sha256": "9e182466e646792903d0beeb5475c468fcca5cd1fd4467c1ea2d6cf1a7aa9357",
+      "developer_sha256": "f212f4b199675c1edc37c9f47695db0c46788134548873d66586b3caf2f3a0f6",
+      "wire_schema_sha256": "8cef3b0985e610e83c3e2541074119044dd9833152ffdce15c3dded579e8d03d",
+      "input_sha256": "f3934281ac1bb7234d95e0e5b6441d5f4122f06dd66e6e0252e1598a455112ee"
+    },
+    {
+      "run_id": "rl-03-skill",
+      "case_id": "rl-03",
+      "arm": "skill",
+      "workspace": "/Users/carchar/Documents/GEO/recipient-aware-ai-codex-pilot-2026-10-16/workspaces/rl-03-skill",
+      "prompt_sha256": "8175e804fa90423a30fcbb20b0e4dae3fb223b92189c838054b46abb4d05be85",
+      "developer_sha256": "104078606c8848b427ad9bc4da36ac9f8e67381c31326c7beb6e18f76d0a2e7e",
+      "wire_schema_sha256": "cc1c5ffcea8eae7a6b1d179d32303df74b58393fcd3303abed39e43b711639d9",
+      "input_sha256": "1ed4dfd2ed380dc15c24bc6887dacd418b7cfe96145e55f3f29c94f75b4f59f8"
+    },
+    {
+      "run_id": "pf-03-skill",
+      "case_id": "pf-03",
+      "arm": "skill",
+      "workspace": "/Users/carchar/Documents/GEO/recipient-aware-ai-codex-pilot-2026-10-16/workspaces/pf-03-skill",
+      "prompt_sha256": "88bd32d5feb94cb3cc93eecffe9b77c8e485c1e9a78ecdf08399e7eb964a025c",
+      "developer_sha256": "f212f4b199675c1edc37c9f47695db0c46788134548873d66586b3caf2f3a0f6",
+      "wire_schema_sha256": "8cef3b0985e610e83c3e2541074119044dd9833152ffdce15c3dded579e8d03d",
+      "input_sha256": "68cef7e90a0ee9640109e87d42bb06a8f9f6a7313f1661b342bb42b4057e53db"
+    },
+    {
+      "run_id": "dh-01-baseline",
+      "case_id": "dh-01",
+      "arm": "baseline",
+      "workspace": "/Users/carchar/Documents/GEO/recipient-aware-ai-codex-pilot-2026-10-16/workspaces/dh-01-baseline",
+      "prompt_sha256": "3fbf048ba70e5d8e3a50aa1d2d6f06f28448c02c5351a322f3464302a70fdd68",
+      "developer_sha256": "6a198b04b81020c626f59877b3b76f92e318ebfe262b94a4519acf8de2419837",
+      "wire_schema_sha256": "94c036de759217adb9a0aa574ee1f8277aab96f66cdf40e56cf65dba7fac9a79",
+      "input_sha256": "b780c6f8f3e5a9a1d3c2157f9df02317f4d2c1bc471e781d8cbff4217e62f586"
+    },
+    {
+      "run_id": "rv-04-skill",
+      "case_id": "rv-04",
+      "arm": "skill",
+      "workspace": "/Users/carchar/Documents/GEO/recipient-aware-ai-codex-pilot-2026-10-16/workspaces/rv-04-skill",
+      "prompt_sha256": "0bb55f9bf17a3b69c2b2f7cddc5ccb50c594a5a75da569d4c0a9c75796f19ea0",
+      "developer_sha256": "8067e2621b276a06f29917fec2c38907b9bfd9620c4c0e645bc9c26a9c2088e1",
+      "wire_schema_sha256": "6c6f1883fde5d4297e5e31fbd8ead3b3f066b9cb084ed9d3a03d127a6de9013c",
+      "input_sha256": "7759b63a90654ed5e0640861202bed883a27634d66a460bb9c7a3d04a6517125"
+    },
+    {
+      "run_id": "dh-03-skill",
+      "case_id": "dh-03",
+      "arm": "skill",
+      "workspace": "/Users/carchar/Documents/GEO/recipient-aware-ai-codex-pilot-2026-10-16/workspaces/dh-03-skill",
+      "prompt_sha256": "8ab8dccd93d7a19b830b8e98a960e7f167e4095a31d5f95e33348d09aec2ebc4",
+      "developer_sha256": "6a198b04b81020c626f59877b3b76f92e318ebfe262b94a4519acf8de2419837",
+      "wire_schema_sha256": "94c036de759217adb9a0aa574ee1f8277aab96f66cdf40e56cf65dba7fac9a79",
+      "input_sha256": "a3dfed556a67d30f90055f009d298235ef0f627f96cb2d4a7a7cfe70f45019ea"
+    },
+    {
+      "run_id": "pf-01-skill",
+      "case_id": "pf-01",
+      "arm": "skill",
+      "workspace": "/Users/carchar/Documents/GEO/recipient-aware-ai-codex-pilot-2026-10-16/workspaces/pf-01-skill",
+      "prompt_sha256": "d44a87f3789e7316abfb0a0094193081d798c6b7430b4864ad6ebcda9bbba6ba",
+      "developer_sha256": "f212f4b199675c1edc37c9f47695db0c46788134548873d66586b3caf2f3a0f6",
+      "wire_schema_sha256": "8cef3b0985e610e83c3e2541074119044dd9833152ffdce15c3dded579e8d03d",
+      "input_sha256": "f3934281ac1bb7234d95e0e5b6441d5f4122f06dd66e6e0252e1598a455112ee"
+    },
+    {
+      "run_id": "pf-03-baseline",
+      "case_id": "pf-03",
+      "arm": "baseline",
+      "workspace": "/Users/carchar/Documents/GEO/recipient-aware-ai-codex-pilot-2026-10-16/workspaces/pf-03-baseline",
+      "prompt_sha256": "72e5440aeb002246e56edbd835a9a56ef9fd583d5785c39d7d01be093d71ef37",
+      "developer_sha256": "f212f4b199675c1edc37c9f47695db0c46788134548873d66586b3caf2f3a0f6",
+      "wire_schema_sha256": "8cef3b0985e610e83c3e2541074119044dd9833152ffdce15c3dded579e8d03d",
+      "input_sha256": "68cef7e90a0ee9640109e87d42bb06a8f9f6a7313f1661b342bb42b4057e53db"
+    },
+    {
+      "run_id": "pp-04-skill",
+      "case_id": "pp-04",
+      "arm": "skill",
+      "workspace": "/Users/carchar/Documents/GEO/recipient-aware-ai-codex-pilot-2026-10-16/workspaces/pp-04-skill",
+      "prompt_sha256": "4049e3bf9845cf3b304a6cde26f76df4dc239f68c9341de929137ab08b49017f",
+      "developer_sha256": "b36aa277daf6cf31fef3dc190f34aa97506fa2b18fd637398c20b23b217171c5",
+      "wire_schema_sha256": "13341c9b9ff6a46dbedf7e522b665b02d682176aa8d25d209866c01c18b312ce",
+      "input_sha256": "3446553ffc09c7e9cca2372977c2c633b6bebcb198348699fa8f07a685e01f95"
+    },
+    {
+      "run_id": "dh-01-skill",
+      "case_id": "dh-01",
+      "arm": "skill",
+      "workspace": "/Users/carchar/Documents/GEO/recipient-aware-ai-codex-pilot-2026-10-16/workspaces/dh-01-skill",
+      "prompt_sha256": "dd2fada5acf50bd51238c22805f73ab2e46362f775c51c068fae8ab3ebe2b036",
+      "developer_sha256": "6a198b04b81020c626f59877b3b76f92e318ebfe262b94a4519acf8de2419837",
+      "wire_schema_sha256": "94c036de759217adb9a0aa574ee1f8277aab96f66cdf40e56cf65dba7fac9a79",
+      "input_sha256": "b780c6f8f3e5a9a1d3c2157f9df02317f4d2c1bc471e781d8cbff4217e62f586"
+    },
+    {
+      "run_id": "rv-01-skill",
+      "case_id": "rv-01",
+      "arm": "skill",
+      "workspace": "/Users/carchar/Documents/GEO/recipient-aware-ai-codex-pilot-2026-10-16/workspaces/rv-01-skill",
+      "prompt_sha256": "b3db68ed73b071cbe683682685d469e31a80f5e7f6fc946fe0fe79a4ac5ca996",
+      "developer_sha256": "8067e2621b276a06f29917fec2c38907b9bfd9620c4c0e645bc9c26a9c2088e1",
+      "wire_schema_sha256": "6c6f1883fde5d4297e5e31fbd8ead3b3f066b9cb084ed9d3a03d127a6de9013c",
+      "input_sha256": "7aae0604bcfaeb31f95883aa9aab33ac6ed11956718de444c053d0434f04640b"
+    },
+    {
+      "run_id": "rl-01-baseline",
+      "case_id": "rl-01",
+      "arm": "baseline",
+      "workspace": "/Users/carchar/Documents/GEO/recipient-aware-ai-codex-pilot-2026-10-16/workspaces/rl-01-baseline",
+      "prompt_sha256": "7d03293b5e17289b406da1d8b9a5d4fa8ce4582b4099e51c4948d607966b05bb",
+      "developer_sha256": "104078606c8848b427ad9bc4da36ac9f8e67381c31326c7beb6e18f76d0a2e7e",
+      "wire_schema_sha256": "cc1c5ffcea8eae7a6b1d179d32303df74b58393fcd3303abed39e43b711639d9",
+      "input_sha256": "110c7d6dd91a7ce9048b912fb945a9000e1053dfd3831a6b2385347953b15ab7"
+    },
+    {
+      "run_id": "rl-01-skill",
+      "case_id": "rl-01",
+      "arm": "skill",
+      "workspace": "/Users/carchar/Documents/GEO/recipient-aware-ai-codex-pilot-2026-10-16/workspaces/rl-01-skill",
+      "prompt_sha256": "4494721eb8a3f57e366cfa75d5824c58c0dbbe6a533575075f9dfb4dc1452748",
+      "developer_sha256": "104078606c8848b427ad9bc4da36ac9f8e67381c31326c7beb6e18f76d0a2e7e",
+      "wire_schema_sha256": "cc1c5ffcea8eae7a6b1d179d32303df74b58393fcd3303abed39e43b711639d9",
+      "input_sha256": "110c7d6dd91a7ce9048b912fb945a9000e1053dfd3831a6b2385347953b15ab7"
+    },
+    {
+      "run_id": "pp-01-baseline",
+      "case_id": "pp-01",
+      "arm": "baseline",
+      "workspace": "/Users/carchar/Documents/GEO/recipient-aware-ai-codex-pilot-2026-10-16/workspaces/pp-01-baseline",
+      "prompt_sha256": "ad5fafc9620374cf9c281c7f548ae6b979cd936a9c43f7bbf2453e27ee1ac8e1",
+      "developer_sha256": "b36aa277daf6cf31fef3dc190f34aa97506fa2b18fd637398c20b23b217171c5",
+      "wire_schema_sha256": "13341c9b9ff6a46dbedf7e522b665b02d682176aa8d25d209866c01c18b312ce",
+      "input_sha256": "f9b08453eebebd6a8691e9cd5abdd8babc691c030577c09cac6ab3642d2d0c00"
+    }
+  ],
+  "max_trials": 20,
+  "attempt_policy": "One fresh independent exec per arm; no retries or output repair; retain failures.",
+  "comparison": "Same input, model, effort, common ethics, output schema and local read-only tools. Skill condition adds explicit invocation and unchanged repo-local skills; baseline has none of the five skills available.",
+  "isolation": "Per-run Git-root workspaces; minimal-runtime and own-workspace reads only; memories, global AGENTS, global skills, plugins/apps/MCP config, hooks, browser and subagents disabled. Validate host context and filesystem before generation.",
+  "evaluation": "Unchanged rai.core.validate_output and existing expected decisions, plus separately labeled agent content assessment. No references or expectations supplied to executors.",
+  "human_review": "NOT_PERFORMED",
+  "limitations": [
+    "Single English synthetic case per category per protocol, one sample per arm.",
+    "Shared schema and common rules already provide a strong baseline.",
+    "Alias-based model, no claim of immutable provider snapshot or deterministic answers.",
+    "Agent review is not independent human evaluation."
+  ]
+}

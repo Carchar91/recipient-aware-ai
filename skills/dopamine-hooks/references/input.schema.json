@@ -4,7 +4,7 @@
     "schema_version": {
       "type": "string",
       "enum": [
-        "1.0"
+        "1.1"
       ]
     },
     "case_id": {
@@ -91,6 +91,57 @@
     },
     "privacy_ok": {
       "type": "boolean"
+    },
+    "perspective": {
+      "type": "object",
+      "properties": {
+        "recipient_known_evidence": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "sender_private_evidence": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "recipient_criteria": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "human_authority": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "agent_authority": {
+          "type": "string",
+          "enum": [
+            "draft_only"
+          ]
+        }
+      },
+      "required": [
+        "recipient_known_evidence",
+        "sender_private_evidence",
+        "recipient_criteria",
+        "human_authority",
+        "agent_authority"
+      ],
+      "additionalProperties": false
     }
   },
   "required": [
@@ -106,9 +157,10 @@
     "evidence",
     "material_conditions",
     "verbatim_terms",
-    "privacy_ok"
+    "privacy_ok",
+    "perspective"
   ],
   "additionalProperties": false,
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "Recipient-Aware AI input 1.0"
+  "title": "Recipient-Aware AI input 1.1"
 }

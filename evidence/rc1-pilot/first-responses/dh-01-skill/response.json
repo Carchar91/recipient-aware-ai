@@ -1,0 +1,48 @@
+{
+  "schema_version": "1.0",
+  "protocol": "dopamine-hooks",
+  "case_id": "dh-01",
+  "decision": "proceed",
+  "decision_reason": "The supplied claims support a bounded opening explaining the distinction between improved wording and a justified request.",
+  "evidence_used": [
+    {
+      "evidence_id": "E1",
+      "quote": "The essay explains how AI can improve wording without checking a request's justification."
+    },
+    {
+      "evidence_id": "E2",
+      "quote": "This is a practitioner methodology, not a scientifically validated result."
+    }
+  ],
+  "hypotheses": [],
+  "uncertainties": [
+    "The full essay and descriptions of its five tools were not supplied.",
+    "The supplied claims are user assertions, not independently verified findings."
+  ],
+  "preserved_conditions": [
+    {
+      "evidence_id": "E2",
+      "statement": "This is a practitioner methodology, not a scientifically validated result."
+    }
+  ],
+  "clarifying_questions": [],
+  "safe_alternative": "",
+  "result": {
+    "headline": "Five Tools for Working with AI: Is the Request Justified?",
+    "opening": "AI can make a request sound better without checking whether it is justified. What, then, should you check before using the polished version?",
+    "body": "Start with the request itself: what are you asking someone to do, and what supports that ask? Improving the wording does not establish that the request is justified. That distinction is the starting point for this essay's approach to working with AI: review the basis of the request as well as its expression. This is a practitioner methodology, not a scientifically validated result.",
+    "promise": "Explain why improved wording still leaves the request's justification to be checked.",
+    "payoff": "Improving the wording does not establish that the request is justified.",
+    "call_to_action": "If useful, take one AI-assisted draft and ask: what supports the request beneath the wording?",
+    "claim_refs": [
+      "E1",
+      "E2"
+    ]
+  },
+  "recipient_choices": [
+    "confirm",
+    "clarify",
+    "decline"
+  ],
+  "ethical_notice": "For understanding and good-faith communication. Never for deception, coercion, or exploiting vulnerabilities. Respect the other person's right to disagree."
+}

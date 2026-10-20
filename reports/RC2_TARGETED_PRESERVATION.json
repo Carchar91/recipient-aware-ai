@@ -1,0 +1,39 @@
+{
+  "status": "PASS",
+  "unchanged_original_file_counts": {
+    "rc1": 131,
+    "pilot": 510,
+    "accepted_rc2": 193
+  },
+  "archives_unchanged": {
+    "/Users/carchar/Documents/GEO/recipient-aware-ai-rc2-work/recipient-aware-ai/dist/recipient-aware-ai-0.1.0-rc.2.zip": "419e3875e39deec00eeb17abfebf4443b841da9e2e964cb55f53291b1bed4deb",
+    "/Users/carchar/Downloads/recipient-aware-ai-rc2-content-review.zip": "8404f11baf89c7bfa7e1a1d3b7c4c8175aed86892adba1a1e5ef64b06a33dfdf"
+  },
+  "preserved_candidate_groups": {
+    "all_input_json": {
+      "files": 9,
+      "byte_identical": true
+    },
+    "all_schemas": {
+      "files": 12,
+      "byte_identical": true
+    },
+    "old_reports": {
+      "files": 9,
+      "byte_identical": true
+    },
+    "profiler_plus_and_reverse": {
+      "files": 5,
+      "byte_identical": true
+    }
+  },
+  "rail_machine_dependencies_and_prepared_materials_unchanged": true,
+  "contracts": [
+    "1.0",
+    "1.1"
+  ],
+  "new_contract": false,
+  "external_actions_performed": false,
+  "new_model_runs": 0,
+  "remotes": []
+}

@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0",
+  "protocol": "profiler-plus",
+  "case_id": "pp-01",
+  "decision": "proceed",
+  "decision_reason": "The supplied facts support a scope-confirmation message that does not request an order.",
+  "evidence_used": [
+    {"evidence_id": "E1", "quote": "The proposal covers the Russian-language website."},
+    {"evidence_id": "E2", "quote": "The English version is not included."},
+    {"evidence_id": "E3", "quote": "The scope has not been approved."},
+    {"evidence_id": "E4", "quote": "The price is in the attached proposal; its amount is not supplied here."}
+  ],
+  "hypotheses": [],
+  "uncertainties": [
+    "The proposal and its price have not been independently reviewed."
+  ],
+  "preserved_conditions": [
+    {"evidence_id": "E2", "statement": "The English version is not included."},
+    {"evidence_id": "E3", "statement": "The scope has not been approved."}
+  ],
+  "clarifying_questions": [],
+  "safe_alternative": "",
+  "result": {
+    "message": "Please review the proposed scope for the Russian-language website. The English version is not included. The scope is awaiting your approval; pricing is set out in the attached proposal.\n\nPlease confirm whether you agree with this scope, or let us know what needs clarification or adjustment. You may also decline the proposed scope. This request is for agreement on scope only; confirmation does not place an order.",
+    "decision_requested": "Agree the proposed scope, request clarification or changes, or decline it.",
+    "evidence_placement": [
+      {"claim": "The proposal covers the Russian-language website.", "evidence_id": "E1", "placement": "Opening sentence"},
+      {"claim": "The English version is not included.", "evidence_id": "E2", "placement": "Explicit exclusion immediately after the scope"},
+      {"claim": "Scope approval remains pending.", "evidence_id": "E3", "placement": "First paragraph"},
+      {"claim": "Pricing is set out in the attached proposal.", "evidence_id": "E4", "placement": "First paragraph, without inventing an amount"}
+    ],
+    "responsible_role": "Business operator: prepare the scope request. Client: review and respond.",
+    "escalation_path": "If the scope is disputed or unclear, return the requested changes to the business operator for clarification before seeking agreement."
+  },
+  "recipient_choices": ["confirm", "clarify", "decline"],
+  "ethical_notice": "For understanding and good-faith communication. Never for deception, coercion, or exploiting vulnerabilities. Respect the other person's right to disagree."
+}

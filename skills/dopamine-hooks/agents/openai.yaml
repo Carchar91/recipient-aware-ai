@@ -1,6 +1,6 @@
 interface:
   display_name: "Dopamine Hooks"
-  short_description: "Make relevance visible and deliver meaningful closure without fake urgency or neurochemical claims."
+  short_description: "Build a connected movement of attention through the whole text, with meaningful answers and useful transitions."
   default_prompt: "Use $dopamine-hooks on the material I provide, within its stated evidence and ethical boundaries."
 policy:
   allow_implicit_invocation: false

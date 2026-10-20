@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0",
+  "case_id": "pp-01",
+  "protocol": "profiler-plus",
+  "language": "English",
+  "goal": "Prepare a message asking the client to agree the scope, not place an order.",
+  "sender_role": "Business operator",
+  "recipient_role": "Client",
+  "context": "",
+  "material": "Everything is ready. We just need your confirmation.",
+  "evidence": [
+    {
+      "id": "E1",
+      "text": "The proposal covers the Russian-language website.",
+      "kind": "user_assertion"
+    },
+    {
+      "id": "E2",
+      "text": "The English version is not included.",
+      "kind": "user_assertion"
+    },
+    {
+      "id": "E3",
+      "text": "The scope has not been approved.",
+      "kind": "user_assertion"
+    },
+    {
+      "id": "E4",
+      "text": "The price is in the attached proposal; its amount is not supplied here.",
+      "kind": "user_assertion"
+    }
+  ],
+  "material_conditions": [
+    "E2",
+    "E3"
+  ],
+  "verbatim_terms": [
+    "The English version is not included."
+  ],
+  "privacy_ok": true
+}

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Create deterministic review archives and their byte-integrity manifests."""
+"""Create deterministic experimental prerelease archives and integrity manifests."""
 from pathlib import Path
 import hashlib,json,zipfile
 ROOT=Path(__file__).resolve().parents[1]
@@ -30,8 +30,8 @@ def main():
     version=(ROOT/'VERSION').read_text().strip()
     files=source_files()
     manifest={'project':'recipient-aware-ai','version':version,
-      'status':'private_review_candidate','remote_publication':'not_performed_by_packaging',
-      'license':'pending_owner_decision','manifest_excludes_itself':True,
+      'status':'experimental_prerelease','remote_publication':'not_performed_by_packaging',
+      'license':'Apache-2.0','license_scope':'author_owned_materials; third-party terms retained','manifest_excludes_itself':True,
       'files':[{'path':str(p.relative_to(ROOT)).replace('\\','/'),'bytes':p.stat().st_size,
                 'sha256':hashlib.sha256(p.read_bytes()).hexdigest()} for p in files]}
     (ROOT/'MANIFEST.json').write_text(json.dumps(manifest,indent=2)+'\n')
@@ -39,13 +39,15 @@ def main():
     source_zip=dist/f'recipient-aware-ai-{version}.zip'
     archive(source_zip,[(f'recipient-aware-ai/{p.relative_to(ROOT).as_posix()}',p.read_bytes()) for p in files]+[('recipient-aware-ai/MANIFEST.json',(ROOT/'MANIFEST.json').read_bytes())])
     skill_files=[p for p in files if p.relative_to(ROOT).parts[0]=='skills']
-    skill_manifest={'version':version,'license':'pending_owner_decision','status':'private_review_candidate',
+    skill_notices={name:(ROOT/name).read_bytes() for name in ('LICENSE','NOTICE','THIRD_PARTY_NOTICES.md','LICENSE_PENDING.md')}
+    skill_notices['INSTALLATION.md']=(ROOT/'docs/INSTALLATION.md').read_bytes()
+    skill_manifest={'version':version,'license':'Apache-2.0','status':'experimental_prerelease',
+     'license_scope':'author_owned_materials; third-party terms retained',
      'files':[{'path':p.relative_to(ROOT/'skills').as_posix(),'bytes':p.stat().st_size,'sha256':hashlib.sha256(p.read_bytes()).hexdigest()} for p in skill_files]}
+    skill_manifest['files'] += [{'path':name,'bytes':len(blob),'sha256':hashlib.sha256(blob).hexdigest()} for name,blob in sorted(skill_notices.items())]
     skill_zip=dist/f'recipient-aware-ai-skills-{version}.zip'
-    archive(skill_zip,[(p.relative_to(ROOT/'skills').as_posix(),p.read_bytes()) for p in skill_files]+[
-      ('MANIFEST.json',(json.dumps(skill_manifest,indent=2)+'\n').encode()),
-      ('LICENSE_PENDING.md',(ROOT/'LICENSE_PENDING.md').read_bytes()),
-      ('INSTALLATION.md',(ROOT/'docs/INSTALLATION.md').read_bytes())])
+    archive(skill_zip,[(p.relative_to(ROOT/'skills').as_posix(),p.read_bytes()) for p in skill_files]+list(skill_notices.items())+[
+      ('MANIFEST.json',(json.dumps(skill_manifest,indent=2)+'\n').encode())])
     checks=''.join(hashlib.sha256(p.read_bytes()).hexdigest()+'  '+p.name+'\n' for p in (source_zip,skill_zip))
     (dist/'SHA256SUMS.txt').write_text(checks)
     print(json.dumps({'files':len(files),'source_archive':str(source_zip),'skills_archive':str(skill_zip),'sha256sums':checks},indent=2))

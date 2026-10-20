@@ -1,9 +1,9 @@
-# Public licensing decision pending
+# Licensing decision resolved
 
-This candidate is prepared for private review by Eugene Prudchenko. The owner has not approved a public license for this repository.
-This file is a release-status notice, not a newly negotiated license or a grant of public reuse rights.
-Do not describe this candidate as open source. Do not make the repository public or publish a public release until the owner chooses the applicable license(s).
+On 20 October 2026 Eugene Prudchenko explicitly approved **Apache-2.0** for the materials he owns in Recipient-Aware AI: code, operational specifications, standalone skills, documentation and project-created examples. The standard text is in [LICENSE](LICENSE); attribution is in [NOTICE](NOTICE).
 
-A previous discussion considered separate licenses for documentation and code. Those suggestions were not an approval, so no CC, MIT, Apache or other license has been applied here.
-The responsible-use principles govern the intended behavior of the official protocols; they must not be presented as a guarantee that third parties cannot misuse copies.
-Third-party dependencies remain governed by their own licenses and are not vendored in this archive.
+This retained filename records the resolution of the earlier pending decision. Historical reports, release assets and source snapshots stating that licensing was pending have not been rewritten. They describe their own preparation stage.
+
+Third-party materials retain their existing notices and terms; dependencies are not vendored or relicensed. See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
+
+Responsible Use and the official skills' behavioural boundaries remain visible. They are intended-use and output instructions, not extra field-of-use restrictions added to Apache-2.0 or a promise of legal control over third-party copies. No exclusive ownership of abstract ideas or efficacy validation is asserted.

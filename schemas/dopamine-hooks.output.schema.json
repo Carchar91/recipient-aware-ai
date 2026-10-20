@@ -4,7 +4,7 @@
     "schema_version": {
       "type": "string",
       "enum": [
-        "1.0"
+        "1.1"
       ]
     },
     "protocol": {
@@ -129,16 +129,15 @@
           "type": "object",
           "properties": {
             "headline": {
-              "type": "string",
-              "minLength": 1
+              "type": "string"
             },
             "opening": {
-              "type": "string",
-              "minLength": 1
+              "type": "string"
             },
             "body": {
               "type": "string",
-              "minLength": 1
+              "minLength": 1,
+              "description": "Complete reader-facing text, including opening; not an outline."
             },
             "promise": {
               "type": "string",
@@ -146,11 +145,11 @@
             },
             "payoff": {
               "type": "string",
-              "minLength": 1
+              "minLength": 1,
+              "description": "Operator summary of the delivered answer, not necessarily a literal quotation."
             },
             "call_to_action": {
-              "type": "string",
-              "minLength": 1
+              "type": "string"
             },
             "claim_refs": {
               "type": "array",
@@ -212,5 +211,5 @@
   ],
   "additionalProperties": false,
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "dopamine-hooks output 1.0"
+  "title": "dopamine-hooks output 1.1"
 }

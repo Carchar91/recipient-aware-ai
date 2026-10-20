@@ -14,10 +14,14 @@ def main():
  report={'status':'PASS' if result.wasSuccessful() else 'FAIL','test_layer':'offline_engineering_only',
   'tests_run':result.testsRun,'failures':len(result.failures),'errors':len(result.errors),'skipped':len(result.skipped),
   'python':platform.python_version(),'dependencies':{x:version(x) for x in ('jsonschema','attrs','jsonschema-specifications','referencing','rpds-py','typing_extensions')},
+  'candidate_version':(ROOT/'VERSION').read_text().strip(),
+  'supported_contract_versions':['1.0','1.1'],
+  'development_case_count_rc2':len(json.loads((ROOT/'development/rc2/cases.json').read_text())),
+  'development_output_origin_rc2':'assistant_authored_synthetic_development_sample',
   'scenario_count':len(list((ROOT/'evals/cases').glob('*.json'))),'protocol_count':5,'reference_outputs':5,
   'reference_output_origin':'assistant_authored_synthetic_fixtures',
   'live_model_calls':0,'live_evaluation_status':'NOT_RUN','independent_semantic_review':'NOT_RUN',
-  'github_publication':'NOT_PERFORMED','license':'PENDING_OWNER_DECISION',
+  'github_publication':'NOT_PERFORMED_BY_THIS_OFFLINE_COMMAND','license':'Apache-2.0',
   'limits':'Passing schema, provenance-reference and mock-transport tests does not establish model behavior, semantic truth, safety or efficacy.'}
  target=ROOT/a.report;target.parent.mkdir(parents=True,exist_ok=True);target.write_text(json.dumps(report,indent=2)+'\n')
  target.with_suffix('.log').write_text(stream.getvalue())

@@ -1,0 +1,29 @@
+name: Experience with one operation
+description: Tell us what was useful and what needed fixing.
+title: "[Feedback] "
+body:
+  - type: markdown
+    attributes:
+      value: "Use synthetic or safely redacted details. Do not upload private documents, correspondence, personal data, credentials or material you lack permission to share."
+  - type: textarea
+    id: task
+    attributes:
+      label: Task
+      description: What result did you need? Keep it safe to publish.
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Selected operation and environment
+      placeholder: "Reverse; Codex version; model if known"
+    validations:
+      required: true
+  - type: textarea
+    id: useful
+    attributes:
+      label: What was useful?
+  - type: textarea
+    id: corrections
+    attributes:
+      label: What did you need to correct or finish?

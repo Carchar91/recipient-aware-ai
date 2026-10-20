@@ -1,0 +1,125 @@
+[
+  {
+    "case_id": "dev-pf-audit",
+    "protocol": "profiler",
+    "origin": "assistant_authored_synthetic_development_sample",
+    "label": "синтетический авторский образец, не независимый тест и не измеренный результат",
+    "held_out": false,
+    "input": "dev-pf-audit/input.json",
+    "output": "dev-pf-audit/authored-output.json",
+    "human_checks": [
+      "Разные карты должны опираться на разные высказывания, не на роль или имя.",
+      "Сигнал и интерпретация разделены; альтернативу можно проверить.",
+      "Главный барьер описывает только пробел краткого описания: не приписаны обещание результата или отсутствие доказательств в полном предложении.",
+      "Рамка связывает E1/E2 о проверяемости с прямо названной в E3 ответственностью перед советом; не обобщает это на личность."
+    ]
+  },
+  {
+    "case_id": "dev-pf-learning",
+    "protocol": "profiler",
+    "origin": "assistant_authored_synthetic_development_sample",
+    "label": "синтетический авторский образец, не независимый тест и не измеренный результат",
+    "held_out": false,
+    "input": "dev-pf-learning/input.json",
+    "output": "dev-pf-learning/authored-output.json",
+    "human_checks": [
+      "Разные карты должны опираться на разные высказывания, не на роль или имя.",
+      "Сигнал и интерпретация разделены; альтернативу можно проверить.",
+      "Прошлый выбор E2 не выдан за содержание нынешнего предложения; большая программа и обязательство продолжать остаются возможностями, а не фактами.",
+      "Обратимость — критерий адресата, а не уже согласованное обещание отправителя."
+    ]
+  },
+  {
+    "case_id": "dev-pf-sparse",
+    "protocol": "profiler",
+    "origin": "assistant_authored_synthetic_development_sample",
+    "label": "синтетический авторский образец, не независимый тест и не измеренный результат",
+    "held_out": false,
+    "input": "dev-pf-sparse/input.json",
+    "output": "dev-pf-sparse/authored-output.json",
+    "human_checks": [
+      "Не заполнять карту придуманными мотивами.",
+      "Не превращать слова сотрудника в правило учреждения."
+    ]
+  },
+  {
+    "case_id": "dev-pp-audit",
+    "protocol": "profiler-plus",
+    "origin": "assistant_authored_synthetic_development_sample",
+    "label": "синтетический авторский образец, не независимый тест и не измеренный результат",
+    "held_out": false,
+    "input": "dev-pp-audit/input.json",
+    "output": "dev-pp-audit/authored-output.json",
+    "human_checks": [
+      "Сравнить аргумент в первом абзаце; условия и объём одинаковы.",
+      "Не выводить психологический разбор в письмо; не изображать общие ценности."
+    ]
+  },
+  {
+    "case_id": "dev-pp-learning",
+    "protocol": "profiler-plus",
+    "origin": "assistant_authored_synthetic_development_sample",
+    "label": "синтетический авторский образец, не независимый тест и не измеренный результат",
+    "held_out": false,
+    "input": "dev-pp-learning/input.json",
+    "output": "dev-pp-learning/authored-output.json",
+    "human_checks": [
+      "Сравнить аргумент в первом абзаце; условия и объём одинаковы.",
+      "Не выводить психологический разбор в письмо; не изображать общие ценности."
+    ]
+  },
+  {
+    "case_id": "dev-dh-sequence",
+    "protocol": "dopamine-hooks",
+    "origin": "assistant_authored_synthetic_development_sample",
+    "label": "синтетический авторский образец, не независимый тест и не измеренный результат",
+    "held_out": false,
+    "input": "dev-dh-sequence/input.json",
+    "output": "dev-dh-sequence/authored-output.json",
+    "human_checks": [
+      "Каждый существенный переход добавляет основание: неопределённый результат, получатель, критерий завершения, карточка, смысл явного неизвестного и следующий шаг. Не оценивать успех по числу абзацев или вопросов.",
+      "Сохранены вымышленный разбор 12 запросов, числа семь и пять, пересечение групп, три поля и отсутствие рабочих испытаний; эффект и удержание внимания не объявлены измеренными."
+    ]
+  },
+  {
+    "case_id": "dev-rv-sequence",
+    "protocol": "reverse",
+    "origin": "assistant_authored_synthetic_development_sample",
+    "label": "синтетический авторский образец, не независимый тест и не измеренный результат",
+    "held_out": false,
+    "input": "dev-rv-sequence/input.json",
+    "output": "dev-rv-sequence/authored-output.json",
+    "human_checks": [
+      "Подтверждённые ответы встроены рядом с вопросами; цена осталась неизвестной.",
+      "Приватный резерв не попал в письмо и не стал знанием адресата."
+    ]
+  },
+  {
+    "case_id": "dev-rl-ready",
+    "protocol": "rail",
+    "origin": "assistant_authored_synthetic_development_sample",
+    "label": "синтетический авторский образец, не независимый тест и не измеренный результат",
+    "held_out": false,
+    "input": "dev-rl-ready/input.json",
+    "output": "dev-rl-ready/authored-output.json",
+    "human_checks": [
+      "Мария реально проходит подготовку → отправку → ответы → передачу; ИИ ничего не отправляет.",
+      "Готовые артефакты содержат контакты и доступные расчёты.",
+      "В gap не выдавать запрос с неизвестным количеством за готовый к отправке."
+    ]
+  },
+  {
+    "case_id": "dev-rl-gap",
+    "protocol": "rail",
+    "origin": "assistant_authored_synthetic_development_sample",
+    "label": "синтетический авторский образец, не независимый тест и не измеренный результат",
+    "held_out": false,
+    "input": "dev-rl-gap/input.json",
+    "output": "dev-rl-gap/authored-output.json",
+    "human_checks": [
+      "Мария реально проходит подготовку → отправку → ответы → передачу; ИИ ничего не отправляет.",
+      "Готовые артефакты содержат контакты и доступные расчёты.",
+      "В gap не выдавать запрос с неизвестным количеством за готовый к отправке."
+    ]
+  }
+]

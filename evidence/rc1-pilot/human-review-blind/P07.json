@@ -1,0 +1,45 @@
+{
+  "pair_id": "P07",
+  "input": {
+    "schema_version": "1.0",
+    "case_id": "rv-01",
+    "protocol": "reverse",
+    "language": "English",
+    "goal": "Check this message and correct the request if needed.",
+    "sender_role": "Business operator",
+    "recipient_role": "Client",
+    "context": "",
+    "material": "Everything is ready. We just need your confirmation.",
+    "evidence": [
+      {
+        "id": "E1",
+        "text": "The proposal covers the Russian-language website.",
+        "kind": "user_assertion"
+      },
+      {
+        "id": "E2",
+        "text": "The English version is not included.",
+        "kind": "user_assertion"
+      },
+      {
+        "id": "E3",
+        "text": "The intended decision is scope agreement, not order authorization.",
+        "kind": "user_assertion"
+      }
+    ],
+    "material_conditions": [
+      "E2",
+      "E3"
+    ],
+    "verbatim_terms": [
+      "The English version is not included."
+    ],
+    "privacy_ok": true
+  },
+  "A": {
+    "response_text": "{\n  \"schema_version\": \"1.0\",\n  \"protocol\": \"reverse\",\n  \"case_id\": \"rv-01\",\n  \"decision\": \"proceed\",\n  \"decision_reason\": \"The supplied facts support a revision that specifies the scope and limits what confirmation means.\",\n  \"evidence_used\": [\n    {\n      \"evidence_id\": \"E1\",\n      \"quote\": \"The proposal covers the Russian-language website.\"\n    },\n    {\n      \"evidence_id\": \"E2\",\n      \"quote\": \"The English version is not included.\"\n    },\n    {\n      \"evidence_id\": \"E3\",\n      \"quote\": \"The intended decision is scope agreement, not order authorization.\"\n    }\n  ],\n  \"hypotheses\": [\n    {\n      \"statement\": \"The client could interpret confirmation as authorization to proceed with an order.\",\n      \"supporting_evidence\": [\"E3\"],\n      \"alternative\": \"The client may already understand that only scope agreement is requested.\",\n      \"verification_question\": \"Is it clear that confirmation concerns scope only and does not authorize an order?\"\n    }\n  ],\n  \"uncertainties\": [\n    \"The supplied facts do not establish that everything is ready.\",\n    \"The client's prior understanding of scope and confirmation is unknown.\"\n  ],\n  \"preserved_conditions\": [\n    {\n      \"evidence_id\": \"E2\",\n      \"statement\": \"The English version is not included.\"\n    },\n    {\n      \"evidence_id\": \"E3\",\n      \"statement\": \"The intended decision is scope agreement, not order authorization.\"\n    }\n  ],\n  \"clarifying_questions\": [],\n  \"safe_alternative\": \"\",\n  \"result\": {\n    \"recipient_readback\": \"Everything appears settled, and my confirmation may authorize the next step, but the message does not identify the scope or explain what I am approving.\",\n    \"first_impression\": \"Brief but vague; it presents confirmation as a formality.\",\n    \"findings\": [\n      {\n        \"quote\": \"Everything is ready.\",\n        \"possible_reading\": \"All preparation is complete and no unresolved matters remain.\",\n        \"risk\": \"unsupported_claim\",\n        \"revision_principle\": \"Replace the broad readiness claim with the supplied scope facts.\"\n      },\n      {\n        \"quote\": \"We just need your confirmation.\",\n        \"possible_reading\": \"My confirmation could authorize an order; the scope and exclusions are unstated.\",\n        \"risk\": \"ambiguity\",\n        \"revision_principle\": \"Specify the Russian-language website, state the English exclusion, and limit confirmation to scope agreement.\"\n      },\n      {\n        \"quote\": \"just\",\n        \"possible_reading\": \"Agreement is expected and further discussion is unnecessary.\",\n        \"risk\": \"pressure\",\n        \"revision_principle\": \"Invite a substantive decision and allow questions or disagreement.\"\n      }\n    ],\n    \"revised_message\": \"Please confirm whether you agree with the proposed scope: the Russian-language website. The English version is not included. Your confirmation would indicate scope agreement only; it would not authorize an order. If you have questions or do not agree with this scope, please let us know.\",\n    \"sender_task_correction\": \"Ask for an explicit scope decision. Do not assume readiness or treat a general confirmation as order authorization.\"\n  },\n  \"recipient_choices\": [\"confirm\", \"clarify\", \"decline\"],\n  \"ethical_notice\": \"For understanding and good-faith communication. Never for deception, coercion, or exploiting vulnerabilities. Respect the other person's right to disagree.\"\n}"
+  },
+  "B": {
+    "response_text": "{\n  \"schema_version\": \"1.0\",\n  \"protocol\": \"reverse\",\n  \"case_id\": \"rv-01\",\n  \"decision\": \"proceed\",\n  \"decision_reason\": \"E1–E3 provide enough information to make the scope and requested decision explicit.\",\n  \"evidence_used\": [\n    {\n      \"evidence_id\": \"E1\",\n      \"quote\": \"The proposal covers the Russian-language website.\"\n    },\n    {\n      \"evidence_id\": \"E2\",\n      \"quote\": \"The English version is not included.\"\n    },\n    {\n      \"evidence_id\": \"E3\",\n      \"quote\": \"The intended decision is scope agreement, not order authorization.\"\n    }\n  ],\n  \"hypotheses\": [],\n  \"uncertainties\": [\n    \"The supplied assertions are not independently verified.\",\n    \"The material does not establish what is ready or whether the client already knows the proposed scope.\"\n  ],\n  \"preserved_conditions\": [\n    {\n      \"evidence_id\": \"E1\",\n      \"statement\": \"The proposal covers the Russian-language website.\"\n    },\n    {\n      \"evidence_id\": \"E2\",\n      \"statement\": \"The English version is not included.\"\n    },\n    {\n      \"evidence_id\": \"E3\",\n      \"statement\": \"The intended decision is scope agreement, not order authorization.\"\n    }\n  ],\n  \"clarifying_questions\": [],\n  \"safe_alternative\": \"\",\n  \"result\": {\n    \"recipient_readback\": \"The sender says everything is ready and asks for my confirmation. The message does not specify what I am confirming or what my confirmation would authorize. I could infer that my approval is the final step before action.\",\n    \"first_impression\": \"The wording may sound like a request for a routine sign-off, leaving little indication that scope still needs agreement.\",\n    \"findings\": [\n      {\n        \"quote\": \"Everything is ready.\",\n        \"possible_reading\": \"All preparations or deliverables are complete. The supplied evidence does not establish this.\",\n        \"risk\": \"unsupported_claim\",\n        \"revision_principle\": \"Replace the broad readiness claim with the proposed scope supported by E1.\"\n      },\n      {\n        \"quote\": \"Everything\",\n        \"possible_reading\": \"Omission: no scope boundary or language exclusion is stated, so the client cannot tell what is included.\",\n        \"risk\": \"missing_condition\",\n        \"revision_principle\": \"State the Russian-language website scope and the English-version exclusion explicitly, preserving E1 and E2.\"\n      },\n      {\n        \"quote\": \"your confirmation\",\n        \"possible_reading\": \"Confirmation could mean permission to place or begin an order. The scope-only purpose in E3 is omitted.\",\n        \"risk\": \"ambiguity\",\n        \"revision_principle\": \"Ask specifically for scope agreement and state that this does not authorize an order.\"\n      },\n      {\n        \"quote\": \"We just need your confirmation.\",\n        \"possible_reading\": \"Agreement may seem expected, with questions or disagreement treated as unnecessary delays.\",\n        \"risk\": \"pressure\",\n        \"revision_principle\": \"Invite confirmation, clarification, or rejection of the proposed scope.\"\n      }\n    ],\n    \"revised_message\": \"The proposal covers the Russian-language website. The English version is not included. Please confirm whether you agree with this scope. This confirmation is for scope agreement only and does not authorize an order. If anything is unclear or you do not agree with the proposed scope, please let us know.\",\n    \"sender_task_correction\": \"Request an explicit scope decision, as specified in E3. Do not assume the client knows the language boundary in E1–E2 or understands what an undefined confirmation permits.\"\n  },\n  \"recipient_choices\": [\n    \"confirm\",\n    \"clarify\",\n    \"decline\"\n  ],\n  \"ethical_notice\": \"For understanding and good-faith communication. Never for deception, coercion, or exploiting vulnerabilities. Respect the other person's right to disagree.\"\n}"
+  }
+}

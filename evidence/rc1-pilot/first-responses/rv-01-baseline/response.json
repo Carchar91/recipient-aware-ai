@@ -1,0 +1,73 @@
+{
+  "schema_version": "1.0",
+  "protocol": "reverse",
+  "case_id": "rv-01",
+  "decision": "proceed",
+  "decision_reason": "The supplied facts support a revision that specifies the scope and limits what confirmation means.",
+  "evidence_used": [
+    {
+      "evidence_id": "E1",
+      "quote": "The proposal covers the Russian-language website."
+    },
+    {
+      "evidence_id": "E2",
+      "quote": "The English version is not included."
+    },
+    {
+      "evidence_id": "E3",
+      "quote": "The intended decision is scope agreement, not order authorization."
+    }
+  ],
+  "hypotheses": [
+    {
+      "statement": "The client could interpret confirmation as authorization to proceed with an order.",
+      "supporting_evidence": ["E3"],
+      "alternative": "The client may already understand that only scope agreement is requested.",
+      "verification_question": "Is it clear that confirmation concerns scope only and does not authorize an order?"
+    }
+  ],
+  "uncertainties": [
+    "The supplied facts do not establish that everything is ready.",
+    "The client's prior understanding of scope and confirmation is unknown."
+  ],
+  "preserved_conditions": [
+    {
+      "evidence_id": "E2",
+      "statement": "The English version is not included."
+    },
+    {
+      "evidence_id": "E3",
+      "statement": "The intended decision is scope agreement, not order authorization."
+    }
+  ],
+  "clarifying_questions": [],
+  "safe_alternative": "",
+  "result": {
+    "recipient_readback": "Everything appears settled, and my confirmation may authorize the next step, but the message does not identify the scope or explain what I am approving.",
+    "first_impression": "Brief but vague; it presents confirmation as a formality.",
+    "findings": [
+      {
+        "quote": "Everything is ready.",
+        "possible_reading": "All preparation is complete and no unresolved matters remain.",
+        "risk": "unsupported_claim",
+        "revision_principle": "Replace the broad readiness claim with the supplied scope facts."
+      },
+      {
+        "quote": "We just need your confirmation.",
+        "possible_reading": "My confirmation could authorize an order; the scope and exclusions are unstated.",
+        "risk": "ambiguity",
+        "revision_principle": "Specify the Russian-language website, state the English exclusion, and limit confirmation to scope agreement."
+      },
+      {
+        "quote": "just",
+        "possible_reading": "Agreement is expected and further discussion is unnecessary.",
+        "risk": "pressure",
+        "revision_principle": "Invite a substantive decision and allow questions or disagreement."
+      }
+    ],
+    "revised_message": "Please confirm whether you agree with the proposed scope: the Russian-language website. The English version is not included. Your confirmation would indicate scope agreement only; it would not authorize an order. If you have questions or do not agree with this scope, please let us know.",
+    "sender_task_correction": "Ask for an explicit scope decision. Do not assume readiness or treat a general confirmation as order authorization."
+  },
+  "recipient_choices": ["confirm", "clarify", "decline"],
+  "ethical_notice": "For understanding and good-faith communication. Never for deception, coercion, or exploiting vulnerabilities. Respect the other person's right to disagree."
+}

@@ -4,7 +4,7 @@
     "schema_version": {
       "type": "string",
       "enum": [
-        "1.0"
+        "1.1"
       ]
     },
     "protocol": {
@@ -166,13 +166,55 @@
             "recommended_action": {
               "type": "string",
               "minLength": 1
+            },
+            "decision_map": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "signal": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "interpretation": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "evidence_refs": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "uniqueItems": true,
+                    "minItems": 1
+                  }
+                },
+                "required": [
+                  "signal",
+                  "interpretation",
+                  "evidence_refs"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "main_barrier": {
+              "type": "string",
+              "minLength": 1
+            },
+            "communication_frame": {
+              "type": "string",
+              "minLength": 1
             }
           },
           "required": [
             "observations",
             "role_constraints",
             "likely_objections",
-            "recommended_action"
+            "recommended_action",
+            "decision_map",
+            "main_barrier",
+            "communication_frame"
           ],
           "additionalProperties": false
         },
@@ -217,5 +259,5 @@
   ],
   "additionalProperties": false,
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "profiler output 1.0"
+  "title": "profiler output 1.1"
 }

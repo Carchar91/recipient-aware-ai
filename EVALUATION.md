@@ -4,7 +4,7 @@
 
 **Engineering verification** tests parsers, schemas, exact references, quote presence, workflow dependencies, no-network defaults, explicit invocation and generated-file parity. It runs offline with deterministic fixtures and mocks.
 
-**Model behavior** requires actual responses to versioned inputs and recorded model identifiers. The `tools/live_eval.py` runner prepares and records these trials. It does not run unless explicitly authorized. This candidate contains no live model-run evidence.
+**Model behavior** requires actual responses to versioned inputs and recorded model identifiers. The `tools/live_eval.py` runner prepares and records optional API trials only when explicitly authorised. Separately, [eight saved synthetic rc.2 Codex sessions](evidence/rc2-eight-runs/REPORT_RU.md) illustrate the selected operations; their first answers and primary agent assessments are unchanged. They are not controlled superiority evidence. The [earlier rc.1 pilot](evidence/rc1-pilot/SOURCE.md) remains separate and unchanged: 20 executor runs, 18 structural passes, partially contaminated comparison; no superiority conclusion. The owner assessment is `author_product_review`, not independent or fully blind. No new model sessions were run for this public release; the strengthened Rail file-delivery rule remains untested by a new session.
 
 **Semantic evaluation** requires a reviewer to examine whether the response is true to the input, useful, non-coercive and appropriate to authority. Human judgment cannot be replaced by a model claiming it was ethical or by a JSON field set to true.
 
@@ -12,13 +12,22 @@ Never combine these three layers into one undifferentiated PASS.
 
 ## Test matrix
 
-Thirty synthetic development cases cover the five independent modes, with six cases per mode. They include normal use, missing or conflicting information, requests for abusive mechanisms, embedded instruction attacks, Russian or Thai output requirements, and benign firmness/authority/consent boundaries.
+Thirty retained 1.0 synthetic development cases cover the five independent modes, with six cases per mode. They include normal use, missing or conflicting information, requests for abusive mechanisms, embedded instruction attacks, Russian or Thai output requirements, and benign firmness/authority/consent boundaries.
 
 Each case has an input, allowed reference decisions and semantic review anchors. **The compiler sees only `input`.** Expected decisions and review anchors are not sent to the model.
 
 Five worked reference outputs and five invalid outputs demonstrate the contract. They are authoring fixtures, not blind model completions. Do not use their validation rate as an efficacy score.
 
-## Paired comparison
+## Two distinct future questions
+
+1. **Component comparison:** what does the full procedure add to a shared structured contract? `compile_case(..., 'baseline')` / `live_eval.py` implement this condition. rc.2 removes the index purpose sentence from baseline, but both arms still see a protocol-specific schema and shared rules. This is not a protocol-naive ordinary-user control.
+2. **Practical output comparison:** what does an ordinary user get from invoking a mode? This needs a separately preregistered setup with the same facts, language, tools, known context, permissions and usable deliverable requirements; a strong ordinary instruction must not contain the protocol procedure, generated examples or method-specific schema. That harness and run are not claimed here.
+
+The nine richer cases in `development/rc2/` are authoring/development data, with all outputs labeled. They and close paraphrases must not become future held-out cases. Real future evaluation requires new independently prepared cases and separate authorization; do not overwrite the old pilot or repair its replies.
+
+Assess distinctive operations separately: evidenced criteria and alternative maps (Profiler); changed explanation with invariant facts (Plus); progression and delivered value across paragraphs (Hooks); consequential questions and answer placement (Reverse); prepared artifacts, calculations, authority, complete handoff and blockers (Rail). Syntax alone cannot grade these.
+
+## Paired component comparison
 
 For each selected case, compare a baseline and protocol arm on the same model, input, output schema, output-token cap and common ethical rules. The protocol arm adds only the detailed selected mode procedure. This is a conservative component comparison, not a test against an unguarded or deliberately weak competitor.
 

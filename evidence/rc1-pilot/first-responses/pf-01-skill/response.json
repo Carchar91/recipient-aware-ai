@@ -1,0 +1,75 @@
+{
+  "schema_version": "1.0",
+  "protocol": "profiler",
+  "case_id": "pf-01",
+  "decision": "proceed",
+  "decision_reason": "The supplied account supports a bounded verification step, although it does not establish an official bank requirement or the clerk's authority.",
+  "evidence_used": [
+    {
+      "evidence_id": "E1",
+      "quote": "The clerk said: The bank does not allow this without the contract."
+    },
+    {
+      "evidence_id": "E2",
+      "quote": "No written bank rule has been supplied."
+    },
+    {
+      "evidence_id": "E3",
+      "quote": "The clerk's approval authority is unknown."
+    }
+  ],
+  "hypotheses": [
+    {
+      "statement": "The clerk may be applying a documentation requirement relevant to this transaction.",
+      "supporting_evidence": ["E1"],
+      "alternative": "The clerk may be interpreting a requirement more broadly than it applies.",
+      "verification_question": "Which requirement makes the contract necessary for this transaction?"
+    },
+    {
+      "statement": "The obstacle may reflect a limit on the clerk's approval authority.",
+      "supporting_evidence": ["E1", "E3"],
+      "alternative": "The requirement may apply regardless of who approves the transaction.",
+      "verification_question": "Is this a bank-wide requirement for this transaction, or does proceeding require review by someone with different authority?"
+    }
+  ],
+  "uncertainties": [
+    "The transaction and contract type are unspecified.",
+    "The applicable rule, its scope and any permitted alternatives are unverified (E1, E2).",
+    "The clerk's approval authority is unknown (E3)."
+  ],
+  "preserved_conditions": [
+    {
+      "evidence_id": "E1",
+      "statement": "The bank does not allow this without the contract."
+    }
+  ],
+  "clarifying_questions": [],
+  "safe_alternative": "",
+  "result": {
+    "observations": [
+      {
+        "evidence_id": "E1",
+        "observation": "The user reports that the clerk described a contract as necessary to proceed; this establishes the reported statement, not the bank's actual policy."
+      },
+      {
+        "evidence_id": "E2",
+        "observation": "The user reports that no written rule has been supplied; this does not establish that no rule exists."
+      },
+      {
+        "evidence_id": "E3",
+        "observation": "The supplied account does not establish the clerk's approval authority."
+      }
+    ],
+    "role_constraints": [
+      "A contract requirement is reported but remains unverified (E1, E2).",
+      "No authority to approve exceptions or waive documents can be attributed to the clerk from the supplied evidence (E3)."
+    ],
+    "likely_objections": [
+      "The clerk may reiterate that processing cannot proceed without the contract (E1).",
+      "The clerk may be unable to authorize an alternative personally; this is a possibility, not an established limitation (E3)."
+    ],
+    "recommended_action": "Ask the clerk to identify the applicable requirement and explain why it requires this contract for this transaction, acknowledging their reported condition that proceeding without it is not allowed. If they cannot verify the basis, ask who is authorized to clarify it. Treat this as verification, not a request to bypass the requirement."
+  },
+  "recipient_choices": ["confirm", "clarify", "decline", "escalate"],
+  "ethical_notice": "For understanding and good-faith communication. Never for deception, coercion, or exploiting vulnerabilities. Respect the other person's right to disagree."
+}

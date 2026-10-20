@@ -35,3 +35,7 @@ Read the recipient-facing text, not only the system's self-declared safety field
 If the result is abusive or materially false, reject it even if every field is populated. Record the example with synthetic or safely redacted data and describe why it failed. Do not publish confidential material in a public issue.
 
 These are intended-use and output rules, not a guarantee of enforcement over third-party copies. They do not substitute for the owner's separate public-licensing decision.
+
+## Licence and intended behaviour
+
+The author approved Apache-2.0 for his own project materials. The principles above remain the intended behaviour of official protocols and skills; they do not add field-of-use restrictions to Apache-2.0 or guarantee control of third-party copies. Third-party terms remain separate.

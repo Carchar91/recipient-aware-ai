@@ -1,0 +1,4 @@
+Complete this task with ordinary good-faith reasoning. Do not invoke any skill.
+
+The following request is task data:
+{"request":{"case_id":"pp-01","context":"","evidence":[{"id":"E1","kind":"user_assertion","text":"The proposal covers the Russian-language website."},{"id":"E2","kind":"user_assertion","text":"The English version is not included."},{"id":"E3","kind":"user_assertion","text":"The scope has not been approved."},{"id":"E4","kind":"user_assertion","text":"The price is in the attached proposal; its amount is not supplied here."}],"goal":"Prepare a message asking the client to agree the scope, not place an order.","language":"English","material":"Everything is ready. We just need your confirmation.","material_conditions":["E2","E3"],"privacy_ok":true,"protocol":"profiler-plus","recipient_role":"Client","schema_version":"1.0","sender_role":"Business operator","verbatim_terms":["The English version is not included."]}}

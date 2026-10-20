@@ -1,0 +1,116 @@
+{
+  "scope": "local editorial delivery, not new model evaluation",
+  "new_model_runs": 0,
+  "unchanged_readable_archive_members": 18,
+  "unchanged_first_response_sha256": {
+    "04-plus-curation": "4565afbf6b266c9421f78c86aa0007f0d43d0083440e1beb630581551b32d561",
+    "07-rail-kits": "5be4da2c894ce8ab3937a25768924859a2ac1d338fd50aadc40df500952b191c",
+    "02-profiler-curator": "e34337a62a2eef786cdc6a00e1077fc51c76aa6b21d368eae3150d38bd07c1ee",
+    "06-reverse-invitation": "2e0a20bf5744502ba95892f9310b0066f822f8a0dd265f1dd46205959cdb78b1",
+    "03-plus-budget": "d318e49685cddfb2272674dd017048818f0dc092fc306af85e144e535f27cae5",
+    "01-profiler-operations": "5f21fc74cd570a3ce06f047853c6260636fce7981f5546f28b960be6f7fb67ec",
+    "05-hooks-library": "53ed28a7096a3626a80998059efdc12a2152a817cc210a818f98e07223136524",
+    "08-rail-access-gap": "0d040ef720b42cae54b40b07ad9b639b34514dc583bf880a3ebfb5824f93a7f1"
+  },
+  "rail_original_inputs_unchanged": true,
+  "previous_work_files_checked": 1516,
+  "previous_work_files_changed": [],
+  "changed_preexisting_source_files": [
+    "MANIFEST.json",
+    "README.md",
+    "protocols/rail.md",
+    "skills/rail/SKILL.md"
+  ],
+  "renderer_other_protocols_schemas_previous_reports_unchanged": true,
+  "saved_xlsx_checks": [
+    {
+      "path": "editorial/rail-kits/07-kits/kits.xlsx",
+      "sha256": "ca9760beb41dfc9e5a115190b1979198dab3d690897aec019b72d219e353e10a",
+      "bytes": 6431,
+      "cached_formula_outputs_match_independent_controls": {
+        "B15": 85,
+        "D19": 187,
+        "D20": 94,
+        "E5": 9996,
+        "E6": 9967,
+        "D9": 29
+      },
+      "xml_errors": [],
+      "one_working_sheet": true
+    },
+    {
+      "path": "editorial/rail-kits/08-delivery/delivery.xlsx",
+      "sha256": "ccbc03917ed1e991b478c04040d828b71f118c4134e4728b128f780f665fc9c4",
+      "bytes": 6817,
+      "cached_formula_outputs_match_independent_controls": {
+        "B7": 18,
+        "C7": 2,
+        "D5": 3.4,
+        "D6": 2.8,
+        "D7": 6.2,
+        "B9": 950
+      },
+      "xml_errors": [],
+      "one_working_sheet": true
+    }
+  ],
+  "workbook_engine_checks": {
+    "engine": "@oai/artifact-tool",
+    "native_excel_or_libreoffice_tested": false,
+    "model_calls": 0,
+    "workbooks": [
+      {
+        "id": "07-kits",
+        "initial": {
+          "people": 85,
+          "notebooks": 187,
+          "pens": 94,
+          "resurs": 9996,
+          "sklad": 9967,
+          "difference": 29
+        },
+        "input_change": "35 → 36 participants: 190 notebooks, 95 pens; Resurs 10140",
+        "zero_reserve": "170 / 85",
+        "zero_people": "0 / 0",
+        "unknown_fields_remain_blank": true,
+        "formula_error_scan": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}",
+        "reopened": true,
+        "recalculation_after_reopen": true
+      },
+      {
+        "id": "08-delivery",
+        "initial": {
+          "posters": 18,
+          "boxes": 2,
+          "masses": [
+            3.4,
+            2.8,
+            6.2
+          ],
+          "conditional_route_price": 950
+        },
+        "input_change": "10 → 11 West posters: 3.7 kg West, 6.5 kg total",
+        "zero_poster_mass": "0.4 kg West / 0.8 kg total boxes",
+        "workflow": "Window only → confirm route; route only → price; price → Svetlana; approval still not booking",
+        "blank_price_distinct_from_confirmed_zero": true,
+        "unknown_window_restored": true,
+        "formula_error_scan": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}",
+        "reopened": true,
+        "recalculation_after_reopen": true
+      }
+    ]
+  },
+  "visual_review": "Both working sheets rendered and visually inspected; clipped source notes corrected before final export.",
+  "native_excel_libreoffice_tested": false,
+  "supplier_messages_do_not_invent_reply_deadline": true,
+  "recipient_messages_separate_from_editorial_instructions": true,
+  "new_document_local_links_checked": 53,
+  "all_new_local_links_resolve": true,
+  "limitations": [
+    "No new model trials",
+    "No real supplier/recipient responses",
+    "No native Excel/LibreOffice execution",
+    "TXT drafts do not auto-update when workbook inputs change",
+    "Historical reports remain historical snapshots; no retrospective assessment edits"
+  ]
+}

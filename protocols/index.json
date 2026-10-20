@@ -1,36 +1,36 @@
 {
-  "version": "0.1.0-rc.1",
+  "version": "0.1.0-rc.2",
   "source_article": "https://prudchenko.com/writing/five-communication-protocols",
   "invocation": "explicit_single_protocol",
   "protocols": [
     {
       "id": "profiler",
       "name": "Profiler",
-      "purpose": "Separate observations, plausible explanations and role constraints before choosing a communication strategy.",
+      "purpose": "Build a bounded working map of how this particular recipient approaches a decision, using their supplied words, actions and stated priorities.",
       "source": "protocols/profiler.md"
     },
     {
       "id": "profiler-plus",
       "name": "Profiler Plus",
-      "purpose": "Turn contextual understanding into a grounded message or decision package the recipient can act on.",
+      "purpose": "Translate an honest proposal into the frame this recipient can understand and evaluate, without changing its facts or conditions.",
       "source": "protocols/profiler-plus.md"
     },
     {
       "id": "dopamine-hooks",
       "name": "Dopamine Hooks",
-      "purpose": "Make relevance visible and deliver meaningful closure without fake urgency or neurochemical claims.",
+      "purpose": "Build a connected movement of attention through the whole text, with meaningful answers and useful transitions.",
       "source": "protocols/dopamine-hooks.md"
     },
     {
       "id": "reverse",
       "name": "Reverse",
-      "purpose": "Check a drafted message from the recipient side and challenge the sender’s assumptions.",
+      "purpose": "Walk through the material as its recipient could read it, then place supported answers where consequential questions arise.",
       "source": "protocols/reverse.md"
     },
     {
       "id": "rail",
       "name": "Rail",
-      "purpose": "Turn an unfinished request into a usable path of actions while preserving independent judgment.",
+      "purpose": "Prepare the usable execution kit, rather than a description of work the recipient still has to organize.",
       "source": "protocols/rail.md"
     }
   ]

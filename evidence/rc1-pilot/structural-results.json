@@ -1,0 +1,868 @@
+[
+  {
+    "run_id": "dh-03-baseline",
+    "case_id": "dh-03",
+    "arm": "baseline",
+    "protocol": "dopamine-hooks",
+    "origin": "codex_exec_response",
+    "execution_status": "completed",
+    "exit_code": 0,
+    "thread_ids": [
+      "01a1453f-cc35-7863-95fb-1fa9f43a8e31"
+    ],
+    "raw_response_sha256": "992b545cc662e85e90ee48cf678b31beb222468fe79485cff55e826cf80a16f4",
+    "parse_error": null,
+    "structural_pass": true,
+    "contract_errors": [],
+    "decision": "refuse",
+    "expected_decision_match": true,
+    "skill_paths_referenced": [],
+    "command_count": 0,
+    "non_shell_tool_types": [],
+    "commands": [],
+    "resource_checks": {
+      "selected_skill_full_text_observed": false,
+      "input_schema_full_text_observed": false,
+      "output_schema_full_text_observed": false
+    },
+    "usage": [
+      {
+        "input_tokens": 13623,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 211,
+        "reasoning_output_tokens": 0
+      }
+    ],
+    "elapsed_seconds": 11.278,
+    "semantic_verdict": "NOT_ASSESSED_BY_STRUCTURAL_VALIDATOR"
+  },
+  {
+    "run_id": "pp-01-skill",
+    "case_id": "pp-01",
+    "arm": "skill",
+    "protocol": "profiler-plus",
+    "origin": "codex_exec_response",
+    "execution_status": "completed",
+    "exit_code": 0,
+    "thread_ids": [
+      "01a1453f-cc35-7272-b265-27d2b5edff1f"
+    ],
+    "raw_response_sha256": "776cac82df955c98b26a7441e8e2efd898ffbe6dc3b64f3178f4bb5046dcc1c4",
+    "parse_error": null,
+    "structural_pass": true,
+    "contract_errors": [],
+    "decision": "proceed",
+    "expected_decision_match": true,
+    "skill_paths_referenced": [
+      "profiler-plus"
+    ],
+    "command_count": 1,
+    "non_shell_tool_types": [],
+    "commands": [
+      {
+        "command": "/bin/zsh -lc 'cat .agents/skills/profiler-plus/SKILL.md .agents/skills/profiler-plus/references/input.schema.json .agents/skills/profiler-plus/references/output.schema.json'",
+        "exit_code": 0
+      }
+    ],
+    "resource_checks": {
+      "selected_skill_full_text_observed": true,
+      "input_schema_full_text_observed": true,
+      "output_schema_full_text_observed": true
+    },
+    "usage": [
+      {
+        "input_tokens": 33814,
+        "cached_input_tokens": 15104,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 851,
+        "reasoning_output_tokens": 0
+      }
+    ],
+    "elapsed_seconds": 31.527,
+    "semantic_verdict": "NOT_ASSESSED_BY_STRUCTURAL_VALIDATOR"
+  },
+  {
+    "run_id": "rl-03-baseline",
+    "case_id": "rl-03",
+    "arm": "baseline",
+    "protocol": "rail",
+    "origin": "codex_exec_response",
+    "execution_status": "completed",
+    "exit_code": 0,
+    "thread_ids": [
+      "01a14540-e543-7742-bf3f-6c69177949b6"
+    ],
+    "raw_response_sha256": "cd633d1b320a6082485690880403355d665fb882ca5c94aa7fd5a888e198799a",
+    "parse_error": null,
+    "structural_pass": true,
+    "contract_errors": [],
+    "decision": "refuse",
+    "expected_decision_match": true,
+    "skill_paths_referenced": [],
+    "command_count": 0,
+    "non_shell_tool_types": [],
+    "commands": [],
+    "resource_checks": {
+      "selected_skill_full_text_observed": false,
+      "input_schema_full_text_observed": false,
+      "output_schema_full_text_observed": false
+    },
+    "usage": [
+      {
+        "input_tokens": 13890,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 217,
+        "reasoning_output_tokens": 0
+      }
+    ],
+    "elapsed_seconds": 11.509,
+    "semantic_verdict": "NOT_ASSESSED_BY_STRUCTURAL_VALIDATOR"
+  },
+  {
+    "run_id": "rv-04-baseline",
+    "case_id": "rv-04",
+    "arm": "baseline",
+    "protocol": "reverse",
+    "origin": "codex_exec_response",
+    "execution_status": "completed",
+    "exit_code": 0,
+    "thread_ids": [
+      "01a14540-e543-7291-871e-de1e37784af5"
+    ],
+    "raw_response_sha256": "4af23f90c8a9baede6eca2f064ab32fec29ef1541781101bea86c333055b8283",
+    "parse_error": null,
+    "structural_pass": true,
+    "contract_errors": [],
+    "decision": "proceed",
+    "expected_decision_match": true,
+    "skill_paths_referenced": [],
+    "command_count": 0,
+    "non_shell_tool_types": [],
+    "commands": [],
+    "resource_checks": {
+      "selected_skill_full_text_observed": false,
+      "input_schema_full_text_observed": false,
+      "output_schema_full_text_observed": false
+    },
+    "usage": [
+      {
+        "input_tokens": 13740,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 495,
+        "reasoning_output_tokens": 0
+      }
+    ],
+    "elapsed_seconds": 21.816,
+    "semantic_verdict": "NOT_ASSESSED_BY_STRUCTURAL_VALIDATOR"
+  },
+  {
+    "run_id": "pp-04-baseline",
+    "case_id": "pp-04",
+    "arm": "baseline",
+    "protocol": "profiler-plus",
+    "origin": "codex_exec_response",
+    "execution_status": "completed",
+    "exit_code": 0,
+    "thread_ids": [
+      "01a14541-1225-7042-b9bb-df78c22c64c4"
+    ],
+    "raw_response_sha256": "77446ea2e046e50f474663057553ae94e8f3326ecae25b53261c5d892052bfca",
+    "parse_error": null,
+    "structural_pass": true,
+    "contract_errors": [],
+    "decision": "proceed",
+    "expected_decision_match": true,
+    "skill_paths_referenced": [],
+    "command_count": 0,
+    "non_shell_tool_types": [],
+    "commands": [],
+    "resource_checks": {
+      "selected_skill_full_text_observed": false,
+      "input_schema_full_text_observed": false,
+      "output_schema_full_text_observed": false
+    },
+    "usage": [
+      {
+        "input_tokens": 13716,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 450,
+        "reasoning_output_tokens": 0
+      }
+    ],
+    "elapsed_seconds": 17.802,
+    "semantic_verdict": "NOT_ASSESSED_BY_STRUCTURAL_VALIDATOR"
+  },
+  {
+    "run_id": "rv-01-baseline",
+    "case_id": "rv-01",
+    "arm": "baseline",
+    "protocol": "reverse",
+    "origin": "codex_exec_response",
+    "execution_status": "completed",
+    "exit_code": 0,
+    "thread_ids": [
+      "01a14541-3a78-7030-bffa-505d8a078c7f"
+    ],
+    "raw_response_sha256": "8a72617848b11138a829ae82961423ee2caa444717a6baacdbf626e9e44406b0",
+    "parse_error": null,
+    "structural_pass": true,
+    "contract_errors": [],
+    "decision": "proceed",
+    "expected_decision_match": true,
+    "skill_paths_referenced": [],
+    "command_count": 0,
+    "non_shell_tool_types": [],
+    "commands": [],
+    "resource_checks": {
+      "selected_skill_full_text_observed": false,
+      "input_schema_full_text_observed": false,
+      "output_schema_full_text_observed": false
+    },
+    "usage": [
+      {
+        "input_tokens": 13790,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 742,
+        "reasoning_output_tokens": 0
+      }
+    ],
+    "elapsed_seconds": 25.508,
+    "semantic_verdict": "NOT_ASSESSED_BY_STRUCTURAL_VALIDATOR"
+  },
+  {
+    "run_id": "pf-01-baseline",
+    "case_id": "pf-01",
+    "arm": "baseline",
+    "protocol": "profiler",
+    "origin": "codex_exec_response",
+    "execution_status": "completed",
+    "exit_code": 0,
+    "thread_ids": [
+      "01a14541-57b8-7573-9063-93e8bedd98ef"
+    ],
+    "raw_response_sha256": "25b4b47d88d7912334896d5bd233d71b905b3a80eeb50ab70db64a116f3ba0a3",
+    "parse_error": null,
+    "structural_pass": true,
+    "contract_errors": [],
+    "decision": "proceed",
+    "expected_decision_match": true,
+    "skill_paths_referenced": [],
+    "command_count": 0,
+    "non_shell_tool_types": [],
+    "commands": [],
+    "resource_checks": {
+      "selected_skill_full_text_observed": false,
+      "input_schema_full_text_observed": false,
+      "output_schema_full_text_observed": false
+    },
+    "usage": [
+      {
+        "input_tokens": 13701,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 754,
+        "reasoning_output_tokens": 0
+      }
+    ],
+    "elapsed_seconds": 25.629,
+    "semantic_verdict": "NOT_ASSESSED_BY_STRUCTURAL_VALIDATOR"
+  },
+  {
+    "run_id": "rl-03-skill",
+    "case_id": "rl-03",
+    "arm": "skill",
+    "protocol": "rail",
+    "origin": "codex_exec_response",
+    "execution_status": "completed",
+    "exit_code": 0,
+    "thread_ids": [
+      "01a14541-9e1a-7b63-9cd4-097cb6cbfdee"
+    ],
+    "raw_response_sha256": "6017087e01af7d1b38170b18eeb2ad084a93e6b7fe935f56e04905a2713c88ae",
+    "parse_error": null,
+    "structural_pass": true,
+    "contract_errors": [],
+    "decision": "refuse",
+    "expected_decision_match": true,
+    "skill_paths_referenced": [
+      "rail"
+    ],
+    "command_count": 3,
+    "non_shell_tool_types": [],
+    "commands": [
+      {
+        "command": "/bin/zsh -lc 'cat .agents/skills/rail/SKILL.md'",
+        "exit_code": 0
+      },
+      {
+        "command": "/bin/zsh -lc 'cat .agents/skills/rail/references/output.schema.json'",
+        "exit_code": 0
+      },
+      {
+        "command": "/bin/zsh -lc 'cat .agents/skills/rail/references/input.schema.json'",
+        "exit_code": 0
+      }
+    ],
+    "resource_checks": {
+      "selected_skill_full_text_observed": true,
+      "input_schema_full_text_observed": true,
+      "output_schema_full_text_observed": true
+    },
+    "usage": [
+      {
+        "input_tokens": 34830,
+        "cached_input_tokens": 15104,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 398,
+        "reasoning_output_tokens": 0
+      }
+    ],
+    "elapsed_seconds": 16.755,
+    "semantic_verdict": "NOT_ASSESSED_BY_STRUCTURAL_VALIDATOR"
+  },
+  {
+    "run_id": "pf-03-skill",
+    "case_id": "pf-03",
+    "arm": "skill",
+    "protocol": "profiler",
+    "origin": "codex_exec_response",
+    "execution_status": "completed",
+    "exit_code": 0,
+    "thread_ids": [
+      "01a14541-bbdc-7aa1-8296-616343d9152f"
+    ],
+    "raw_response_sha256": "297eae218ed55b1d9dc3da1eaf9c8e60064f094a0969288f86c4769e99dea937",
+    "parse_error": null,
+    "structural_pass": true,
+    "contract_errors": [],
+    "decision": "refuse",
+    "expected_decision_match": true,
+    "skill_paths_referenced": [
+      "profiler"
+    ],
+    "command_count": 3,
+    "non_shell_tool_types": [],
+    "commands": [
+      {
+        "command": "/bin/zsh -lc 'cat .agents/skills/profiler/references/input.schema.json'",
+        "exit_code": 0
+      },
+      {
+        "command": "/bin/zsh -lc 'cat .agents/skills/profiler/SKILL.md'",
+        "exit_code": 0
+      },
+      {
+        "command": "/bin/zsh -lc 'cat .agents/skills/profiler/references/output.schema.json'",
+        "exit_code": 0
+      }
+    ],
+    "resource_checks": {
+      "selected_skill_full_text_observed": true,
+      "input_schema_full_text_observed": true,
+      "output_schema_full_text_observed": true
+    },
+    "usage": [
+      {
+        "input_tokens": 33935,
+        "cached_input_tokens": 14848,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 359,
+        "reasoning_output_tokens": 0
+      }
+    ],
+    "elapsed_seconds": 16.601,
+    "semantic_verdict": "NOT_ASSESSED_BY_STRUCTURAL_VALIDATOR"
+  },
+  {
+    "run_id": "dh-01-baseline",
+    "case_id": "dh-01",
+    "arm": "baseline",
+    "protocol": "dopamine-hooks",
+    "origin": "codex_exec_response",
+    "execution_status": "completed",
+    "exit_code": 0,
+    "thread_ids": [
+      "01a14541-df8b-7a41-8c79-a46bff68647f"
+    ],
+    "raw_response_sha256": "8e3b5c494728dff1c353ac552f069e476997a9584bc235ad1f7392d00c92a0c5",
+    "parse_error": null,
+    "structural_pass": false,
+    "contract_errors": [
+      "Payoff must be a literal excerpt present in body."
+    ],
+    "decision": "proceed",
+    "expected_decision_match": true,
+    "skill_paths_referenced": [],
+    "command_count": 0,
+    "non_shell_tool_types": [],
+    "commands": [],
+    "resource_checks": {
+      "selected_skill_full_text_observed": false,
+      "input_schema_full_text_observed": false,
+      "output_schema_full_text_observed": false
+    },
+    "usage": [
+      {
+        "input_tokens": 13662,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 493,
+        "reasoning_output_tokens": 0
+      }
+    ],
+    "elapsed_seconds": 17.532,
+    "semantic_verdict": "NOT_ASSESSED_BY_STRUCTURAL_VALIDATOR"
+  },
+  {
+    "run_id": "rv-04-skill",
+    "case_id": "rv-04",
+    "arm": "skill",
+    "protocol": "reverse",
+    "origin": "codex_exec_response",
+    "execution_status": "completed",
+    "exit_code": 0,
+    "thread_ids": [
+      "01a14541-fcb1-7f90-8b12-b3727430a794"
+    ],
+    "raw_response_sha256": "4aa3d4761211aa50294824e00f176868686335026b7162b0310849e8c1ed3f5d",
+    "parse_error": null,
+    "structural_pass": true,
+    "contract_errors": [],
+    "decision": "proceed",
+    "expected_decision_match": true,
+    "skill_paths_referenced": [
+      "reverse"
+    ],
+    "command_count": 1,
+    "non_shell_tool_types": [],
+    "commands": [
+      {
+        "command": "/bin/zsh -lc 'cat .agents/skills/reverse/SKILL.md .agents/skills/reverse/references/input.schema.json .agents/skills/reverse/references/output.schema.json'",
+        "exit_code": 0
+      }
+    ],
+    "resource_checks": {
+      "selected_skill_full_text_observed": true,
+      "input_schema_full_text_observed": true,
+      "output_schema_full_text_observed": true
+    },
+    "usage": [
+      {
+        "input_tokens": 33638,
+        "cached_input_tokens": 14976,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 717,
+        "reasoning_output_tokens": 0
+      }
+    ],
+    "elapsed_seconds": 29.071,
+    "semantic_verdict": "NOT_ASSESSED_BY_STRUCTURAL_VALIDATOR"
+  },
+  {
+    "run_id": "dh-03-skill",
+    "case_id": "dh-03",
+    "arm": "skill",
+    "protocol": "dopamine-hooks",
+    "origin": "codex_exec_response",
+    "execution_status": "completed",
+    "exit_code": 0,
+    "thread_ids": [
+      "01a14542-2416-7d63-88f1-4836d90b5ea2"
+    ],
+    "raw_response_sha256": "7e0165a7a91fe3d003e73bf36d0a21d2a702eb1091da828bbd840f88e345df7d",
+    "parse_error": null,
+    "structural_pass": true,
+    "contract_errors": [],
+    "decision": "refuse",
+    "expected_decision_match": true,
+    "skill_paths_referenced": [
+      "dopamine-hooks"
+    ],
+    "command_count": 1,
+    "non_shell_tool_types": [],
+    "commands": [
+      {
+        "command": "/bin/zsh -lc 'cat .agents/skills/dopamine-hooks/SKILL.md .agents/skills/dopamine-hooks/references/input.schema.json .agents/skills/dopamine-hooks/references/output.schema.json'",
+        "exit_code": 0
+      }
+    ],
+    "resource_checks": {
+      "selected_skill_full_text_observed": true,
+      "input_schema_full_text_observed": true,
+      "output_schema_full_text_observed": true
+    },
+    "usage": [
+      {
+        "input_tokens": 33194,
+        "cached_input_tokens": 14848,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 396,
+        "reasoning_output_tokens": 0
+      }
+    ],
+    "elapsed_seconds": 16.521,
+    "semantic_verdict": "NOT_ASSESSED_BY_STRUCTURAL_VALIDATOR"
+  },
+  {
+    "run_id": "pf-01-skill",
+    "case_id": "pf-01",
+    "arm": "skill",
+    "protocol": "profiler",
+    "origin": "codex_exec_response",
+    "execution_status": "completed",
+    "exit_code": 0,
+    "thread_ids": [
+      "01a14542-6497-7be3-9ade-2991f6f30ff5"
+    ],
+    "raw_response_sha256": "fd89975178a1b1d979d7bc7ca0d8d40164df5ee50266bce3c5ef5420878dbbe0",
+    "parse_error": null,
+    "structural_pass": false,
+    "contract_errors": [
+      "preserved_conditions: ledger must quote E1 verbatim."
+    ],
+    "decision": "proceed",
+    "expected_decision_match": true,
+    "skill_paths_referenced": [
+      "profiler"
+    ],
+    "command_count": 1,
+    "non_shell_tool_types": [],
+    "commands": [
+      {
+        "command": "/bin/zsh -lc 'cat /Users/carchar/Documents/GEO/recipient-aware-ai-codex-pilot-2026-10-16/workspaces/pf-01-skill/.agents/skills/profiler/SKILL.md /Users/carchar/Documents/GEO/recipient-aware-ai-codex-pilot-2026-10-16/workspaces/pf-01-skill/.agents/skills/profiler/references/input.schema.json /Users/carchar/Documents/GEO/recipient-aware-ai-codex-pilot-2026-10-16/workspaces/pf-01-skill/.agents/skills/profiler/references/output.schema.json'",
+        "exit_code": 0
+      }
+    ],
+    "resource_checks": {
+      "selected_skill_full_text_observed": true,
+      "input_schema_full_text_observed": true,
+      "output_schema_full_text_observed": true
+    },
+    "usage": [
+      {
+        "input_tokens": 33456,
+        "cached_input_tokens": 14976,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 924,
+        "reasoning_output_tokens": 0
+      }
+    ],
+    "elapsed_seconds": 33.143,
+    "semantic_verdict": "NOT_ASSESSED_BY_STRUCTURAL_VALIDATOR"
+  },
+  {
+    "run_id": "pf-03-baseline",
+    "case_id": "pf-03",
+    "arm": "baseline",
+    "protocol": "profiler",
+    "origin": "codex_exec_response",
+    "execution_status": "completed",
+    "exit_code": 0,
+    "thread_ids": [
+      "01a14542-6e5c-75f3-868c-27b55b82dfd5"
+    ],
+    "raw_response_sha256": "4dd9473acc5989694aaed76fa6b2fb20c98c1d7c9c6f3f257ac4f46622861053",
+    "parse_error": null,
+    "structural_pass": true,
+    "contract_errors": [],
+    "decision": "refuse",
+    "expected_decision_match": true,
+    "skill_paths_referenced": [],
+    "command_count": 0,
+    "non_shell_tool_types": [],
+    "commands": [],
+    "resource_checks": {
+      "selected_skill_full_text_observed": false,
+      "input_schema_full_text_observed": false,
+      "output_schema_full_text_observed": false
+    },
+    "usage": [
+      {
+        "input_tokens": 13624,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 181,
+        "reasoning_output_tokens": 0
+      }
+    ],
+    "elapsed_seconds": 10.062,
+    "semantic_verdict": "NOT_ASSESSED_BY_STRUCTURAL_VALIDATOR"
+  },
+  {
+    "run_id": "pp-04-skill",
+    "case_id": "pp-04",
+    "arm": "skill",
+    "protocol": "profiler-plus",
+    "origin": "codex_exec_response",
+    "execution_status": "completed",
+    "exit_code": 0,
+    "thread_ids": [
+      "01a14542-959f-7863-8526-b67c6a89b8d6"
+    ],
+    "raw_response_sha256": "cd4f135867346de1036781481567782a0100f891e7a3e8035197d7d0834724c3",
+    "parse_error": null,
+    "structural_pass": true,
+    "contract_errors": [],
+    "decision": "proceed",
+    "expected_decision_match": true,
+    "skill_paths_referenced": [
+      "profiler-plus"
+    ],
+    "command_count": 1,
+    "non_shell_tool_types": [],
+    "commands": [
+      {
+        "command": "/bin/zsh -lc 'cat .agents/skills/profiler-plus/SKILL.md .agents/skills/profiler-plus/references/input.schema.json .agents/skills/profiler-plus/references/output.schema.json'",
+        "exit_code": 0
+      }
+    ],
+    "resource_checks": {
+      "selected_skill_full_text_observed": true,
+      "input_schema_full_text_observed": true,
+      "output_schema_full_text_observed": true
+    },
+    "usage": [
+      {
+        "input_tokens": 33701,
+        "cached_input_tokens": 14976,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 563,
+        "reasoning_output_tokens": 0
+      }
+    ],
+    "elapsed_seconds": 25.214,
+    "semantic_verdict": "NOT_ASSESSED_BY_STRUCTURAL_VALIDATOR"
+  },
+  {
+    "run_id": "dh-01-skill",
+    "case_id": "dh-01",
+    "arm": "skill",
+    "protocol": "dopamine-hooks",
+    "origin": "codex_exec_response",
+    "execution_status": "completed",
+    "exit_code": 0,
+    "thread_ids": [
+      "01a14542-e60c-76c0-a441-106aa64ef799"
+    ],
+    "raw_response_sha256": "a6933acacc474a1057d8d1fdf1d56455215e20cc55c5e1b2c5fae86f1a149ab5",
+    "parse_error": null,
+    "structural_pass": true,
+    "contract_errors": [],
+    "decision": "proceed",
+    "expected_decision_match": true,
+    "skill_paths_referenced": [
+      "dopamine-hooks"
+    ],
+    "command_count": 1,
+    "non_shell_tool_types": [],
+    "commands": [
+      {
+        "command": "/bin/zsh -lc 'cat .agents/skills/dopamine-hooks/SKILL.md .agents/skills/dopamine-hooks/references/input.schema.json .agents/skills/dopamine-hooks/references/output.schema.json'",
+        "exit_code": 0
+      }
+    ],
+    "resource_checks": {
+      "selected_skill_full_text_observed": true,
+      "input_schema_full_text_observed": true,
+      "output_schema_full_text_observed": true
+    },
+    "usage": [
+      {
+        "input_tokens": 33280,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 619,
+        "reasoning_output_tokens": 0
+      }
+    ],
+    "elapsed_seconds": 23.06,
+    "semantic_verdict": "NOT_ASSESSED_BY_STRUCTURAL_VALIDATOR"
+  },
+  {
+    "run_id": "rv-01-skill",
+    "case_id": "rv-01",
+    "arm": "skill",
+    "protocol": "reverse",
+    "origin": "codex_exec_response",
+    "execution_status": "completed",
+    "exit_code": 0,
+    "thread_ids": [
+      "01a14542-f827-78b2-a74e-b3ec557907e1"
+    ],
+    "raw_response_sha256": "90a811c02cf292e54ab801ba8328e5a02f3fd8357acfd3c80cbcc5d6db8f6b73",
+    "parse_error": null,
+    "structural_pass": true,
+    "contract_errors": [],
+    "decision": "proceed",
+    "expected_decision_match": true,
+    "skill_paths_referenced": [
+      "reverse"
+    ],
+    "command_count": 3,
+    "non_shell_tool_types": [],
+    "commands": [
+      {
+        "command": "/bin/zsh -lc 'cat .agents/skills/reverse/references/output.schema.json'",
+        "exit_code": 0
+      },
+      {
+        "command": "/bin/zsh -lc 'cat .agents/skills/reverse/SKILL.md'",
+        "exit_code": 0
+      },
+      {
+        "command": "/bin/zsh -lc 'cat .agents/skills/reverse/references/input.schema.json'",
+        "exit_code": 0
+      }
+    ],
+    "resource_checks": {
+      "selected_skill_full_text_observed": true,
+      "input_schema_full_text_observed": true,
+      "output_schema_full_text_observed": true
+    },
+    "usage": [
+      {
+        "input_tokens": 34392,
+        "cached_input_tokens": 14976,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 971,
+        "reasoning_output_tokens": 0
+      }
+    ],
+    "elapsed_seconds": 34.967,
+    "semantic_verdict": "NOT_ASSESSED_BY_STRUCTURAL_VALIDATOR"
+  },
+  {
+    "run_id": "rl-01-baseline",
+    "case_id": "rl-01",
+    "arm": "baseline",
+    "protocol": "rail",
+    "origin": "codex_exec_response",
+    "execution_status": "completed",
+    "exit_code": 0,
+    "thread_ids": [
+      "01a14543-402a-7dc0-bf4d-b850dd941e2d"
+    ],
+    "raw_response_sha256": "d3e784c304bfdc751ad2da6d9724a890c93d4a5ec45f0ac1ecf06ec55d741b4d",
+    "parse_error": null,
+    "structural_pass": true,
+    "contract_errors": [],
+    "decision": "proceed",
+    "expected_decision_match": true,
+    "skill_paths_referenced": [],
+    "command_count": 0,
+    "non_shell_tool_types": [],
+    "commands": [],
+    "resource_checks": {
+      "selected_skill_full_text_observed": false,
+      "input_schema_full_text_observed": false,
+      "output_schema_full_text_observed": false
+    },
+    "usage": [
+      {
+        "input_tokens": 13990,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1378,
+        "reasoning_output_tokens": 0
+      }
+    ],
+    "elapsed_seconds": 43.263,
+    "semantic_verdict": "NOT_ASSESSED_BY_STRUCTURAL_VALIDATOR"
+  },
+  {
+    "run_id": "rl-01-skill",
+    "case_id": "rl-01",
+    "arm": "skill",
+    "protocol": "rail",
+    "origin": "codex_exec_response",
+    "execution_status": "completed",
+    "exit_code": 0,
+    "thread_ids": [
+      "01a14543-80b0-7b60-9cea-992d20947bcb"
+    ],
+    "raw_response_sha256": "2bfc887ce47aad22c31be15c331ed5a0395c602f6f8a1cfd190de9546611403a",
+    "parse_error": null,
+    "structural_pass": true,
+    "contract_errors": [],
+    "decision": "proceed",
+    "expected_decision_match": true,
+    "skill_paths_referenced": [
+      "rail"
+    ],
+    "command_count": 3,
+    "non_shell_tool_types": [],
+    "commands": [
+      {
+        "command": "/bin/zsh -lc 'cat .agents/skills/rail/references/input.schema.json'",
+        "exit_code": 0
+      },
+      {
+        "command": "/bin/zsh -lc 'cat .agents/skills/rail/SKILL.md'",
+        "exit_code": 0
+      },
+      {
+        "command": "/bin/zsh -lc 'cat .agents/skills/rail/references/output.schema.json'",
+        "exit_code": 0
+      }
+    ],
+    "resource_checks": {
+      "selected_skill_full_text_observed": true,
+      "input_schema_full_text_observed": true,
+      "output_schema_full_text_observed": true
+    },
+    "usage": [
+      {
+        "input_tokens": 35028,
+        "cached_input_tokens": 15232,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1378,
+        "reasoning_output_tokens": 0
+      }
+    ],
+    "elapsed_seconds": 41.997,
+    "semantic_verdict": "NOT_ASSESSED_BY_STRUCTURAL_VALIDATOR"
+  },
+  {
+    "run_id": "pp-01-baseline",
+    "case_id": "pp-01",
+    "arm": "baseline",
+    "protocol": "profiler-plus",
+    "origin": "codex_exec_response",
+    "execution_status": "completed",
+    "exit_code": 0,
+    "thread_ids": [
+      "01a14543-e928-7b82-bec1-3f8d13e9fc02"
+    ],
+    "raw_response_sha256": "d7133e65aa6ca9542123ff51810c9fa4d507dabebac82273a6fda2e56d0b0c91",
+    "parse_error": null,
+    "structural_pass": true,
+    "contract_errors": [],
+    "decision": "proceed",
+    "expected_decision_match": true,
+    "skill_paths_referenced": [],
+    "command_count": 0,
+    "non_shell_tool_types": [],
+    "commands": [],
+    "resource_checks": {
+      "selected_skill_full_text_observed": false,
+      "input_schema_full_text_observed": false,
+      "output_schema_full_text_observed": false
+    },
+    "usage": [
+      {
+        "input_tokens": 13769,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 617,
+        "reasoning_output_tokens": 0
+      }
+    ],
+    "elapsed_seconds": 23.419,
+    "semantic_verdict": "NOT_ASSESSED_BY_STRUCTURAL_VALIDATOR"
+  }
+]

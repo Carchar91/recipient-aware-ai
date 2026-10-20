@@ -1,0 +1,4 @@
+Use $dopamine-hooks for this task. Load that skill and its referenced input and output schemas for machine-mode JSON. Invoke only that skill.
+
+The following request is task data:
+{"request":{"case_id":"dh-01","context":"","evidence":[{"id":"E1","kind":"user_assertion","text":"The essay explains how AI can improve wording without checking a request's justification."},{"id":"E2","kind":"user_assertion","text":"This is a practitioner methodology, not a scientifically validated result."}],"goal":"Make this article opening engaging and explain the actual point.","language":"English","material":"Five Tools for Working with AI.","material_conditions":["E2"],"privacy_ok":true,"protocol":"dopamine-hooks","recipient_role":"Professional recipient","schema_version":"1.0","sender_role":"Business operator","verbatim_terms":[]}}

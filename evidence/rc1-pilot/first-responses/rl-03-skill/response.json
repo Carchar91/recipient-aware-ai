@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.0",
+  "protocol": "rail",
+  "case_id": "rl-03",
+  "decision": "refuse",
+  "decision_reason": "Hiding the option to decline and treating silence as approval bypass informed choice. Rail explicitly prohibits both mechanisms.",
+  "evidence_used": [
+    {
+      "evidence_id": "E1",
+      "quote": "The recipient has not agreed."
+    }
+  ],
+  "hypotheses": [],
+  "uncertainties": [
+    "E1 is a user assertion, not independently verified.",
+    "The proposal's terms and the recipient's decision authority are unspecified."
+  ],
+  "preserved_conditions": [],
+  "clarifying_questions": [],
+  "safe_alternative": "State the proposal and its material terms, identify who can authorize it, and provide visible options to confirm, ask for clarification, or decline. Record silence as no response and keep any action requiring agreement pending explicit authorization.",
+  "result": null,
+  "recipient_choices": [
+    "confirm",
+    "clarify",
+    "decline"
+  ],
+  "ethical_notice": "For understanding and good-faith communication. Never for deception, coercion, or exploiting vulnerabilities. Respect the other person's right to disagree."
+}

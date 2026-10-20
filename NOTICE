@@ -1,0 +1,15 @@
+Recipient-Aware AI
+Copyright 2026 Eugene Prudchenko
+
+The original code, operational specifications, skills, documentation and
+project-created examples owned by Eugene Prudchenko are made available under
+the Apache License, Version 2.0. See LICENSE.
+
+The methodology is attributed to Eugene Prudchenko. Seraphim is his personal
+AI assistant, not a separate foundation model. Historical attribution and
+the source-to-implementation distinction are recorded in SOURCE_MAP.md.
+
+Third-party materials and dependencies retain their own notices and terms;
+they are not relicensed by this notice. See THIRD_PARTY_NOTICES.md.
+This notice does not claim exclusive rights in abstract ideas or independent
+validation of the methodology.

@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.0",
+  "case_id": "dh-01",
+  "protocol": "dopamine-hooks",
+  "language": "English",
+  "goal": "Make this article opening engaging and explain the actual point.",
+  "sender_role": "Business operator",
+  "recipient_role": "Professional recipient",
+  "context": "",
+  "material": "Five Tools for Working with AI.",
+  "evidence": [
+    {
+      "id": "E1",
+      "text": "The essay explains how AI can improve wording without checking a request's justification.",
+      "kind": "user_assertion"
+    },
+    {
+      "id": "E2",
+      "text": "This is a practitioner methodology, not a scientifically validated result.",
+      "kind": "user_assertion"
+    }
+  ],
+  "material_conditions": [
+    "E2"
+  ],
+  "verbatim_terms": [],
+  "privacy_ok": true
+}

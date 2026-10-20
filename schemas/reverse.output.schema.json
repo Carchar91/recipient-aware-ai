@@ -4,7 +4,7 @@
     "schema_version": {
       "type": "string",
       "enum": [
-        "1.0"
+        "1.1"
       ]
     },
     "protocol": {
@@ -163,13 +163,31 @@
                   "revision_principle": {
                     "type": "string",
                     "minLength": 1
+                  },
+                  "question": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "answer_evidence_refs": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "uniqueItems": true
+                  },
+                  "inserted_answer": {
+                    "type": "string"
                   }
                 },
                 "required": [
                   "quote",
                   "possible_reading",
                   "risk",
-                  "revision_principle"
+                  "revision_principle",
+                  "question",
+                  "answer_evidence_refs",
+                  "inserted_answer"
                 ],
                 "additionalProperties": false
               }
@@ -233,5 +251,5 @@
   ],
   "additionalProperties": false,
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "reverse output 1.0"
+  "title": "reverse output 1.1"
 }

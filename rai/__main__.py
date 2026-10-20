@@ -16,6 +16,7 @@ def main(argv=None) -> int:
     vi = sub.add_parser('validate-input'); vi.add_argument('--input', required=True)
     vo = sub.add_parser('validate-output'); vo.add_argument('--input', required=True); vo.add_argument('--output', required=True)
     render = sub.add_parser('render'); render.add_argument('--input', required=True); render.add_argument('--output', required=True)
+    render.add_argument('--audit', action='store_true', help='Append the full operator-only machine record.')
     live = sub.add_parser('run', help='One paid model request, only with both explicit opt-in flags.')
     live.add_argument('--input', required=True); live.add_argument('--model', required=True)
     live.add_argument('--arm', choices=('protocol','baseline'), default='protocol')
@@ -34,7 +35,7 @@ def main(argv=None) -> int:
         elif args.command == 'validate-output':
             errors = validate_output(data, load_json(args.output))
         elif args.command == 'render':
-            print(render_output(data, load_json(args.output)), end=''); return 0
+            print(render_output(data, load_json(args.output), audit=args.audit), end=''); return 0
         elif args.command == 'run':
             record = call_model(data,args.model,arm=args.arm,allow_network=args.allow_network,
                                 acknowledge_cost=args.acknowledge_cost,max_output_tokens=args.max_output_tokens)

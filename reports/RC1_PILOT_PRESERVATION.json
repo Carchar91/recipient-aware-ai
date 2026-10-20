@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "byte_identical_file_counts": {
+    "rc1": 131,
+    "pilot": 510
+  },
+  "rc1_worktree_clean": true,
+  "rc1_head": "97e0381294ef25f0bea4898e0493fb508e994362",
+  "candidate_branch": "local/rc2-author-intent",
+  "candidate_remotes": [],
+  "push_performed": false,
+  "new_model_runs": 0,
+  "rc1_tag_object_sha": "8a5fe5e9e79d19d3043dcdbdcafdae982d80ee5a",
+  "rc1_tag_commit": "97e0381294ef25f0bea4898e0493fb508e994362"
+}

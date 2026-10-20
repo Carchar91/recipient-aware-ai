@@ -1,0 +1,111 @@
+{
+  "amended_at_utc": "2026-10-16T15:05:47.343070+00:00",
+  "before_first_model_attempt": true,
+  "original_preregistration_preserved": true,
+  "host": "codex-cli 0.163.0-alpha.10.2",
+  "reason": "PATH CLI 0.146.1 lacks current model catalog; use already-installed app runtime supporting gpt-6-astra medium. No installation/update performed.",
+  "changes": "Executable path replaced, global builtin-skill disable list refreshed after runtime bootstrap. No input, selection, model, effort, shared instructions or output-schema changes.",
+  "known_context_limit": "No-model debug inspection finds generic global Seraphim AGENTS in both arms despite project_doc_max_bytes=0. It contains no detailed five-protocol instructions or reference answers; shared host context is disclosed. Initial catalog omission alone does not prove nondiscovery for explicit-only skills.",
+  "commands": [
+    {
+      "run_id": "dh-01-baseline",
+      "original_command_sha256": "cded35370721e0ac0e445b6e6caa2cac209784316c13b936ed41292749228547",
+      "effective_command_sha256": "e36bf49c34857fdc56fd6c02fa3677499b78b913f790a29535f5a7bf5a42e207"
+    },
+    {
+      "run_id": "dh-01-skill",
+      "original_command_sha256": "d3afe9e5a4ef7831a91a9e352aba84729de52602258a27838b85aadfba347751",
+      "effective_command_sha256": "6d18d60dd887c0f935e7453db2a953722cf1a7882a4e70c09661abe70a83c163"
+    },
+    {
+      "run_id": "dh-03-baseline",
+      "original_command_sha256": "5a0588e2147a630310af86c3892cf6a89fbd477f789c4761a782301d5b905196",
+      "effective_command_sha256": "48f990b4e8831e54ce7b80add7d96260133bcdb08c745e68d1b8aaa6bae06686"
+    },
+    {
+      "run_id": "dh-03-skill",
+      "original_command_sha256": "91c0ff181d2febbaecf307df759fe805af8f6084af00e13228735876b6bf77a6",
+      "effective_command_sha256": "3ba36e50e234c9d8ec27202dc064f281033238fabb034407c4a729b08dd928b0"
+    },
+    {
+      "run_id": "pf-01-baseline",
+      "original_command_sha256": "d87141ef5d8ad244286c350a95088397c583bd184b43f6c87594fa6e51465adc",
+      "effective_command_sha256": "e0359ebe21a2b5dc589f065d6427af4a1e9ed4a29dcba88682fc968b77d603be"
+    },
+    {
+      "run_id": "pf-01-skill",
+      "original_command_sha256": "0319809dedb719c753533e49fa96362edf836c88a1c3f30440aba6d011900ae2",
+      "effective_command_sha256": "7b9834cde328457425d84081d0ba3eef42dd05572517bc92ed140a885c58496f"
+    },
+    {
+      "run_id": "pf-03-baseline",
+      "original_command_sha256": "91847a551e74163000b566f025706603e1910bb5e5ef9498946e79a0db818308",
+      "effective_command_sha256": "b7d8ca8aedb186359de3a1142861108fd960bafc0aba795469f39857ce1dbaf6"
+    },
+    {
+      "run_id": "pf-03-skill",
+      "original_command_sha256": "3a1bc2559334af4055a4e86f4324c942cd0bef31bf73d7c6223ce3d628603c3a",
+      "effective_command_sha256": "d2bda3fe20626b9b44a0f4ac05b029cfe6fc9f21f17c73776891d2f357e744f1"
+    },
+    {
+      "run_id": "pp-01-baseline",
+      "original_command_sha256": "1d8bbdbdf90e33c10872f90f0ba82f95c21daa2b54edc982151846b219236923",
+      "effective_command_sha256": "f842334a88e476e9dfc251c9e81ed88434f091def93cc753eff06f5d89bfe5d5"
+    },
+    {
+      "run_id": "pp-01-skill",
+      "original_command_sha256": "e303f2ea2eda17143fbe2f349825eab1b2accbf6081f6d08c41e5886c2414e74",
+      "effective_command_sha256": "a822651172724a58f8d0673222b29a98ab77b4d5f4c88987f95e84d0260ed4a9"
+    },
+    {
+      "run_id": "pp-04-baseline",
+      "original_command_sha256": "cbc6c5f610696a19c98e770ffa29a435dd50dbdd5ba543729be3c7cc2247f1e7",
+      "effective_command_sha256": "97c67a090291fb00730bed8c36dcd8b393312bb0a9959550e2fd1a3704163f5a"
+    },
+    {
+      "run_id": "pp-04-skill",
+      "original_command_sha256": "2941365c7e32032ed816cf7538f5ccb269046c6dbfef3375d325de39cf7011ee",
+      "effective_command_sha256": "b161f3cb5a2f54be9dfbe8d50b397fc79e6c4be60269007ee719089fdaa88405"
+    },
+    {
+      "run_id": "rl-01-baseline",
+      "original_command_sha256": "e91a2db6a19ab4928bf66ff1ec2a8a9c0dd9f7477cfc55501faf4bdec477d93b",
+      "effective_command_sha256": "a1bf14768bac734e5ed757c12cc1effa2b81544ba1eee3a56e76916e5fda08f3"
+    },
+    {
+      "run_id": "rl-01-skill",
+      "original_command_sha256": "f7a683951554c57ecfb332ecaa6d28e48315d05b0b6ba9c6e3a020701cde2d52",
+      "effective_command_sha256": "4d35374d9328dd6ea40ec82035a812d106c1fe6c84189bcd3487988498509df5"
+    },
+    {
+      "run_id": "rl-03-baseline",
+      "original_command_sha256": "cb88cbbe2a0c85c3ecd6a3c7449e4dbda3ab1c28944e94815ce889ae87c9b069",
+      "effective_command_sha256": "fb949018cee01631fff1b87fa863b3cce4c8e7188abe319dc213b850f1231548"
+    },
+    {
+      "run_id": "rl-03-skill",
+      "original_command_sha256": "f7d1771cb310f22ecaf624873a0932822dabe2e054bf42cb7aca874f21d66ccc",
+      "effective_command_sha256": "80b9a65daf1d21a3138d046afa4d5cf312f2cee81548b75fd1ffac1dd5bbd8a3"
+    },
+    {
+      "run_id": "rv-01-baseline",
+      "original_command_sha256": "f0df1ab2f5032f8d1490f0a2319c9f5e2a69594de75c104122d8e50ed3584328",
+      "effective_command_sha256": "4881d6b0dc76d674c0835033bb69a55622cfb933d2aafa95d636835c5a7abd14"
+    },
+    {
+      "run_id": "rv-01-skill",
+      "original_command_sha256": "fc132892914eb6b3f29c9ef4a908204fa5c91ad1b747bfea80843a0b280152ea",
+      "effective_command_sha256": "1f623aa2ea285fa3308ba8ee6e75c627aedce8d68fcecb62fd303322eb07efa9"
+    },
+    {
+      "run_id": "rv-04-baseline",
+      "original_command_sha256": "774bac32fb6fa7fc4443add62a419199e15cca5228cf8e52ed0cece5dd70cf55",
+      "effective_command_sha256": "37c814f17ac387d2ec1fcdb394fccd5878b639a0a5a23f7eed4d0c7bfeb516ce"
+    },
+    {
+      "run_id": "rv-04-skill",
+      "original_command_sha256": "4474befbb3662db8593b400b02ee4b3524e0a69e895381d806abdc9890309de8",
+      "effective_command_sha256": "0f271a4e0cbf37371818f4ae9bd8d68884194eac9ff66e6bd6ae53e243a6d968"
+    }
+  ]
+}

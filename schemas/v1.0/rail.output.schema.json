@@ -1,0 +1,279 @@
+{
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "enum": [
+        "1.0"
+      ]
+    },
+    "protocol": {
+      "type": "string",
+      "enum": [
+        "rail"
+      ]
+    },
+    "case_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "decision": {
+      "type": "string",
+      "enum": [
+        "proceed",
+        "clarify",
+        "refuse"
+      ]
+    },
+    "decision_reason": {
+      "type": "string",
+      "minLength": 1
+    },
+    "evidence_used": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "evidence_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "quote": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "evidence_id",
+          "quote"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "hypotheses": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "statement": {
+            "type": "string",
+            "minLength": 1
+          },
+          "supporting_evidence": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "alternative": {
+            "type": "string",
+            "minLength": 1
+          },
+          "verification_question": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "statement",
+          "supporting_evidence",
+          "alternative",
+          "verification_question"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "uncertainties": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "preserved_conditions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "evidence_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "statement": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "evidence_id",
+          "statement"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "clarifying_questions": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "maxItems": 3
+    },
+    "safe_alternative": {
+      "type": "string"
+    },
+    "result": {
+      "anyOf": [
+        {
+          "type": "object",
+          "properties": {
+            "steps": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "pattern": "^S[1-9][0-9]*$"
+                  },
+                  "actor": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "action": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "evidence_refs": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  },
+                  "output": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "depends_on": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "uniqueItems": true
+                  }
+                },
+                "required": [
+                  "id",
+                  "actor",
+                  "action",
+                  "evidence_refs",
+                  "output",
+                  "depends_on"
+                ],
+                "additionalProperties": false
+              },
+              "minItems": 1
+            },
+            "decision_owner": {
+              "type": "string",
+              "minLength": 1
+            },
+            "branches": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "when": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "action": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "outcome": {
+                    "type": "string",
+                    "enum": [
+                      "confirm",
+                      "clarify",
+                      "decline",
+                      "escalate"
+                    ]
+                  }
+                },
+                "required": [
+                  "when",
+                  "action",
+                  "outcome"
+                ],
+                "additionalProperties": false
+              },
+              "minItems": 1
+            },
+            "message": {
+              "type": "string",
+              "minLength": 1
+            },
+            "do_not_decide": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          },
+          "required": [
+            "steps",
+            "decision_owner",
+            "branches",
+            "message",
+            "do_not_decide"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "recipient_choices": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "confirm",
+          "clarify",
+          "decline",
+          "escalate"
+        ]
+      },
+      "uniqueItems": true
+    },
+    "ethical_notice": {
+      "type": "string",
+      "minLength": 1
+    }
+  },
+  "required": [
+    "schema_version",
+    "protocol",
+    "case_id",
+    "decision",
+    "decision_reason",
+    "evidence_used",
+    "hypotheses",
+    "uncertainties",
+    "preserved_conditions",
+    "clarifying_questions",
+    "safe_alternative",
+    "result",
+    "recipient_choices",
+    "ethical_notice"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "rail output 1.0"
+}
