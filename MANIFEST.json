@@ -333,46 +333,6 @@
       "sha256": "8ce243054b74f89a847da348bc4defdb222304c9c85e91082c2bdcb128ad0dbc"
     },
     {
-      "path": "distribution/ARTICLE_UPDATE.md",
-      "bytes": 1488,
-      "sha256": "6c835ad622b4dfc0edd18a780b4d78acf63d04b8603b80c36e896409806e071e"
-    },
-    {
-      "path": "distribution/AWESOME_LISTS.md",
-      "bytes": 809,
-      "sha256": "63e5ce81d41b81b34db8b015520c6e432f427ecffd8460f0b03840a4c5dbab75"
-    },
-    {
-      "path": "distribution/DEMO_VIDEO.md",
-      "bytes": 2153,
-      "sha256": "03ebfca73d943e7507aa280b51d078ef8af71bf67df6eea80d820ff4b8fccda8"
-    },
-    {
-      "path": "distribution/DEVELOPER_COMMUNITY.md",
-      "bytes": 2234,
-      "sha256": "c050f29089e5f5c51842b25f511bf15a2eca682f8f1e13308c27ef8b6346633c"
-    },
-    {
-      "path": "distribution/GITHUB_PRESENTATION.md",
-      "bytes": 2957,
-      "sha256": "a670e1dbd1f0d6633328142aaaca70a8cfb6e6ef0beb04f59596215895a93665"
-    },
-    {
-      "path": "distribution/PITCH_ADDENDUM.md",
-      "bytes": 2041,
-      "sha256": "73ee5d18eb4b4412e00dc009fd8d7ca3c6c21d6e0914d88dbc018f79b5708c97"
-    },
-    {
-      "path": "distribution/README.md",
-      "bytes": 1150,
-      "sha256": "db7cbb44ba4592c43fc86748e1aace801751b0c1be0e6a4541d4d702d03e366d"
-    },
-    {
-      "path": "distribution/SHOW_HN.md",
-      "bytes": 2490,
-      "sha256": "c07a839dd48ff33410d4a0d3a59c2a7213b213afd0b9b5676d3443b49bee0083"
-    },
-    {
       "path": "docs/COMPATIBILITY.md",
       "bytes": 7666,
       "sha256": "c3e310caa8672eb7f05004000cc2c6ac7a4b2c990abce166a57e03e423e7be7e"
@@ -381,11 +341,6 @@
       "path": "docs/CONTRACT_1_1.md",
       "bytes": 3460,
       "sha256": "bc15dd1e8b2aef5ff5e841180c6077be73dee4b0ac6342d0d72829eaed72342b"
-    },
-    {
-      "path": "docs/DISTRIBUTION_REVIEW.md",
-      "bytes": 4844,
-      "sha256": "72992e96a290a8de613efaa3b1bbd5aba35f9cf4b8edbcfd38c49d58d378277c"
     },
     {
       "path": "docs/INSTALLATION.md",
@@ -1788,5 +1743,5 @@
       "sha256": "dbd661ef06d71252b8607f96d6d1a0d2325a19cf08e8500193f9dcd598a7f855"
     }
   ],
-  "snapshot_scope": "Unreleased distribution branch based on v0.1.0-rc.2; not the published release asset manifest."
+  "snapshot_scope": "Distribution source snapshot based on v0.1.0-rc.2; not the published release asset manifest."
 }
