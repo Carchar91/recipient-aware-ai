@@ -99,8 +99,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 11886,
-      "sha256": "03852e1ccacb2a10457752512c9b632237f4ae0a675cedbfc98c08ae6b61a75e"
+      "bytes": 14775,
+      "sha256": "37293511438add9ecb9377379b3a0566ed594611cc2e72933f49588770340767"
     },
     {
       "path": "README.ru.md",
@@ -333,14 +333,34 @@
       "sha256": "8ce243054b74f89a847da348bc4defdb222304c9c85e91082c2bdcb128ad0dbc"
     },
     {
+      "path": "docs/COMPATIBILITY.md",
+      "bytes": 7666,
+      "sha256": "c3e310caa8672eb7f05004000cc2c6ac7a4b2c990abce166a57e03e423e7be7e"
+    },
+    {
       "path": "docs/CONTRACT_1_1.md",
       "bytes": 3460,
       "sha256": "bc15dd1e8b2aef5ff5e841180c6077be73dee4b0ac6342d0d72829eaed72342b"
     },
     {
       "path": "docs/INSTALLATION.md",
-      "bytes": 3534,
-      "sha256": "ec2978fc623ff8487c5f1803d169c96c851adecda644c81e91473650ee1319fc"
+      "bytes": 4331,
+      "sha256": "5a814278e9664262cae87da574cd3280723784720f9745c80f7ee3d2fae63f42"
+    },
+    {
+      "path": "docs/PLUGIN.md",
+      "bytes": 5451,
+      "sha256": "99dcf3bf61f99a4ea94a2cae8a3bc1ff10ef298e424b4f534f5b4357eee4af41"
+    },
+    {
+      "path": "docs/PLUGIN_SUBMISSION.md",
+      "bytes": 5130,
+      "sha256": "ccd6c122525ea9115bb634cb1d38b07c2ae68653e51228846fc077db68bdf8d9"
+    },
+    {
+      "path": "docs/SKILLS_SH.md",
+      "bytes": 4720,
+      "sha256": "9c5144cde50f1e4be4149e8e4847e5d8c1c6df6c938bf9bb94fe0febafeeecd6"
     },
     {
       "path": "docs/TECHNICAL_SOURCES.md",
@@ -1303,6 +1323,26 @@
       "sha256": "ba119029abd3cfcd0edf506afcd3160524c16282ec2b1ccb637b56efbc41a414"
     },
     {
+      "path": "plugin/EVALUATION.md",
+      "bytes": 595,
+      "sha256": "1f2e451973f8eea2cf57faf202484735c10137c1b74038d83fa4bbc0e1326106"
+    },
+    {
+      "path": "plugin/README.md",
+      "bytes": 3009,
+      "sha256": "44567d644dd2f39679a4ab98b23a13689bc9bbc12da5201d1cef52eaa7da067c"
+    },
+    {
+      "path": "plugin/assets/icon.svg",
+      "bytes": 510,
+      "sha256": "a09248b43b3544d3a36bef578d61a26d95f5ba65b479fd3d0a667c51ec6e924f"
+    },
+    {
+      "path": "plugin/plugin.json",
+      "bytes": 4310,
+      "sha256": "64124ec0131fc0e322f0b3d254df2ff9ba92da67b6d85311451cd8eaea53f6cd"
+    },
+    {
       "path": "protocols/common.md",
       "bytes": 5535,
       "sha256": "de3477a01447f8fdeee956dca1a6161ad51536b6dd56915f6bc42832711939e3"
@@ -1668,6 +1708,11 @@
       "sha256": "009bced26e1f1fc13c40d5dc4bc6be451c2d33becfc8a48e972d96fd577de1c5"
     },
     {
+      "path": "tools/build_plugin.py",
+      "bytes": 10673,
+      "sha256": "a00fdbb6fcb9ab386dc87ac81c2d02d83ea00d10f55025ec7c1f7fd561bd0dd1"
+    },
+    {
       "path": "tools/build_skills.py",
       "bytes": 2368,
       "sha256": "eebde8414103fc79ae375d9e5b15166583bf881a041b7d2da1f832b98a065a8d"
@@ -1697,5 +1742,6 @@
       "bytes": 1322,
       "sha256": "dbd661ef06d71252b8607f96d6d1a0d2325a19cf08e8500193f9dcd598a7f855"
     }
-  ]
+  ],
+  "snapshot_scope": "Distribution source snapshot based on v0.1.0-rc.2; not the published release asset manifest."
 }

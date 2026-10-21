@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" role="img" aria-label="Five independent communication protocols">
+  <rect width="256" height="256" rx="48" fill="#F7F7F5"/>
+  <path d="M51 54h154v119H97l-33 29v-29H51z" fill="none" stroke="#18181A" stroke-width="12" stroke-linejoin="round"/>
+  <path d="M80 92h96M80 111h72M80 130h96M80 149h46" fill="none" stroke="#9A7C50" stroke-width="9" stroke-linecap="round"/>
+  <circle cx="178" cy="149" r="5" fill="#9A7C50"/>
+</svg>

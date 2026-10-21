@@ -1,5 +1,11 @@
 # Installation and invocation
 
+## Fast project install
+
+The [skills CLI route](SKILLS_SH.md) was checked against the public `v0.1.0-rc.2` tag with CLI `skills@1.7.4`. It discovers all five skills and installs one explicitly selected skill into an empty Codex project. The [README command](../README.md#install-one-skill) pins both the installer and the source tag and disables installer telemetry. Use a new project for the first try; inspect existing skill folders before changing a working project.
+
+One new synthetic Codex usage smoke is recorded separately in [compatibility and the first answer](COMPATIBILITY.md). It is an installation/use check, not an effectiveness comparison. No other agent's runtime is claimed as tested.
+
 ## Source harness
 
 Use Python 3.11+ from the repository root. Install `requirements.lock` in an isolated environment. Run `python tools/verify.py` before use. The exact pinned dependencies were also installed successfully in a clean macOS ARM64 environment with Python 3.14.4 during handoff. Other Python/platform combinations remain unverified.
@@ -18,7 +24,7 @@ Invoke a selected mode explicitly, for example `$reverse` with the target messag
 
 `agents/openai.yaml` sets `allow_implicit_invocation: false`. This is a host setting, not a universal safety guarantee. Other clients may ignore it. The plain Python harness always takes one explicit mode from the validated input.
 
-No plugin manifest or marketplace publication is asserted in this candidate. Packaging these same generated skills into a plugin is a separate integration and validation task. Do not invent a catalog listing, installation link or platform certification.
+A separate skills-only [plugin package and its recorded checks](PLUGIN.md) reuse the same generated skills. Local package validation or Codex installation does not establish installation in a ChatGPT account, marketplace availability or platform certification. No public plugin listing is asserted.
 
 References: https://agentskills.io/specification and https://learn.chatgpt.com/docs/build-skills
 
@@ -26,4 +32,4 @@ References: https://agentskills.io/specification and https://learn.chatgpt.com/d
 
 Current exported references are contract 1.1; the source harness can also validate preserved 1.0 artifacts. Read the full source package's `docs/CONTRACT_1_1.md` before mixing versions. Ordinary chat should produce the selected mode’s readable deliverable; machine mode is opt-in. `render --audit` exposes the full operator record separately.
 
-Eight saved synthetic sessions used Codex CLI 0.163.0-alpha.10.2 with existing ChatGPT sign-in, requested alias gpt-6-astra and reasoning medium. The full selected skill was read in each recorded session. Global Seraphim instructions remained in the host; the backend snapshot was not exposed. See the full source package's `evidence/rc2-eight-runs/REPORT_RU.md`. Preparing this public release adds only file/instruction checks, not another model or host-integration trial. In particular, the new Rail file-delivery rule, ChatGPT plugin installation, native Excel/LibreOffice and other hosts remain untested.
+Eight saved synthetic sessions used Codex CLI 0.163.0-alpha.10.2 with existing ChatGPT sign-in, requested alias gpt-6-astra and reasoning medium. The full selected skill was read in each recorded session. Global Seraphim instructions remained in the host; the backend snapshot was not exposed. See the full source package's `evidence/rc2-eight-runs/REPORT_RU.md`. That public-release preparation added only file/instruction checks. The later distribution smoke is recorded above without changing those earlier answers or reports. The new Rail file-delivery rule, ChatGPT-account plugin installation, native Excel/LibreOffice and other hosts remain untested.
