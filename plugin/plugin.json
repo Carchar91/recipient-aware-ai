@@ -1,0 +1,47 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "recipient-aware-ai",
+  "version": "0.1.0-rc.2",
+  "description": "Five independent protocols for understanding recipients, adapting explanations, sustaining interest, answering likely questions, and preparing a handoff.",
+  "author": {
+    "name": "Eugene Prudchenko",
+    "url": "https://prudchenko.com"
+  },
+  "homepage": "https://github.com/Carchar91/recipient-aware-ai",
+  "repository": "https://github.com/Carchar91/recipient-aware-ai",
+  "license": "Apache-2.0",
+  "keywords": ["communication", "agent-skills", "recipient-aware", "writing"],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Recipient-Aware AI",
+        "shortDescription": "Write for the reader's needs",
+        "longDescription": "Choose one of five independent communication protocols: Profiler examines evidence about a person's reasoning and decision criteria; Profiler Plus adapts a communication to a particular recipient; Dopamine Hooks develops honest interest through a text; Reverse reads material from the recipient's perspective and integrates supported answers; Rail prepares work and handoff materials for an executor. The protocols do not activate one another. Developed by Eugene Prudchenko through practical work with his personal AI assistant, Seraphim, which is not a separate foundation model. Experimental prerelease: synthetic examples and engineering checks do not establish superior performance, psychological accuracy, or practical efficacy. For understanding and good-faith communication. Never for deception, coercion, or exploiting vulnerabilities. Respect the other person's right to disagree. Instructions only: no bundled MCP server, external data storage, telemetry, or sending capability. The chosen AI host still processes your messages under its own terms.",
+        "developerName": "Eugene Prudchenko",
+        "category": "Communication",
+        "capabilities": [],
+        "websiteURL": "https://github.com/Carchar91/recipient-aware-ai",
+        "supportURL": "https://github.com/Carchar91/recipient-aware-ai/issues",
+        "defaultPrompt": [
+          "Use Reverse to read my draft as its recipient and integrate only supported answers to likely questions.",
+          "Use Profiler Plus to explain the same offer to two different recipients without changing its terms.",
+          "Use Rail to prepare the work and a handoff. Mark missing data; do not invent it or send anything."
+        ],
+        "logo": "./assets/icon.svg",
+        "composerIcon": "./assets/icon.svg"
+      },
+      "review": {
+        "prompts": [
+          "Use Profiler. Synthetic colleague: she asked for a cost breakdown, an owner and a two-week trial before approving a proposal. What decision criteria are supported, what remains a hypothesis, and what should I ask next?",
+          "Use Profiler Plus. Synthetic offer: a 90-minute workshop costs $600, has a maximum of 12 participants, and needs a projector. Write separate short explanations for a finance manager and a programme lead. Keep the terms identical.",
+          "Use Dopamine Hooks. Write a 250-word synthetic note for volunteers explaining why recording repair outcomes helps the next shift. Develop interest across paragraphs without fabricated claims or pressure.",
+          "Use Reverse. Synthetic draft: Please approve a $200 materials order for Saturday's free repair workshop. Facts: it serves 20 people, uses the community room, requires no extra equipment, and unused materials will be kept for the next workshop. Integrate supported answers to likely questions and mark remaining unknowns.",
+          "Use Rail. Prepare a handoff for assembling 24 synthetic welcome packs. Each needs one notebook and two pens. Stock: 30 notebooks and 40 pens. Purchase prices and delivery address are unknown. Do the arithmetic, prepare useful artifacts where supported, and mark the exact missing inputs."
+        ]
+      },
+      "publication": {
+        "release_notes": "Local skills-only packaging candidate based on Recipient-Aware AI v0.1.0-rc.2. Includes the five existing skills unchanged, onboarding, ethical boundaries and limitations. Not submitted to or available in the public plugin directory."
+      }
+    }
+  }
+}

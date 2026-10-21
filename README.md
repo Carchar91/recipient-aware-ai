@@ -1,5 +1,7 @@
 # Recipient-Aware AI
 
+**Turn an unclear request into a message or handoff someone can act on.**
+
 Five independent operations for using AI to understand a person's decision criteria, write a grounded message, develop a complete text, read it from the recipient's side, or prepare the work someone needs to execute.
 
 Use them when the bottleneck is an unclear decision, a message that assumes too much, or a handoff that leaves someone else to finish the preparation. Choose one operation for the task. These are not five AI personas or a mandatory pipeline.
@@ -9,6 +11,36 @@ Use them when the bottleneck is an unclear decision, a message that assumes too 
 Try a standalone skill in **Codex**, the environment used for the saved eight-run check: [quick start below](#try-one-operation-in-codex). You get a decision map, a usable text, or a prepared execution kit, depending on the operation. Results still need human review.
 
 **[Get v0.1.0-rc.2 — experimental prerelease](https://github.com/Carchar91/recipient-aware-ai/releases/tag/v0.1.0-rc.2)** · [Apache-2.0](LICENSE) for author-owned materials; [third-party terms retained](THIRD_PARTY_NOTICES.md).
+
+## Install one skill
+
+From a **new, empty project directory** with Node.js **22.20+**:
+
+```bash
+DISABLE_TELEMETRY=1 DO_NOT_TRACK=1 npx --yes skills@1.7.4 add https://github.com/Carchar91/recipient-aware-ai/tree/v0.1.0-rc.2 --skill profiler-plus --agent codex --yes
+```
+
+This command was checked against the public rc.2 tag. It installs only `profiler-plus` into the project's `.agents/skills` and creates a local lockfile. Open that project in Codex, explicitly invoke `$profiler-plus`, and provide the proposal, fixed terms, recipient's stated priorities and requested decision. Ordinary use needs no Python or JSON. Review the text before using it.
+
+The CLI is third-party code executed by `npx`; inspect skills and existing folders before installing into a working project. The environment flags disable CLI telemetry for this route. [Discovery, exact checks and a synthetic usage result](docs/SKILLS_SH.md) · [Host compatibility limits](docs/COMPATIBILITY.md) · [Checksum-verified ZIP alternative](#try-one-operation-in-codex)
+
+## Before / after: ask for a decision the facts support
+
+**Before:** “Everything is already prepared; all we need from you are photographs and confirmation.”
+
+**After:** “There is a projector in the room, but the ability to display the TIFF files you sent has not yet been checked.” The revised invitation also says: “We will publish the announcement only after you explicitly agree to lead this meeting.”
+
+Reverse replaces an unsupported readiness claim with the actual technical gap and an explicit agreement boundary. These are excerpts from an **editorial English translation of a saved synthetic example**, not a new test or a report of a real recipient's reaction. [Read the complete before / after and source](SHOWCASE_EN.md#2-reverse-an-invitation-before-and-after).
+
+**[Choose one of the five protocols](#choose-the-operation)** · **[English showcase](SHOWCASE_EN.md)** · [Installation and compatibility](docs/SKILLS_SH.md)
+
+## Known limitations
+
+- These instructions do not read minds or establish psychological facts. Recipient reactions and motives remain hypotheses.
+- Saved synthetic outputs and offline engineering tests do not establish superior performance, real reader outcomes or universal safety.
+- Host permissions and human review still matter. Instructions are not a security boundary; private material should only be used with appropriate permission.
+
+[Full limitations](LIMITATIONS.md) · [Responsible use](RESPONSIBLE_USE.md) · [Evidence history](EVALUATION.md)
 
 ## One proposal. Two readers. Same terms. Different explanation.
 
@@ -75,7 +107,7 @@ For another operation, copy and explicitly select that skill instead. From the f
 
 The saved check used Codex CLI **0.163.0-alpha.10.2**, existing ChatGPT sign-in, requested model alias **gpt-6-astra**, reasoning **medium**, and eight fresh task contexts. No separate API billing was used. The backend snapshot was not exposed; global Seraphim instructions remained present, and memory/history were disabled. Each trace showed the selected full skill was read. [Original environment and limitations report](evidence/rc2-eight-runs/REPORT_RU.md)
 
-This is the tested route described here. ChatGPT plugin installation or compatibility was **not tested**. The new file-delivery rule has not had a new model trial.
+The later [skills CLI installation and one usage smoke](docs/COMPATIBILITY.md) are recorded separately from these eight saved runs. A skills-only [plugin package](docs/PLUGIN.md) is also prepared separately. Installation in a ChatGPT account and ChatGPT runtime behavior remain **untested**. The new Rail file-delivery rule has not had a new model trial.
 
 ## Developer path
 
@@ -107,7 +139,7 @@ Canonical rules live in `protocols/`; rebuild generated skills with `python tool
 
 All eight situations are synthetic. The full first answers and primary agent assessments are preserved unchanged. They illustrate distinct operations; they are not client implementations, independent studies or controlled evidence of superiority. The [earlier pilot and its unchanged answers](evidence/rc1-pilot/SOURCE.md) retain their failures and partially contaminated control; they established no comparative advantage. [Give practical feedback](https://github.com/Carchar91/recipient-aware-ai/issues/new?template=feedback.yml): the task, selected operation and environment, what helped, and what you had to correct. Do not publish private documents or correspondence.
 
-Engineering checks test software behaviour, provenance handling, generated-source consistency and file integrity. They do **not** measure usefulness to people, semantic truth or general safety. This review ran no new models. Repeated model sessions for this revised delivery rule, real reader reactions, controlled comparisons and safety across scenarios remain untested. The XLSX checks distinguish library recalculation and reopening from untested native Excel/LibreOffice behaviour.
+Engineering checks test software behaviour, provenance handling, generated-source consistency and file integrity. They do **not** measure usefulness to people, semantic truth or general safety. The rc.2 public-release preparation ran no new models; the later distribution smoke is documented separately above. Repeated model sessions for this revised delivery rule, real reader reactions, controlled comparisons and safety across scenarios remain untested. The XLSX checks distinguish library recalculation and reopening from untested native Excel/LibreOffice behaviour.
 
 ## Author, source and boundaries
 
